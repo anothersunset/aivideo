@@ -1,0 +1,12 @@
+{
+  "task_id": "TASK-REVIEWED-REPLACE",
+  "stage": "master_preview_with_replacements",
+  "segment_manifests": [
+    "anime_project\\episode_segments\\onsen_01_sample\\manifest_with_replacements.json",
+    "anime_project\\episode_segments\\act2_01_sample\\manifest_with_replacements.json"
+  ],
+  "shot_count": 52,
+  "duration_seconds": 184.0,
+  "video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4",
+  "status": "needs_director_review"
+}

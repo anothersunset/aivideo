@@ -1,0 +1,17 @@
+{
+  "provider": "blender",
+  "job_id": "onsen_01_sample_17_ON-017",
+  "shot_id": "ON-017",
+  "task": "3d_or_realtime_previs",
+  "layout_request": {
+    "shotId": "ON-017",
+    "durationSeconds": 6.0,
+    "camera": "derive from storyboard camera field and local fallback",
+    "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+  },
+  "duration_seconds": 6.0,
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/onsen_01_sample/previs/ON-017_blender.mp4",
+  "mode": "dry_run_request_packet"
+}

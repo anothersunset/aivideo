@@ -1,0 +1,45 @@
+{
+  "purpose": "Fill these values through environment variables before enabling external submit.",
+  "safety_policy": {
+    "submit_requires": [
+      "provider endpoint",
+      "provider token",
+      "human approval",
+      "cost cap"
+    ],
+    "download_target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/",
+    "post_download_gate": "ExternalResultIngestAgent validates 1920x1080, 24fps, duration, non-empty MP4."
+  },
+  "providers": {
+    "kling_i2v": {
+      "display_name": "Kling image-to-video",
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_API_KEY",
+      "submit_mode": "api_http_json_or_manual_portal"
+    },
+    "seedance_i2v": {
+      "display_name": "Seedance image-to-video",
+      "endpoint_env": "KAGE_SEEDANCE_I2V_ENDPOINT",
+      "token_env": "KAGE_SEEDANCE_I2V_API_KEY",
+      "submit_mode": "api_http_json_or_manual_portal"
+    },
+    "runway": {
+      "display_name": "Runway video generation",
+      "endpoint_env": "KAGE_RUNWAY_ENDPOINT",
+      "token_env": "KAGE_RUNWAY_API_KEY",
+      "submit_mode": "api_http_json_or_manual_portal"
+    },
+    "luma": {
+      "display_name": "Luma video generation",
+      "endpoint_env": "KAGE_LUMA_ENDPOINT",
+      "token_env": "KAGE_LUMA_API_KEY",
+      "submit_mode": "api_http_json_or_manual_portal"
+    },
+    "pika": {
+      "display_name": "Pika video generation",
+      "endpoint_env": "KAGE_PIKA_ENDPOINT",
+      "token_env": "KAGE_PIKA_API_KEY",
+      "submit_mode": "api_http_json_or_manual_portal"
+    }
+  }
+}

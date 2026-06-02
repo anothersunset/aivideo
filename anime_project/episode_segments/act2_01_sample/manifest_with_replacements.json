@@ -1,0 +1,259 @@
+{
+  "task_id": "TASK-REVIEWED-REPLACE",
+  "stage": "segment_edit_with_approved_replacements",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "shot_count": 31,
+  "duration_seconds": 62.0,
+  "audio": "anime_project\\episode_segments\\act2_01_sample\\audio\\temp_mix.wav",
+  "video": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_with_replacements.mp4",
+  "shot_videos": [
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+    "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4"
+  ],
+  "toolchain": "anime_project\\episode_segments\\act2_01_sample\\toolchain_manifest.json",
+  "active_mode": "local_2d_limited_animation_fallback",
+  "review_status": "Needs DirectorAgent/RiskAgent review",
+  "shots": [
+    {
+      "shot_id": "07-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "07-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "07-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "07-004",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-004",
+      "video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+      "duration_seconds": 2.0,
+      "replacement": {
+        "task_id": "TASK-REVIEWED-REPLACE",
+        "segment": "act2_01_sample",
+        "shot_id": "08-004",
+        "provider": "remotion",
+        "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+        "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+        "duration_seconds": 2.0,
+        "expected_duration_seconds": 2.0,
+        "request_packet_source": "anime_project/pipeline/provider_runs/remotion/act2_01_sample",
+        "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+        "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+        "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\act2_01_sample\\08-004\\08-004_remotion_mid.png",
+        "status": "approved_for_manifest_replacement",
+        "notes": "Approved external review result promoted to replacement candidate.",
+        "approved": true,
+        "review_notes": [
+          "duration preserved",
+          "provider route traceable",
+          "risk rules remain controlled by original shot job",
+          "candidate can replace local fallback for re-edit test"
+        ]
+      }
+    },
+    {
+      "shot_id": "08-005",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-006",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-007",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-008",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-009",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "09-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "09-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "10-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "10-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-004",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-005",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "12-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "12-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "12-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "13-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "13-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-004",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    }
+  ],
+  "replacement_count": 1,
+  "source_manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest.json"
+}

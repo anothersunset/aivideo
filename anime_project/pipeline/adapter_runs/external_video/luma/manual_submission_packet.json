@@ -1,0 +1,63 @@
+{
+  "provider": "luma",
+  "instructions": [
+    "Use these payloads in the provider portal/API only after human approval.",
+    "Export/download each chunk to expected_chunk_path.",
+    "If a shot has multiple chunks, assemble the final full shot before placing it at expected_final_inbox_path.",
+    "Single-chunk shots can be copied directly to expected_final_inbox_path.",
+    "Run ExternalResultIngestAgent after returns are placed in the inbox."
+  ],
+  "submissions": [
+    {
+      "provider": "luma",
+      "job_id": "act2_01_sample_08_08-004",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "chunk_index": 1,
+      "duration_seconds": 2.0,
+      "source_keyframe": "anime_project/episode_segments/act2_01_sample/final/key_08-004.png",
+      "motion_prompt": "Adult 2D ninja action anime shot 08-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.\nAnimate this chunk from 0.0s for 2.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+      "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+      "source_packet": "anime_project\\pipeline\\provider_runs\\luma\\act2_01_sample\\act2_01_sample_08_08-004_i2v_requests.json",
+      "provider_expected_output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-004_luma_chunk01.mp4",
+      "expected_chunk_path": "anime_project\\pipeline\\external_results\\chunks\\luma\\act2_01_sample\\08-004\\08-004_luma_chunk01.mp4",
+      "expected_final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\luma\\act2_01_sample\\08-004\\08-004_luma.mp4",
+      "chunk_assembly": "Drop chunk renders to expected_chunk_path; assemble the approved full shot to expected_final_inbox_path.",
+      "status": "ready_for_submit"
+    },
+    {
+      "provider": "luma",
+      "job_id": "onsen_01_sample_08_ON-008",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_index": 1,
+      "duration_seconds": 5.0,
+      "source_keyframe": "anime_project/episode_segments/onsen_01_sample/final/key_ON-008.png",
+      "motion_prompt": "Adult 2D ninja action anime shot ON-008: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.\nAnimate this chunk from 0.0s for 5.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+      "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+      "source_packet": "anime_project\\pipeline\\provider_runs\\luma\\onsen_01_sample\\onsen_01_sample_08_ON-008_i2v_requests.json",
+      "provider_expected_output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-008_luma_chunk01.mp4",
+      "expected_chunk_path": "anime_project\\pipeline\\external_results\\chunks\\luma\\onsen_01_sample\\ON-008\\ON-008_luma_chunk01.mp4",
+      "expected_final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\luma\\onsen_01_sample\\ON-008\\ON-008_luma.mp4",
+      "chunk_assembly": "Drop chunk renders to expected_chunk_path; assemble the approved full shot to expected_final_inbox_path.",
+      "status": "ready_for_submit"
+    },
+    {
+      "provider": "luma",
+      "job_id": "onsen_01_sample_08_ON-008",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_index": 2,
+      "duration_seconds": 3.0,
+      "source_keyframe": "anime_project/episode_segments/onsen_01_sample/final/key_ON-008.png",
+      "motion_prompt": "Adult 2D ninja action anime shot ON-008: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.\nAnimate this chunk from 5.0s for 3.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+      "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+      "source_packet": "anime_project\\pipeline\\provider_runs\\luma\\onsen_01_sample\\onsen_01_sample_08_ON-008_i2v_requests.json",
+      "provider_expected_output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-008_luma_chunk02.mp4",
+      "expected_chunk_path": "anime_project\\pipeline\\external_results\\chunks\\luma\\onsen_01_sample\\ON-008\\ON-008_luma_chunk02.mp4",
+      "expected_final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\luma\\onsen_01_sample\\ON-008\\ON-008_luma.mp4",
+      "chunk_assembly": "Drop chunk renders to expected_chunk_path; assemble the approved full shot to expected_final_inbox_path.",
+      "status": "ready_for_submit"
+    }
+  ]
+}

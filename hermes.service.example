@@ -1,0 +1,18 @@
+[Unit]
+Description=Hermes Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/root/.local/bin/hermes
+Restart=always
+RestartSec=5
+
+# If Hermes depends on a virtual environment or custom PATH, uncomment and adjust:
+# Environment="PATH=/root/.local/bin:/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target

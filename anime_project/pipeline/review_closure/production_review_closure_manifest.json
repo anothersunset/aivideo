@@ -1,0 +1,43 @@
+{
+  "task_id": "TASK-CLOSURE-AFTER-HQ-HANDOFF",
+  "stage": "production_review_closure",
+  "mode": "applied",
+  "decision": "closure_pass_applied",
+  "pipeline_locks": [
+    "anime_project\\pipeline\\acceptance\\master_acceptance_manifest.json",
+    "anime_project\\pipeline\\director_review\\director_risk_review_manifest.json",
+    "anime_project\\deliverables\\producer_demo_v01\\producer_demo_manifest.json",
+    "anime_project\\pipeline\\polish_queue\\polish_queue_manifest.json"
+  ],
+  "total_tasks": 57,
+  "approved_count": 1,
+  "kept_open_count": 0,
+  "remaining_needs_review_count": 0,
+  "remaining_returned_count": 0,
+  "remaining_pending_count": 0,
+  "approved": [
+    {
+      "id": "TASK-057",
+      "agent": "HighQualityProviderHandoffPackageAgent",
+      "title": "Package HQ provider launch handoff zip",
+      "status": "Completed",
+      "review": "Needs review",
+      "decision": "approve_evidence_backed_task",
+      "approve": true,
+      "output": {
+        "path": "anime_project\\deliverables\\current_demo_hq_provider_handoff_v01.zip",
+        "exists": true,
+        "bytes": 1621891
+      },
+      "manifest": {
+        "path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo_hq_provider_handoff_manifest.json",
+        "exists": true,
+        "bytes": 7439
+      },
+      "reason": "Required output or manifest exists and downstream production package/polish queue is ready."
+    }
+  ],
+  "kept_open": [],
+  "report": "anime_project\\pipeline\\review_closure\\production_review_closure_report.md",
+  "next_step": "Run or resolve remaining queued/returned tasks, then repeat closure pass."
+}

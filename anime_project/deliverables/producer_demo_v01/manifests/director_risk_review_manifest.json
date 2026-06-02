@@ -1,0 +1,153 @@
+{
+  "task_id": "TASK-044",
+  "stage": "director_risk_review",
+  "source_acceptance": "anime_project\\pipeline\\acceptance\\master_acceptance_manifest.json",
+  "source_master_manifest": "anime_project\\episode_segments\\master_preview\\manifest_with_replacements.json",
+  "master_video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4",
+  "decision": "conditional_pass_for_internal_producer_demo",
+  "final_release_ready": false,
+  "reviewed_keyframe_count": 5,
+  "nonblank_keyframe_count": 5,
+  "replacement_keyframe_count": 2,
+  "risk_keyframe_count": 5,
+  "contact_sheet": "anime_project\\pipeline\\director_review\\keyframes\\master_review_contact_sheet.png",
+  "keyframes": [
+    {
+      "task_id": "TASK-044",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "label": "Onsen replacement action test",
+      "timestamp_seconds": 38.0,
+      "duration_seconds": 8.0,
+      "frame": "anime_project\\pipeline\\director_review\\keyframes\\onsen_01_sample\\ON-008_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 3.018,
+        "stddev_luma": 8.809,
+        "luma_min": 0,
+        "luma_max": 91,
+        "unique_color_sample_count": 348,
+        "nonblank": true
+      },
+      "replacement_provider": "remotion",
+      "replacement_review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion_mid.png",
+      "review_focus": "Replacement traceability, action readability, rain/silhouette energy.",
+      "risk_rules": [
+        "Confirm this remains a workflow-quality replacement, not final character-style approval."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-044",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "label": "Rating-risk hidden impact",
+      "timestamp_seconds": 135.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-003_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 25.5,
+        "stddev_luma": 11.99,
+        "luma_min": 4,
+        "luma_max": 107,
+        "unique_color_sample_count": 626,
+        "nonblank": true
+      },
+      "replacement_provider": "",
+      "replacement_review_frame": "",
+      "review_focus": "No face, no pain expression, action clarity through body/prop language.",
+      "risk_rules": [
+        "08-003 must not show face or pain expression."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-044",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "label": "Iron centipede replacement test",
+      "timestamp_seconds": 137.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-004_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 5.391,
+        "stddev_luma": 13.712,
+        "luma_min": 0,
+        "luma_max": 122,
+        "unique_color_sample_count": 494,
+        "nonblank": true
+      },
+      "replacement_provider": "remotion",
+      "replacement_review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\act2_01_sample\\08-004\\08-004_remotion_mid.png",
+      "review_focus": "External replacement continuity, creature silhouette, edit rhythm.",
+      "risk_rules": [
+        "Replacement must be approved before manifest promotion."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-044",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "label": "Hirumaru parasite limit",
+      "timestamp_seconds": 163.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\11-004_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 33.509,
+        "stddev_luma": 14.882,
+        "luma_min": 4,
+        "luma_max": 132,
+        "unique_color_sample_count": 741,
+        "nonblank": true
+      },
+      "replacement_provider": "",
+      "replacement_review_frame": "",
+      "review_focus": "Parasite staging must remain readable without escalating body horror.",
+      "risk_rules": [
+        "11-004 parasite count limit: 8."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-044",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "label": "Chiyo restraint beat",
+      "timestamp_seconds": 169.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\12-002_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 33.404,
+        "stddev_luma": 15.628,
+        "luma_min": 5,
+        "luma_max": 117,
+        "unique_color_sample_count": 673,
+        "nonblank": true
+      },
+      "replacement_provider": "",
+      "replacement_review_frame": "",
+      "review_focus": "Silent emotional expression through props/hands; avoid pain-process depiction.",
+      "risk_rules": [
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    }
+  ],
+  "report": "anime_project\\pipeline\\director_review\\director_risk_review.md",
+  "next_step": "Producer can use this as an internal demo review package; final release still needs human art, rating, originality, and sound review."
+}

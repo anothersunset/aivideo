@@ -1,0 +1,318 @@
+{
+  "task_id": "TASK-051",
+  "stage": "segment_edit_with_local_polish_replacements",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "shot_count": 31,
+  "duration_seconds": 62.0,
+  "audio": "anime_project\\episode_segments\\act2_01_sample\\audio\\temp_mix.wav",
+  "video": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_with_local_polish.mp4",
+  "shot_videos": [
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+    "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-003\\08-003_local_polish.mp4",
+    "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-004\\08-004_local_polish.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+    "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\11-004\\11-004_local_polish.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+    "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\12-002\\12-002_local_polish.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+    "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4"
+  ],
+  "toolchain": "anime_project\\episode_segments\\act2_01_sample\\toolchain_manifest.json",
+  "active_mode": "local_2d_limited_animation_fallback",
+  "review_status": "Needs DirectorAgent/RiskAgent review",
+  "shots": [
+    {
+      "shot_id": "07-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "07-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "07-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "07-004",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-003",
+      "video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-003\\08-003_local_polish.mp4",
+      "duration_seconds": 2.0,
+      "replacement": {
+        "task_id": "TASK-051",
+        "queue_id": "POLISH-002",
+        "segment": "act2_01_sample",
+        "shot_id": "08-003",
+        "provider": "local_remotion_polish",
+        "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+        "candidate_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-003\\08-003_local_polish.mp4",
+        "duration_seconds": 2.0,
+        "expected_duration_seconds": 2.0,
+        "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\08-003_local_polish_mid.png",
+        "local_polish_manifest_source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_manifest.json",
+        "status": "approved_for_manifest_replacement",
+        "notes": "Accepted local polish candidate promoted into versioned replacement edit.",
+        "approved": true,
+        "review_notes": [
+          "local polish render accepted",
+          "1920x1080 24fps h264 verification inherited from LocalPolishRenderAgent",
+          "risk rules remain controlled by original shot job and director review metadata"
+        ]
+      }
+    },
+    {
+      "shot_id": "08-004",
+      "video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-004\\08-004_local_polish.mp4",
+      "duration_seconds": 2.0,
+      "replacement": {
+        "task_id": "TASK-051",
+        "queue_id": "POLISH-003",
+        "segment": "act2_01_sample",
+        "shot_id": "08-004",
+        "provider": "local_remotion_polish",
+        "source_local_output": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+        "candidate_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-004\\08-004_local_polish.mp4",
+        "duration_seconds": 2.0,
+        "expected_duration_seconds": 2.0,
+        "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\08-004_local_polish_mid.png",
+        "local_polish_manifest_source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_manifest.json",
+        "status": "approved_for_manifest_replacement",
+        "notes": "Accepted local polish candidate promoted into versioned replacement edit.",
+        "approved": true,
+        "review_notes": [
+          "local polish render accepted",
+          "1920x1080 24fps h264 verification inherited from LocalPolishRenderAgent",
+          "risk rules remain controlled by original shot job and director review metadata"
+        ]
+      }
+    },
+    {
+      "shot_id": "08-005",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-006",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-007",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-008",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "08-009",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "09-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "09-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "10-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "10-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "11-004",
+      "video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\11-004\\11-004_local_polish.mp4",
+      "duration_seconds": 2.0,
+      "replacement": {
+        "task_id": "TASK-051",
+        "queue_id": "POLISH-004",
+        "segment": "act2_01_sample",
+        "shot_id": "11-004",
+        "provider": "local_remotion_polish",
+        "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+        "candidate_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\11-004\\11-004_local_polish.mp4",
+        "duration_seconds": 2.0,
+        "expected_duration_seconds": 2.0,
+        "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\11-004_local_polish_mid.png",
+        "local_polish_manifest_source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_manifest.json",
+        "status": "approved_for_manifest_replacement",
+        "notes": "Accepted local polish candidate promoted into versioned replacement edit.",
+        "approved": true,
+        "review_notes": [
+          "local polish render accepted",
+          "1920x1080 24fps h264 verification inherited from LocalPolishRenderAgent",
+          "risk rules remain controlled by original shot job and director review metadata"
+        ]
+      }
+    },
+    {
+      "shot_id": "11-005",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "12-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "12-002",
+      "video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\12-002\\12-002_local_polish.mp4",
+      "duration_seconds": 2.0,
+      "replacement": {
+        "task_id": "TASK-051",
+        "queue_id": "POLISH-005",
+        "segment": "act2_01_sample",
+        "shot_id": "12-002",
+        "provider": "local_remotion_polish",
+        "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+        "candidate_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\12-002\\12-002_local_polish.mp4",
+        "duration_seconds": 2.0,
+        "expected_duration_seconds": 2.0,
+        "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\12-002_local_polish_mid.png",
+        "local_polish_manifest_source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_manifest.json",
+        "status": "approved_for_manifest_replacement",
+        "notes": "Accepted local polish candidate promoted into versioned replacement edit.",
+        "approved": true,
+        "review_notes": [
+          "local polish render accepted",
+          "1920x1080 24fps h264 verification inherited from LocalPolishRenderAgent",
+          "risk rules remain controlled by original shot job and director review metadata"
+        ]
+      }
+    },
+    {
+      "shot_id": "12-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "13-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "13-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-001",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-002",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-003",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    },
+    {
+      "shot_id": "14-004",
+      "video": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
+      "duration_seconds": 2.0,
+      "replacement": null
+    }
+  ],
+  "replacement_count": 4,
+  "source_manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest.json",
+  "local_polish_source_manifest": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_manifest.json"
+}

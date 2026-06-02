@@ -1,0 +1,17 @@
+{
+  "provider": "blender",
+  "job_id": "act2_01_sample_15_09-002",
+  "shot_id": "09-002",
+  "task": "3d_or_realtime_previs",
+  "layout_request": {
+    "shotId": "09-002",
+    "durationSeconds": 2.0,
+    "camera": "derive from storyboard camera field and local fallback",
+    "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+  },
+  "duration_seconds": 2.0,
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/act2_01_sample/previs/09-002_blender.mp4",
+  "mode": "dry_run_request_packet"
+}

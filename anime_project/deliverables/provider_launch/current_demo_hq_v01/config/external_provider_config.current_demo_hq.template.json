@@ -1,0 +1,24 @@
+{
+  "stage": "external_provider_config_template",
+  "policy": "No external submit is allowed until endpoint, token, approval, and cost cap are configured.",
+  "providers": {
+    "kling_i2v": {
+      "enabled": false,
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
+      "submit_approved_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
+      "cost_cap_env": "KAGE_KLING_I2V_COST_CAP_USD",
+      "suggested_cost_cap_usd": 2.52,
+      "notes": "Fill endpoint/token/cost cap and set submit_approved only after producer approval."
+    },
+    "pika": {
+      "enabled": false,
+      "endpoint_env": "KAGE_PIKA_ENDPOINT",
+      "token_env": "KAGE_PIKA_TOKEN",
+      "submit_approved_env": "KAGE_PIKA_SUBMIT_APPROVED",
+      "cost_cap_env": "KAGE_PIKA_COST_CAP_USD",
+      "suggested_cost_cap_usd": 0.32,
+      "notes": "Fill endpoint/token/cost cap and set submit_approved only after producer approval."
+    }
+  }
+}

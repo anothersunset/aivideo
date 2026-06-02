@@ -1,0 +1,15 @@
+{
+  "provider": "remotion",
+  "composition": "ShotPackage",
+  "job_id": "act2_01_sample_04_07-004",
+  "props": {
+    "shotId": "07-004",
+    "durationSeconds": 2.0,
+    "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+    "prompt": "Adult 2D ninja action anime shot 07-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+  },
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/act2_01_sample/remotion/07-004.mp4",
+  "mode": "dry_run_request_packet"
+}

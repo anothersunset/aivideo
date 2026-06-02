@@ -1,0 +1,51 @@
+{
+  "target": "master_preview",
+  "provider_registry": "anime_project\\pipeline\\provider_registry.json",
+  "source_manifest": "anime_project\\episode_segments\\master_preview\\manifest.json",
+  "segments": [
+    {
+      "segment": "onsen_01_sample",
+      "provider_registry": "anime_project\\pipeline\\provider_registry.json",
+      "source_manifest": "anime_project\\episode_segments\\onsen_01_sample\\manifest.json",
+      "shot_count": 21,
+      "duration_seconds": 122.0,
+      "local_video": "anime_project\\episode_segments\\onsen_01_sample\\final\\onsen_01_sample_limited_animation.mp4",
+      "shot_jobs": "anime_project\\pipeline\\tool_jobs\\onsen_01_sample\\shot_jobs.json",
+      "external_queue": "anime_project\\pipeline\\tool_jobs\\onsen_01_sample\\external_queue.jsonl",
+      "registry_version": "0.1",
+      "next_steps": [
+        "Connect provider credentials.",
+        "Implement one adapter at a time using this job schema.",
+        "Replace shot videos in the segment manifest after approved external renders.",
+        "Run master_edit_agent.py to rebuild the master preview."
+      ]
+    },
+    {
+      "segment": "act2_01_sample",
+      "provider_registry": "anime_project\\pipeline\\provider_registry.json",
+      "source_manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest.json",
+      "shot_count": 31,
+      "duration_seconds": 62.0,
+      "local_video": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_limited_animation.mp4",
+      "shot_jobs": "anime_project\\pipeline\\tool_jobs\\act2_01_sample\\shot_jobs.json",
+      "external_queue": "anime_project\\pipeline\\tool_jobs\\act2_01_sample\\external_queue.jsonl",
+      "registry_version": "0.1",
+      "next_steps": [
+        "Connect provider credentials.",
+        "Implement one adapter at a time using this job schema.",
+        "Replace shot videos in the segment manifest after approved external renders.",
+        "Run master_edit_agent.py to rebuild the master preview."
+      ]
+    }
+  ],
+  "shot_count": 52,
+  "duration_seconds": 184.0,
+  "local_video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_onsen_plus_act2.mp4",
+  "recommended_pipeline": [
+    "Generate or improve keyframes with OpenAI image/Gemini.",
+    "Render selected S-shots with the best available I2V provider: Kling, Seedance, Runway, Luma, Pika, ComfyUI/SVD, or AnimateDiff.",
+    "Package and stabilize edits with Remotion, HyperFrames, Blender/Unreal previs, or local fallback.",
+    "Run Gemini/OpenAI multimodal review before replacing local fallback outputs."
+  ],
+  "status": "local_pipeline_complete_external_provider_jobs_ready"
+}

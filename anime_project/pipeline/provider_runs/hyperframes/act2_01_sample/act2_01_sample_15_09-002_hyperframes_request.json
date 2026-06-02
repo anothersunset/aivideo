@@ -1,0 +1,10 @@
+{
+  "provider": "hyperframes",
+  "job_id": "act2_01_sample_15_09-002",
+  "html_scene": "anime_project\\pipeline\\provider_runs\\hyperframes\\act2_01_sample\\act2_01_sample_15_09-002_scene.html",
+  "duration_seconds": 2.0,
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/act2_01_sample/hyperframes/09-002.mp4",
+  "mode": "dry_run_request_packet"
+}

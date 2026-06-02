@@ -1,0 +1,14 @@
+[
+  {
+    "provider": "seedance_i2v",
+    "job_id": "act2_01_sample_01_07-001",
+    "shot_id": "07-001",
+    "chunk_index": 1,
+    "duration_seconds": 2.0,
+    "source_keyframe": "anime_project/episode_segments/act2_01_sample/final/key_07-001.png",
+    "motion_prompt": "Adult 2D ninja action anime shot 07-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.\nAnimate this chunk from 0.0s for 2.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+    "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+    "expected_output": "anime_project/episode_segments/act2_01_sample/external_i2v/07-001_seedance_i2v_chunk01.mp4",
+    "mode": "dry_run_request_packet"
+  }
+]

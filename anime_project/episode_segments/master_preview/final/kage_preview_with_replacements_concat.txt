@@ -1,0 +1,2 @@
+file 'D:/codex/anime_project/episode_segments/onsen_01_sample/final/onsen_01_sample_with_replacements.mp4'
+file 'D:/codex/anime_project/episode_segments/act2_01_sample/final/act2_01_sample_with_replacements.mp4'

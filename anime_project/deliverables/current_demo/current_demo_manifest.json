@@ -1,0 +1,81 @@
+{
+  "task_id": "TASK-055",
+  "stage": "current_demo_promotion",
+  "decision": "producer_demo_v02_promoted_to_current_internal_demo",
+  "current_version": "producer_demo_v02",
+  "current_zip": "anime_project\\deliverables\\current_demo\\current_producer_demo.zip",
+  "current_video": "anime_project\\deliverables\\current_demo\\video\\kage_current_demo.mp4",
+  "source_manifest": "anime_project\\deliverables\\producer_demo_v02\\producer_demo_v02_manifest.json",
+  "source_package": {
+    "decision": "packaged_for_reviewed_local_polish_producer_demo_v02",
+    "artifact_count": 18,
+    "zip": {
+      "path": "anime_project\\deliverables\\producer_demo_v02.zip",
+      "exists": true,
+      "bytes": 21945876
+    }
+  },
+  "director_review_v02": {
+    "decision": "conditional_pass_for_local_polish_producer_demo_v02",
+    "reviewed_keyframe_count": 5,
+    "nonblank_keyframe_count": 5,
+    "replacement_keyframe_count": 5,
+    "risk_keyframe_count": 5
+  },
+  "local_polish_promotion": {
+    "decision": "local_polish_promoted_to_master_preview",
+    "promoted_count": 5,
+    "segments": [
+      {
+        "segment": "onsen_01_sample",
+        "manifest": "anime_project\\episode_segments\\onsen_01_sample\\manifest_with_local_polish.json",
+        "video": "anime_project\\episode_segments\\onsen_01_sample\\final\\onsen_01_sample_with_local_polish.mp4",
+        "replacement_count": 1
+      },
+      {
+        "segment": "act2_01_sample",
+        "manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest_with_local_polish.json",
+        "video": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_with_local_polish.mp4",
+        "replacement_count": 4
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "role": "current_demo_zip",
+      "path": "anime_project\\deliverables\\current_demo\\current_producer_demo.zip",
+      "exists": true,
+      "bytes": 21945876
+    },
+    {
+      "role": "current_demo_video",
+      "path": "anime_project\\deliverables\\current_demo\\video\\kage_current_demo.mp4",
+      "exists": true,
+      "bytes": 21723869
+    },
+    {
+      "role": "source_v02_manifest",
+      "path": "anime_project\\deliverables\\current_demo\\producer_demo_v02_manifest.json",
+      "exists": true,
+      "bytes": 8019
+    },
+    {
+      "role": "source_v02_readme",
+      "path": "anime_project\\deliverables\\current_demo\\README_PRODUCER_DEMO_V02.md",
+      "exists": true,
+      "bytes": 3273
+    },
+    {
+      "role": "current_demo_readme",
+      "path": "anime_project\\deliverables\\current_demo\\CURRENT_PRODUCER_DEMO.md",
+      "exists": true,
+      "bytes": 787
+    }
+  ],
+  "zip_entry_count": 18,
+  "final_release_ready": false,
+  "readme": "anime_project\\deliverables\\current_demo\\CURRENT_PRODUCER_DEMO.md",
+  "registry": "anime_project\\deliverables\\demo_version_registry.json",
+  "next_step": "Use current_demo as the stable producer handoff, then route selected shots to configured external providers for the next high-quality pass.",
+  "manifest": "anime_project\\deliverables\\current_demo\\current_demo_manifest.json"
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "external_video_provider_submit",
+  "mode": "prepare_submission_queue",
+  "provider": "seedance_i2v",
+  "selected_only": true,
+  "status": "waiting_for_provider_credentials",
+  "created_at": 1780375510,
+  "readiness": {
+    "provider": "seedance_i2v",
+    "display_name": "Seedance image-to-video",
+    "submit_mode": "api_http_json_or_manual_portal",
+    "endpoint_env": "KAGE_SEEDANCE_I2V_ENDPOINT",
+    "token_env": "KAGE_SEEDANCE_I2V_API_KEY",
+    "has_endpoint": false,
+    "has_token": false,
+    "ready_for_api_submit": false
+  },
+  "packet_count": 2,
+  "submission_count": 3,
+  "queue": "anime_project\\pipeline\\adapter_runs\\external_video\\seedance_i2v\\submission_queue.jsonl",
+  "manual_submission_packet": "anime_project\\pipeline\\adapter_runs\\external_video\\seedance_i2v\\manual_submission_packet.json",
+  "config_example": "anime_project\\pipeline\\external_provider_config.example.json",
+  "next_step": "Set endpoint/token env vars and run with submit enabled, or manually submit the packet and drop MP4 returns into the inbox."
+}

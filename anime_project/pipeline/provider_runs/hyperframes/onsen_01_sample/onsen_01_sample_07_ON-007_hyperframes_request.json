@@ -1,0 +1,10 @@
+{
+  "provider": "hyperframes",
+  "job_id": "onsen_01_sample_07_ON-007",
+  "html_scene": "anime_project\\pipeline\\provider_runs\\hyperframes\\onsen_01_sample\\onsen_01_sample_07_ON-007_scene.html",
+  "duration_seconds": 7.0,
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/onsen_01_sample/hyperframes/ON-007.mp4",
+  "mode": "dry_run_request_packet"
+}

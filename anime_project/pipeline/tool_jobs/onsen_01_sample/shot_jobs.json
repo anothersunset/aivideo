@@ -1,0 +1,1798 @@
+{
+  "segment": "onsen_01_sample",
+  "jobs": [
+    {
+      "job_id": "onsen_01_sample_01_ON-001",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-001",
+      "duration_seconds": 5.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-001: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-001",
+            "durationSeconds": 5.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-001: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-001",
+            "durationSeconds": 5.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_02_ON-002",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-002",
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-002: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 4.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-002",
+            "durationSeconds": 4.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-002: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-002",
+            "durationSeconds": 4.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_03_ON-003",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-003",
+      "duration_seconds": 5.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-003: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-003.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-003.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-003",
+            "durationSeconds": 5.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-003: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-003",
+            "durationSeconds": 5.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-003.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-003.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_04_ON-004",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-004",
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-004: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-004.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 4.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-004.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-004",
+            "durationSeconds": 4.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-004: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-004",
+            "durationSeconds": 4.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-004.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-004.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_05_ON-005",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-005",
+      "duration_seconds": 6.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-005: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-005.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 1.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-005.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-005",
+            "durationSeconds": 6.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-005: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-005",
+            "durationSeconds": 6.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-005.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-005.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_06_ON-006",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-006",
+      "duration_seconds": 3.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-006: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-006.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 3.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-006.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-006",
+            "durationSeconds": 3.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-006: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-006",
+            "durationSeconds": 3.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-006.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-006.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_07_ON-007",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-007",
+      "duration_seconds": 7.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-007: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-007.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-007.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-007",
+            "durationSeconds": 7.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-007: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-007",
+            "durationSeconds": 7.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-007.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-007.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_08_ON-008",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "duration_seconds": 8.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-008: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-008.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 3.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-008.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-008",
+            "durationSeconds": 8.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-008: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-008",
+            "durationSeconds": 8.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-008.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-008.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_09_ON-009",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-009",
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-009: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-009.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 4.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-009.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-009",
+            "durationSeconds": 4.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-009: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-009",
+            "durationSeconds": 4.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-009.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-009.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_10_ON-010",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-010",
+      "duration_seconds": 5.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-010: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-010.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-010.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-010",
+            "durationSeconds": 5.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-010: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-010",
+            "durationSeconds": 5.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-010.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-010.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_11_ON-011",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-011",
+      "duration_seconds": 4.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-011: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-011.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 4.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-011.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-011",
+            "durationSeconds": 4.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-011: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-011",
+            "durationSeconds": 4.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-011.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-011.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_12_ON-012",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-012",
+      "duration_seconds": 6.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-012: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-012.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 1.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-012.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-012",
+            "durationSeconds": 6.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-012: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-012",
+            "durationSeconds": 6.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-012.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-012.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_13_ON-013",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-013",
+      "duration_seconds": 5.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-013: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-013.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-013.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-013",
+            "durationSeconds": 5.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-013: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-013",
+            "durationSeconds": 5.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-013.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-013.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_14_ON-014",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-014",
+      "duration_seconds": 5.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-014: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-014.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-014.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-014",
+            "durationSeconds": 5.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-014: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-014",
+            "durationSeconds": 5.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-014.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-014.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_15_ON-015",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-015",
+      "duration_seconds": 8.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-015: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-015.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 3.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-015.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-015",
+            "durationSeconds": 8.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-015: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-015",
+            "durationSeconds": 8.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-015.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-015.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_16_ON-016",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-016",
+      "duration_seconds": 5.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-016: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-016.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-016.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-016",
+            "durationSeconds": 5.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-016: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-016",
+            "durationSeconds": 5.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-016.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-016.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_17_ON-017",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-017",
+      "duration_seconds": 6.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-017: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-017.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 1.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-017.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-017",
+            "durationSeconds": 6.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-017: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-017",
+            "durationSeconds": 6.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-017.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-017.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_18_ON-018",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-018",
+      "duration_seconds": 7.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-018: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-018.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-018.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-018",
+            "durationSeconds": 7.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-018: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-018",
+            "durationSeconds": 7.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-018.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-018.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_19_ON-019",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-019",
+      "duration_seconds": 7.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-019: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-019.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-019.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-019",
+            "durationSeconds": 7.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-019: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-019",
+            "durationSeconds": 7.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-019.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-019.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_20_ON-020",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-020",
+      "duration_seconds": 8.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-020: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-020.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 3.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-020.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-020",
+            "durationSeconds": 8.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-020: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-020",
+            "durationSeconds": 8.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-020.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-020.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "onsen_01_sample_21_ON-021",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-021",
+      "duration_seconds": 10.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
+      "prompt": "Adult 2D ninja action anime shot ON-021: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-021.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 5.0
+            },
+            {
+              "index": 2,
+              "start_seconds": 5.0,
+              "duration_seconds": 5.0
+            }
+          ],
+          "output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-021.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "ON-021",
+            "durationSeconds": 10.0,
+            "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
+            "prompt": "Adult 2D ninja action anime shot ON-021: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "ON-021",
+            "durationSeconds": 10.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/onsen_01_sample/previs/ON-021.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
+            "anime_project/episode_segments/onsen_01_sample/final/key_ON-021.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    }
+  ]
+}

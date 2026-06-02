@@ -1,0 +1,125 @@
+{
+  "task_id": "TASK-037",
+  "stage": "external_chunk_assembly",
+  "assembled_count": 0,
+  "waiting_count": 10,
+  "assembled": [],
+  "waiting": [
+    {
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "chunk_count": 1,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v_chunk01.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "kling_i2v",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_count": 2,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v_chunk01.mp4",
+        "anime_project\\pipeline\\external_results\\chunks\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v_chunk02.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "luma",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "chunk_count": 1,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\luma\\act2_01_sample\\08-004\\08-004_luma.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\luma\\act2_01_sample\\08-004\\08-004_luma_chunk01.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "luma",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_count": 2,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\luma\\onsen_01_sample\\ON-008\\ON-008_luma.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\luma\\onsen_01_sample\\ON-008\\ON-008_luma_chunk01.mp4",
+        "anime_project\\pipeline\\external_results\\chunks\\luma\\onsen_01_sample\\ON-008\\ON-008_luma_chunk02.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "pika",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "chunk_count": 1,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\08-004\\08-004_pika.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\pika\\act2_01_sample\\08-004\\08-004_pika_chunk01.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "pika",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_count": 2,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\pika\\onsen_01_sample\\ON-008\\ON-008_pika.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\pika\\onsen_01_sample\\ON-008\\ON-008_pika_chunk01.mp4",
+        "anime_project\\pipeline\\external_results\\chunks\\pika\\onsen_01_sample\\ON-008\\ON-008_pika_chunk02.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "runway",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "chunk_count": 1,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\runway\\act2_01_sample\\08-004\\08-004_runway.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\runway\\act2_01_sample\\08-004\\08-004_runway_chunk01.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "runway",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_count": 2,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\runway\\onsen_01_sample\\ON-008\\ON-008_runway.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\runway\\onsen_01_sample\\ON-008\\ON-008_runway_chunk01.mp4",
+        "anime_project\\pipeline\\external_results\\chunks\\runway\\onsen_01_sample\\ON-008\\ON-008_runway_chunk02.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "seedance_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "chunk_count": 1,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\seedance_i2v\\act2_01_sample\\08-004\\08-004_seedance_i2v.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\seedance_i2v\\act2_01_sample\\08-004\\08-004_seedance_i2v_chunk01.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    },
+    {
+      "provider": "seedance_i2v",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "chunk_count": 2,
+      "final_inbox_path": "anime_project\\pipeline\\external_results\\inbox\\seedance_i2v\\onsen_01_sample\\ON-008\\ON-008_seedance_i2v.mp4",
+      "missing_chunks": [
+        "anime_project\\pipeline\\external_results\\chunks\\seedance_i2v\\onsen_01_sample\\ON-008\\ON-008_seedance_i2v_chunk01.mp4",
+        "anime_project\\pipeline\\external_results\\chunks\\seedance_i2v\\onsen_01_sample\\ON-008\\ON-008_seedance_i2v_chunk02.mp4"
+      ],
+      "status": "waiting_for_chunks"
+    }
+  ],
+  "next_step": "Run ExternalResultIngestAgent after any assembled files appear in the external inbox."
+}

@@ -1,0 +1,12 @@
+{
+  "task_id": "TASK-040",
+  "stage": "external_provider_poll",
+  "mode": "poll_disabled_status_only",
+  "submit_manifest": "anime_project\\pipeline\\submit_runs\\external_video\\submit_run_manifest.json",
+  "submitted_item_count": 0,
+  "ready_for_download_count": 0,
+  "pending_count": 0,
+  "downloaded_count": 0,
+  "poll_results": [],
+  "next_step": "No submitted provider jobs are available to poll. Run gate and submit after credentials/approval are configured."
+}

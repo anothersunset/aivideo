@@ -1,0 +1,56 @@
+{
+  "segment": "act2_01_sample",
+  "delivery": {
+    "resolution": "1920x1080",
+    "fps": 24,
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "active_mode": "local_2d_limited_animation_fallback",
+  "stage_routes": {
+    "visual_design": {
+      "active": "Pillow layered PNG generator",
+      "preferred_external": [
+        "OpenAI image generation",
+        "Gemini image generation"
+      ],
+      "purpose": "character sheets, monster silhouettes, background/keyframe references"
+    },
+    "shot_animation": {
+      "active": "Python frame compositor + ffmpeg",
+      "preferred_external": [
+        "Remotion",
+        "HyperFrames",
+        "Kling image-to-video",
+        "Seedance image-to-video"
+      ],
+      "purpose": "shot-level motion, camera moves, I2V refinements, HTML-to-video rendering"
+    },
+    "audio": {
+      "active": "Python temp WAV synthesizer",
+      "preferred_external": [
+        "DAW/SFX library",
+        "voice/music generation service"
+      ],
+      "purpose": "temp ambience, impacts, rhythm bed, later voice and music replacement"
+    },
+    "edit": {
+      "active": "ffmpeg concat and mix",
+      "preferred_external": [
+        "Remotion composition",
+        "NLE/XML export"
+      ],
+      "purpose": "multi-video stitching, captions, versioning, final sample delivery"
+    },
+    "review": {
+      "active": "manifest + markdown review",
+      "preferred_external": [
+        "Gemini multimodal review",
+        "OpenAI multimodal review"
+      ],
+      "purpose": "continuity, rating risk, originality, product readiness checks"
+    }
+  },
+  "credential_policy": "External generators are optional. If API keys are absent, the local deterministic renderer remains the production fallback."
+}

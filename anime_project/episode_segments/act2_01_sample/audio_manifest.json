@@ -1,0 +1,9 @@
+{
+  "task_id": "TASK-014",
+  "stage": "temp_audio",
+  "sample_rate": 48000,
+  "channels": 2,
+  "duration_seconds": 62.0,
+  "audio": "anime_project\\episode_segments\\act2_01_sample\\audio\\temp_mix.wav",
+  "note": "Temporary rain, drone, pulse, and impact track. No final voice acting."
+}

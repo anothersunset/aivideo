@@ -1,0 +1,75 @@
+{
+  "task_id": "TASK-039",
+  "stage": "external_provider_submit",
+  "mode": "prepare_only_http_disabled",
+  "created_at": 1780386699,
+  "gate_manifest": "anime_project\\pipeline\\submit_gate\\external_submit_gate_manifest.json",
+  "allowed_provider_count": 0,
+  "blocked_provider_count": 5,
+  "submitted_count": 0,
+  "failed_count": 0,
+  "blocked_providers": [
+    {
+      "provider": "kling_i2v",
+      "blockers": [
+        "has_endpoint",
+        "has_token",
+        "submit_approved",
+        "cost_cap_configured",
+        "cost_within_cap"
+      ],
+      "queue": "anime_project\\pipeline\\adapter_runs\\external_video\\kling_i2v\\submission_queue.jsonl",
+      "manual_submission_packet": "anime_project\\pipeline\\adapter_runs\\external_video\\kling_i2v\\manual_submission_packet.json"
+    },
+    {
+      "provider": "luma",
+      "blockers": [
+        "has_endpoint",
+        "has_token",
+        "submit_approved",
+        "cost_cap_configured",
+        "cost_within_cap"
+      ],
+      "queue": "anime_project\\pipeline\\adapter_runs\\external_video\\luma\\submission_queue.jsonl",
+      "manual_submission_packet": "anime_project\\pipeline\\adapter_runs\\external_video\\luma\\manual_submission_packet.json"
+    },
+    {
+      "provider": "pika",
+      "blockers": [
+        "has_endpoint",
+        "has_token",
+        "submit_approved",
+        "cost_cap_configured",
+        "cost_within_cap"
+      ],
+      "queue": "anime_project\\pipeline\\adapter_runs\\external_video\\pika\\submission_queue.jsonl",
+      "manual_submission_packet": "anime_project\\pipeline\\adapter_runs\\external_video\\pika\\manual_submission_packet.json"
+    },
+    {
+      "provider": "runway",
+      "blockers": [
+        "has_endpoint",
+        "has_token",
+        "submit_approved",
+        "cost_cap_configured",
+        "cost_within_cap"
+      ],
+      "queue": "anime_project\\pipeline\\adapter_runs\\external_video\\runway\\submission_queue.jsonl",
+      "manual_submission_packet": "anime_project\\pipeline\\adapter_runs\\external_video\\runway\\manual_submission_packet.json"
+    },
+    {
+      "provider": "seedance_i2v",
+      "blockers": [
+        "has_endpoint",
+        "has_token",
+        "submit_approved",
+        "cost_cap_configured",
+        "cost_within_cap"
+      ],
+      "queue": "anime_project\\pipeline\\adapter_runs\\external_video\\seedance_i2v\\submission_queue.jsonl",
+      "manual_submission_packet": "anime_project\\pipeline\\adapter_runs\\external_video\\seedance_i2v\\manual_submission_packet.json"
+    }
+  ],
+  "provider_runs": [],
+  "next_step": "No provider passed the submit gate. Configure credentials, approval, and cost cap, then re-run the gate."
+}

@@ -1,0 +1,17 @@
+{
+  "segment": "act2_01_sample",
+  "provider_registry": "anime_project\\pipeline\\provider_registry.json",
+  "source_manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest.json",
+  "shot_count": 31,
+  "duration_seconds": 62.0,
+  "local_video": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_limited_animation.mp4",
+  "shot_jobs": "anime_project\\pipeline\\tool_jobs\\act2_01_sample\\shot_jobs.json",
+  "external_queue": "anime_project\\pipeline\\tool_jobs\\act2_01_sample\\external_queue.jsonl",
+  "registry_version": "0.1",
+  "next_steps": [
+    "Connect provider credentials.",
+    "Implement one adapter at a time using this job schema.",
+    "Replace shot videos in the segment manifest after approved external renders.",
+    "Run master_edit_agent.py to rebuild the master preview."
+  ]
+}

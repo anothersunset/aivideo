@@ -1,0 +1,265 @@
+{
+  "task_id": "TASK-047",
+  "stage": "high_quality_polish_queue",
+  "decision": "handoff_queue_ready_not_submitted",
+  "final_release_ready": false,
+  "source_director_review": "anime_project\\pipeline\\director_review\\director_risk_review_manifest.json",
+  "source_producer_package": "anime_project\\deliverables\\producer_demo_v01\\producer_demo_manifest.json",
+  "provider_registry": "anime_project\\pipeline\\provider_registry.json",
+  "registry_provider_count": 14,
+  "queue_count": 5,
+  "provider_packet_count": 17,
+  "estimated_external_cost_usd": 7.4,
+  "provider_packets": "anime_project\\pipeline\\polish_queue\\provider_handoff_packets.jsonl",
+  "queue": [
+    {
+      "queue_id": "POLISH-001",
+      "priority": "P0",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "label": "Onsen replacement action test",
+      "duration_seconds": 8.0,
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\onsen_01_sample\\ON-008_master_mid.png",
+      "review_focus": "Replacement traceability, action readability, rain/silhouette energy.",
+      "motion_prompt": "Rainy onsen action beat, sharp 2D limited-animation silhouette motion, blade impact readable through rain, no camera chaos, preserve dark restrained palette. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "Confirm this remains a workflow-quality replacement, not final character-style approval.",
+        "Current replacement is workflow-approved only; high-quality vendor output still requires director review."
+      ],
+      "recommended_providers": [
+        "kling_i2v",
+        "seedance_i2v",
+        "runway",
+        "remotion"
+      ],
+      "provider_routes": [
+        {
+          "provider": "kling_i2v",
+          "route": "primary_i2v_motion",
+          "estimated_usd": 1.44,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "seedance_i2v",
+          "route": "alternate_i2v_motion",
+          "estimated_usd": 1.44,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "runway",
+          "route": "premium_motion_variant",
+          "estimated_usd": 1.92,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "estimated_external_cost_usd": 4.8,
+      "status": "ready_for_handoff_not_submitted",
+      "handoff_card": "anime_project\\pipeline\\polish_queue\\handoff_cards\\POLISH-001_onsen_01_sample_ON-008.md"
+    },
+    {
+      "queue_id": "POLISH-002",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "label": "Rating-risk hidden impact",
+      "duration_seconds": 2.0,
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-003_master_mid.png",
+      "review_focus": "No face, no pain expression, action clarity through body/prop language.",
+      "motion_prompt": "Hidden impact beat, no face and no pain expression, communicate danger through props, silhouette timing, and one clean action accent. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "08-003 must not show face or pain expression."
+      ],
+      "recommended_providers": [
+        "remotion",
+        "comfyui_svd",
+        "kling_i2v"
+      ],
+      "provider_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "kling_i2v",
+          "route": "primary_i2v_motion",
+          "estimated_usd": 0.36,
+          "requires_submit_gate": true
+        }
+      ],
+      "estimated_external_cost_usd": 0.36,
+      "status": "ready_for_handoff_not_submitted",
+      "handoff_card": "anime_project\\pipeline\\polish_queue\\handoff_cards\\POLISH-002_act2_01_sample_08-003.md"
+    },
+    {
+      "queue_id": "POLISH-003",
+      "priority": "P0",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "label": "Iron centipede replacement test",
+      "duration_seconds": 2.0,
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-004_master_mid.png",
+      "review_focus": "External replacement continuity, creature silhouette, edit rhythm.",
+      "motion_prompt": "Iron centipede creature motion test, low dark silhouette, segmented body readability, one strong strike rhythm, restrained horror. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "Replacement must be approved before manifest promotion.",
+        "Current replacement is workflow-approved only; high-quality vendor output still requires director review."
+      ],
+      "recommended_providers": [
+        "kling_i2v",
+        "seedance_i2v",
+        "runway",
+        "remotion"
+      ],
+      "provider_routes": [
+        {
+          "provider": "kling_i2v",
+          "route": "primary_i2v_motion",
+          "estimated_usd": 0.36,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "seedance_i2v",
+          "route": "alternate_i2v_motion",
+          "estimated_usd": 0.36,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "runway",
+          "route": "premium_motion_variant",
+          "estimated_usd": 0.48,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "estimated_external_cost_usd": 1.2,
+      "status": "ready_for_handoff_not_submitted",
+      "handoff_card": "anime_project\\pipeline\\polish_queue\\handoff_cards\\POLISH-003_act2_01_sample_08-004.md"
+    },
+    {
+      "queue_id": "POLISH-004",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "label": "Hirumaru parasite limit",
+      "duration_seconds": 2.0,
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\11-004_master_mid.png",
+      "review_focus": "Parasite staging must remain readable without escalating body horror.",
+      "motion_prompt": "Hirumaru parasite staging, keep parasite count at or below eight, clear body spacing, readable threat without gore escalation. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "11-004 parasite count limit: 8."
+      ],
+      "recommended_providers": [
+        "kling_i2v",
+        "seedance_i2v",
+        "comfyui_svd"
+      ],
+      "provider_routes": [
+        {
+          "provider": "kling_i2v",
+          "route": "primary_i2v_motion",
+          "estimated_usd": 0.36,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "seedance_i2v",
+          "route": "alternate_i2v_motion",
+          "estimated_usd": 0.36,
+          "requires_submit_gate": true
+        },
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "estimated_external_cost_usd": 0.72,
+      "status": "ready_for_handoff_not_submitted",
+      "handoff_card": "anime_project\\pipeline\\polish_queue\\handoff_cards\\POLISH-004_act2_01_sample_11-004.md"
+    },
+    {
+      "queue_id": "POLISH-005",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "label": "Chiyo restraint beat",
+      "duration_seconds": 2.0,
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\12-002_master_mid.png",
+      "review_focus": "Silent emotional expression through props/hands; avoid pain-process depiction.",
+      "motion_prompt": "Chiyo restraint beat, silent emotional acting through hands and props, no child pain process, still rain atmosphere. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "recommended_providers": [
+        "remotion",
+        "comfyui_svd",
+        "pika"
+      ],
+      "provider_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "pika",
+          "route": "fast_short_variant",
+          "estimated_usd": 0.32,
+          "requires_submit_gate": true
+        }
+      ],
+      "estimated_external_cost_usd": 0.32,
+      "status": "ready_for_handoff_not_submitted",
+      "handoff_card": "anime_project\\pipeline\\polish_queue\\handoff_cards\\POLISH-005_act2_01_sample_12-002.md"
+    }
+  ],
+  "submit_gate": {
+    "allowed_provider_count": 0,
+    "blocked_provider_count": 5,
+    "total_estimated_cost_usd": 9.8,
+    "approval_request": "anime_project\\pipeline\\submit_gate\\external_submit_approval_request.md"
+  },
+  "report": "anime_project\\pipeline\\polish_queue\\polish_work_order.md",
+  "next_step": "Configure one provider credential/cost cap or run local Remotion/ComfyUI polish tests for selected queue items."
+}

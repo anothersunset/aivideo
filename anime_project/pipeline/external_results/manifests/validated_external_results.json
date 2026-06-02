@@ -1,0 +1,54 @@
+{
+  "stage": "external_result_scan",
+  "inbox": "anime_project\\pipeline\\external_results\\inbox",
+  "accepted_count": 2,
+  "rejected_count": 0,
+  "unknown_count": 0,
+  "accepted_results": [
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
+      "expected_duration_seconds": 8.0,
+      "actual_duration_seconds": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "codec": "h264",
+      "checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "accepted": true,
+      "status": "accepted_for_review"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+      "expected_duration_seconds": 2.0,
+      "actual_duration_seconds": 2.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "codec": "h264",
+      "checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "accepted": true,
+      "status": "accepted_for_review"
+    }
+  ],
+  "rejected_results": [],
+  "unknown_results": [],
+  "next_step": "Approved accepted_results can be reviewed, then converted into replacement manifests for segment re-edit."
+}

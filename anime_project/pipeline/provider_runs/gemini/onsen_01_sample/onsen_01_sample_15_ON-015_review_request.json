@@ -1,0 +1,21 @@
+{
+  "provider": "gemini",
+  "job_id": "onsen_01_sample_15_ON-015",
+  "task": "multimodal_review",
+  "inputs": [
+    "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
+    "anime_project/episode_segments/onsen_01_sample/final/key_ON-015.png"
+  ],
+  "questions": [
+    "Does this shot preserve continuity with the segment manifest?",
+    "Does it violate rating-risk rules?",
+    "Does it appear too close to an existing protected anime composition?",
+    "What should be fixed before replacing the local fallback shot?"
+  ],
+  "risk_rules": [
+    "Maintain original project identity; do not copy protected compositions or character designs.",
+    "Keep violence readable but restrained for international cut options.",
+    "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+  ],
+  "mode": "dry_run_request_packet"
+}

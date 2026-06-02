@@ -1,0 +1,117 @@
+{
+  "task_id": "TASK-022",
+  "stage": "shot_animation",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "seconds_per_shot": 2.0,
+  "shot_count": 21,
+  "duration_seconds": 122.0,
+  "shots": [
+    {
+      "shot_id": "ON-001",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
+      "duration_seconds": 5.0
+    },
+    {
+      "shot_id": "ON-002",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
+      "duration_seconds": 4.0
+    },
+    {
+      "shot_id": "ON-003",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
+      "duration_seconds": 5.0
+    },
+    {
+      "shot_id": "ON-004",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
+      "duration_seconds": 4.0
+    },
+    {
+      "shot_id": "ON-005",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
+      "duration_seconds": 6.0
+    },
+    {
+      "shot_id": "ON-006",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
+      "duration_seconds": 3.0
+    },
+    {
+      "shot_id": "ON-007",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
+      "duration_seconds": 7.0
+    },
+    {
+      "shot_id": "ON-008",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+      "duration_seconds": 8.0
+    },
+    {
+      "shot_id": "ON-009",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
+      "duration_seconds": 4.0
+    },
+    {
+      "shot_id": "ON-010",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
+      "duration_seconds": 5.0
+    },
+    {
+      "shot_id": "ON-011",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
+      "duration_seconds": 4.0
+    },
+    {
+      "shot_id": "ON-012",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
+      "duration_seconds": 6.0
+    },
+    {
+      "shot_id": "ON-013",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
+      "duration_seconds": 5.0
+    },
+    {
+      "shot_id": "ON-014",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
+      "duration_seconds": 5.0
+    },
+    {
+      "shot_id": "ON-015",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
+      "duration_seconds": 8.0
+    },
+    {
+      "shot_id": "ON-016",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
+      "duration_seconds": 5.0
+    },
+    {
+      "shot_id": "ON-017",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
+      "duration_seconds": 6.0
+    },
+    {
+      "shot_id": "ON-018",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
+      "duration_seconds": 7.0
+    },
+    {
+      "shot_id": "ON-019",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
+      "duration_seconds": 7.0
+    },
+    {
+      "shot_id": "ON-020",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
+      "duration_seconds": 8.0
+    },
+    {
+      "shot_id": "ON-021",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
+      "duration_seconds": 10.0
+    }
+  ]
+}

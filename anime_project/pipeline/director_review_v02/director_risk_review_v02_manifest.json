@@ -1,0 +1,153 @@
+{
+  "task_id": "TASK-053",
+  "stage": "director_risk_review_v02",
+  "source_producer_demo_v02": "anime_project\\deliverables\\producer_demo_v02\\producer_demo_v02_manifest.json",
+  "source_master_manifest": "anime_project\\episode_segments\\master_preview\\manifest_with_local_polish.json",
+  "master_video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_local_polish.mp4",
+  "decision": "conditional_pass_for_local_polish_producer_demo_v02",
+  "final_release_ready": false,
+  "reviewed_keyframe_count": 5,
+  "nonblank_keyframe_count": 5,
+  "replacement_keyframe_count": 5,
+  "risk_keyframe_count": 5,
+  "contact_sheet": "anime_project\\pipeline\\director_review_v02\\keyframes\\v02_master_review_contact_sheet.png",
+  "keyframes": [
+    {
+      "task_id": "TASK-053",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "label": "Onsen local-polish action test",
+      "timestamp_seconds": 38.0,
+      "duration_seconds": 8.0,
+      "frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\onsen_01_sample\\ON-008_v02_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 2.286,
+        "stddev_luma": 8.057,
+        "luma_min": 0,
+        "luma_max": 88,
+        "unique_color_sample_count": 263,
+        "nonblank": true
+      },
+      "replacement_provider": "local_remotion_polish",
+      "replacement_review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\onsen_01_sample\\ON-008_local_polish_mid.png",
+      "review_focus": "Local-polish promotion traceability, action readability, rain/silhouette energy.",
+      "risk_rules": [
+        "Confirm this remains a local-polish demo candidate, not final character-style approval."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-053",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "label": "Rating-risk hidden impact",
+      "timestamp_seconds": 135.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-003_v02_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 4.644,
+        "stddev_luma": 12.058,
+        "luma_min": 0,
+        "luma_max": 99,
+        "unique_color_sample_count": 410,
+        "nonblank": true
+      },
+      "replacement_provider": "local_remotion_polish",
+      "replacement_review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\08-003_local_polish_mid.png",
+      "review_focus": "No face, no pain expression, action clarity through body/prop language.",
+      "risk_rules": [
+        "08-003 must not show face or pain expression."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-053",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "label": "Iron centipede local-polish test",
+      "timestamp_seconds": 137.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-004_v02_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 4.483,
+        "stddev_luma": 12.779,
+        "luma_min": 0,
+        "luma_max": 119,
+        "unique_color_sample_count": 435,
+        "nonblank": true
+      },
+      "replacement_provider": "local_remotion_polish",
+      "replacement_review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\08-004_local_polish_mid.png",
+      "review_focus": "Promoted local-polish continuity, creature silhouette, edit rhythm.",
+      "risk_rules": [
+        "Local-polish candidate must remain traceable to an accepted render."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-053",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "label": "Hirumaru parasite limit",
+      "timestamp_seconds": 163.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\11-004_v02_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 10.641,
+        "stddev_luma": 14.374,
+        "luma_min": 0,
+        "luma_max": 124,
+        "unique_color_sample_count": 907,
+        "nonblank": true
+      },
+      "replacement_provider": "local_remotion_polish",
+      "replacement_review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\11-004_local_polish_mid.png",
+      "review_focus": "Parasite staging must remain readable without escalating body horror.",
+      "risk_rules": [
+        "11-004 parasite count limit: 8."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    },
+    {
+      "task_id": "TASK-053",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "label": "Chiyo restraint beat",
+      "timestamp_seconds": 169.0,
+      "duration_seconds": 2.0,
+      "frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
+      "metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 15.24,
+        "stddev_luma": 15.253,
+        "luma_min": 0,
+        "luma_max": 112,
+        "unique_color_sample_count": 1007,
+        "nonblank": true
+      },
+      "replacement_provider": "local_remotion_polish",
+      "replacement_review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\12-002_local_polish_mid.png",
+      "review_focus": "Silent emotional expression through props/hands; avoid pain-process depiction.",
+      "risk_rules": [
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "director_status": "visual_evidence_ready",
+      "risk_status": "rules_attached_pending_human_review"
+    }
+  ],
+  "report": "anime_project\\pipeline\\director_review_v02\\director_risk_review_v02.md",
+  "next_step": "Promote v02 as the current internal producer demo or route selected shots to configured external providers for a higher-quality pass."
+}

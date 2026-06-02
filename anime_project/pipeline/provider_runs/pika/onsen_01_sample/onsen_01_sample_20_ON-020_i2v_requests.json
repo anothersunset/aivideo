@@ -1,0 +1,26 @@
+[
+  {
+    "provider": "pika",
+    "job_id": "onsen_01_sample_20_ON-020",
+    "shot_id": "ON-020",
+    "chunk_index": 1,
+    "duration_seconds": 5.0,
+    "source_keyframe": "anime_project/episode_segments/onsen_01_sample/final/key_ON-020.png",
+    "motion_prompt": "Adult 2D ninja action anime shot ON-020: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.\nAnimate this chunk from 0.0s for 5.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+    "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+    "expected_output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-020_pika_chunk01.mp4",
+    "mode": "dry_run_request_packet"
+  },
+  {
+    "provider": "pika",
+    "job_id": "onsen_01_sample_20_ON-020",
+    "shot_id": "ON-020",
+    "chunk_index": 2,
+    "duration_seconds": 3.0,
+    "source_keyframe": "anime_project/episode_segments/onsen_01_sample/final/key_ON-020.png",
+    "motion_prompt": "Adult 2D ninja action anime shot ON-020: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.\nAnimate this chunk from 5.0s for 3.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+    "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+    "expected_output": "anime_project/episode_segments/onsen_01_sample/external_i2v/ON-020_pika_chunk02.mp4",
+    "mode": "dry_run_request_packet"
+  }
+]

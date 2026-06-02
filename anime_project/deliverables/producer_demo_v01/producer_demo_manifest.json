@@ -1,0 +1,170 @@
+{
+  "task_id": "TASK-046",
+  "stage": "producer_demo_package",
+  "decision": "packaged_for_internal_producer_demo",
+  "final_release_ready": false,
+  "package_dir": "anime_project\\deliverables\\producer_demo_v01",
+  "zip": {
+    "path": "anime_project\\deliverables\\producer_demo_v01.zip",
+    "exists": true,
+    "bytes": 21396995
+  },
+  "master_video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4",
+  "acceptance": {
+    "decision": "ready_for_director_producer_review",
+    "passed_count": 6,
+    "failed_count": 0
+  },
+  "director_review": {
+    "decision": "conditional_pass_for_internal_producer_demo",
+    "reviewed_keyframe_count": 5,
+    "nonblank_keyframe_count": 5
+  },
+  "external_reviews": {
+    "reviewed_count": 2,
+    "approved_count": 2,
+    "returned_count": 0
+  },
+  "replacements": {
+    "mode": "approved_external_results_from_review",
+    "replacement_count": 2
+  },
+  "artifact_count": 19,
+  "artifacts": [
+    {
+      "role": "master_preview_video",
+      "source": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\video\\kage_preview_with_replacements.mp4",
+      "exists": true,
+      "bytes": 20335654
+    },
+    {
+      "role": "master_acceptance_report",
+      "source": "anime_project\\pipeline\\acceptance\\master_acceptance_report.md",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\reports\\master_acceptance_report.md",
+      "exists": true,
+      "bytes": 1163
+    },
+    {
+      "role": "master_acceptance_manifest",
+      "source": "anime_project\\pipeline\\acceptance\\master_acceptance_manifest.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\manifests\\master_acceptance_manifest.json",
+      "exists": true,
+      "bytes": 6752
+    },
+    {
+      "role": "director_risk_review_report",
+      "source": "anime_project\\pipeline\\director_review\\director_risk_review.md",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\reports\\director_risk_review.md",
+      "exists": true,
+      "bytes": 2331
+    },
+    {
+      "role": "director_risk_review_manifest",
+      "source": "anime_project\\pipeline\\director_review\\director_risk_review_manifest.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\manifests\\director_risk_review_manifest.json",
+      "exists": true,
+      "bytes": 6073
+    },
+    {
+      "role": "external_result_review_report",
+      "source": "anime_project\\pipeline\\external_reviews\\external_result_review.md",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\reports\\external_result_review.md",
+      "exists": true,
+      "bytes": 478
+    },
+    {
+      "role": "approved_external_results_manifest",
+      "source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\manifests\\approved_external_results.json",
+      "exists": true,
+      "bytes": 5630
+    },
+    {
+      "role": "replacement_candidate_manifest",
+      "source": "anime_project\\pipeline\\replacements\\candidate_manifest.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\manifests\\replacement_candidate_manifest.json",
+      "exists": true,
+      "bytes": 2349
+    },
+    {
+      "role": "external_video_runbook",
+      "source": "anime_project\\EXTERNAL_VIDEO_PIPELINE_RUNBOOK.md",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\docs\\EXTERNAL_VIDEO_PIPELINE_RUNBOOK.md",
+      "exists": true,
+      "bytes": 3305
+    },
+    {
+      "role": "provider_registry",
+      "source": "anime_project\\pipeline\\provider_registry.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\manifests\\provider_registry.json",
+      "exists": true,
+      "bytes": 8130
+    },
+    {
+      "role": "external_submit_gate_manifest",
+      "source": "anime_project\\pipeline\\submit_gate\\external_submit_gate_manifest.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\manifests\\external_submit_gate_manifest.json",
+      "exists": true,
+      "bytes": 5230
+    },
+    {
+      "role": "contact_sheet",
+      "source": "anime_project\\pipeline\\director_review\\keyframes\\master_review_contact_sheet.png",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\review\\keyframes\\master_review_contact_sheet.png",
+      "exists": true,
+      "bytes": 144647
+    },
+    {
+      "role": "keyframe:ON-008",
+      "source": "anime_project\\pipeline\\director_review\\keyframes\\onsen_01_sample\\ON-008_master_mid.png",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\review\\keyframes\\onsen_01_sample_ON-008.png",
+      "exists": true,
+      "bytes": 140265
+    },
+    {
+      "role": "keyframe:08-003",
+      "source": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-003_master_mid.png",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\review\\keyframes\\act2_01_sample_08-003.png",
+      "exists": true,
+      "bytes": 264647
+    },
+    {
+      "role": "keyframe:08-004",
+      "source": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-004_master_mid.png",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\review\\keyframes\\act2_01_sample_08-004.png",
+      "exists": true,
+      "bytes": 258140
+    },
+    {
+      "role": "keyframe:11-004",
+      "source": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\11-004_master_mid.png",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\review\\keyframes\\act2_01_sample_11-004.png",
+      "exists": true,
+      "bytes": 304186
+    },
+    {
+      "role": "keyframe:12-002",
+      "source": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\12-002_master_mid.png",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\review\\keyframes\\act2_01_sample_12-002.png",
+      "exists": true,
+      "bytes": 243677
+    },
+    {
+      "role": "producer_demo_readme",
+      "source": "anime_project\\deliverables\\producer_demo_v01\\README_PRODUCER_DEMO.md",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\README_PRODUCER_DEMO.md",
+      "exists": true,
+      "bytes": 3061
+    },
+    {
+      "role": "producer_demo_manifest",
+      "source": "anime_project\\deliverables\\producer_demo_v01\\producer_demo_manifest.json",
+      "package_path": "anime_project\\deliverables\\producer_demo_v01\\producer_demo_manifest.json",
+      "exists": true,
+      "bytes": 7043
+    }
+  ],
+  "readme": "anime_project\\deliverables\\producer_demo_v01\\README_PRODUCER_DEMO.md",
+  "next_step": "Producer review can approve this package for internal demo use or request high-quality provider replacement on selected shots."
+}

@@ -1,0 +1,25 @@
+{
+  "stage": "external_video_provider_submit_summary",
+  "mode": "prepare_submission_queues",
+  "providers": [
+    "kling_i2v",
+    "seedance_i2v",
+    "runway",
+    "luma",
+    "pika"
+  ],
+  "selected_only": true,
+  "provider_count": 5,
+  "ready_provider_count": 0,
+  "blocked_provider_count": 5,
+  "total_packet_count": 10,
+  "total_submission_count": 15,
+  "manifests": [
+    "anime_project\\pipeline\\adapter_runs\\external_video\\kling_i2v\\run_manifest.json",
+    "anime_project\\pipeline\\adapter_runs\\external_video\\seedance_i2v\\run_manifest.json",
+    "anime_project\\pipeline\\adapter_runs\\external_video\\runway\\run_manifest.json",
+    "anime_project\\pipeline\\adapter_runs\\external_video\\luma\\run_manifest.json",
+    "anime_project\\pipeline\\adapter_runs\\external_video\\pika\\run_manifest.json"
+  ],
+  "next_step": "Choose one provider, configure credentials/cost cap, then implement provider-specific submit/poll/download."
+}

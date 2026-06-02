@@ -1,0 +1,215 @@
+{
+  "task_id": "TASK-050",
+  "stage": "local_polish_render",
+  "mode": "local_remotion_style_no_external_api_call",
+  "decision": "local_polish_candidates_ready",
+  "source_polish_queue": "anime_project\\pipeline\\polish_queue\\polish_queue_manifest.json",
+  "rendered_count": 5,
+  "accepted_count": 5,
+  "rejected_count": 0,
+  "contact_sheet": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\local_polish_contact_sheet.png",
+  "renders": [
+    {
+      "task_id": "TASK-050",
+      "queue_id": "POLISH-001",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "priority": "P0",
+      "source_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\onsen_01_sample\\ON-008_master_mid.png",
+      "output": "anime_project\\pipeline\\polish_outputs\\local_remotion\\onsen_01_sample\\ON-008\\ON-008_local_polish.mp4",
+      "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\onsen_01_sample\\ON-008_local_polish_mid.png",
+      "duration_seconds": 8.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration_seconds": 8.0
+      },
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 2.286,
+        "stddev_luma": 8.057,
+        "luma_min": 0,
+        "luma_max": 88,
+        "unique_color_sample_count": 263,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_matches": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "local_polish_candidate_ready",
+      "notes": "Local Remotion-style polish candidate; no paid provider call was made."
+    },
+    {
+      "task_id": "TASK-050",
+      "queue_id": "POLISH-002",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "priority": "P1",
+      "source_video": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-003_master_mid.png",
+      "output": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-003\\08-003_local_polish.mp4",
+      "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\08-003_local_polish_mid.png",
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration_seconds": 2.0
+      },
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 4.644,
+        "stddev_luma": 12.058,
+        "luma_min": 0,
+        "luma_max": 99,
+        "unique_color_sample_count": 410,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_matches": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "local_polish_candidate_ready",
+      "notes": "Local Remotion-style polish candidate; no paid provider call was made."
+    },
+    {
+      "task_id": "TASK-050",
+      "queue_id": "POLISH-003",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "priority": "P0",
+      "source_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\08-004_master_mid.png",
+      "output": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-004\\08-004_local_polish.mp4",
+      "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\08-004_local_polish_mid.png",
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration_seconds": 2.0
+      },
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 4.483,
+        "stddev_luma": 12.779,
+        "luma_min": 0,
+        "luma_max": 119,
+        "unique_color_sample_count": 435,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_matches": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "local_polish_candidate_ready",
+      "notes": "Local Remotion-style polish candidate; no paid provider call was made."
+    },
+    {
+      "task_id": "TASK-050",
+      "queue_id": "POLISH-004",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "priority": "P1",
+      "source_video": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\11-004_master_mid.png",
+      "output": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\11-004\\11-004_local_polish.mp4",
+      "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\11-004_local_polish_mid.png",
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration_seconds": 2.0
+      },
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 10.641,
+        "stddev_luma": 14.374,
+        "luma_min": 0,
+        "luma_max": 124,
+        "unique_color_sample_count": 907,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_matches": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "local_polish_candidate_ready",
+      "notes": "Local Remotion-style polish candidate; no paid provider call was made."
+    },
+    {
+      "task_id": "TASK-050",
+      "queue_id": "POLISH-005",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "priority": "P1",
+      "source_video": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+      "source_frame": "anime_project\\pipeline\\director_review\\keyframes\\act2_01_sample\\12-002_master_mid.png",
+      "output": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\12-002\\12-002_local_polish.mp4",
+      "review_frame": "anime_project\\pipeline\\polish_outputs\\local_remotion\\review_frames\\act2_01_sample\\12-002_local_polish_mid.png",
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration_seconds": 2.0
+      },
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 15.24,
+        "stddev_luma": 15.253,
+        "luma_min": 0,
+        "luma_max": 112,
+        "unique_color_sample_count": 1007,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_matches": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "local_polish_candidate_ready",
+      "notes": "Local Remotion-style polish candidate; no paid provider call was made."
+    }
+  ],
+  "report": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_report.md",
+  "next_step": "Review local polish candidates, then promote accepted clips into replacement manifests."
+}

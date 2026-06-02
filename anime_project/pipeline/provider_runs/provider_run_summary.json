@@ -1,0 +1,40 @@
+{
+  "mode": "dry_run_no_external_api_call",
+  "providers": [
+    "openai_image",
+    "gemini",
+    "kling_i2v",
+    "seedance_i2v",
+    "runway",
+    "luma",
+    "pika",
+    "comfyui_svd",
+    "animatediff",
+    "remotion",
+    "hyperframes",
+    "blender",
+    "unreal"
+  ],
+  "segments": [
+    "onsen_01_sample",
+    "act2_01_sample"
+  ],
+  "provider_run_manifests": [
+    "anime_project\\pipeline\\provider_runs\\openai_image\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\gemini\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\kling_i2v\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\seedance_i2v\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\runway\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\luma\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\pika\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\comfyui_svd\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\animatediff\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\remotion\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\hyperframes\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\blender\\run_manifest.json",
+    "anime_project\\pipeline\\provider_runs\\unreal\\run_manifest.json"
+  ],
+  "total_jobs_processed": 676,
+  "total_request_packets": 726,
+  "next_step": "Implement one provider adapter submit/poll/download loop, then replace approved local fallback shots in segment manifests."
+}

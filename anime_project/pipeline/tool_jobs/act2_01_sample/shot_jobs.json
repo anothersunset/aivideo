@@ -1,0 +1,2578 @@
+{
+  "segment": "act2_01_sample",
+  "jobs": [
+    {
+      "job_id": "act2_01_sample_01_07-001",
+      "segment": "act2_01_sample",
+      "shot_id": "07-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 07-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_07-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/07-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "07-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 07-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "07-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/07-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_07-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_02_07-002",
+      "segment": "act2_01_sample",
+      "shot_id": "07-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 07-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_07-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/07-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "07-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 07-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "07-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/07-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_07-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_03_07-003",
+      "segment": "act2_01_sample",
+      "shot_id": "07-003",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+      "prompt": "Adult 2D ninja action anime shot 07-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_07-003.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/07-003.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "07-003",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+            "prompt": "Adult 2D ninja action anime shot 07-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "07-003",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/07-003.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_07-003.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_04_07-004",
+      "segment": "act2_01_sample",
+      "shot_id": "07-004",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+      "prompt": "Adult 2D ninja action anime shot 07-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_07-004.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/07-004.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "07-004",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+            "prompt": "Adult 2D ninja action anime shot 07-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "07-004",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/07-004.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_07-004.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_05_08-001",
+      "segment": "act2_01_sample",
+      "shot_id": "08-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_06_08-002",
+      "segment": "act2_01_sample",
+      "shot_id": "08-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_07_08-003",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-003.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-003.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-003",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-003",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-003.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-003.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_08_08-004",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-004.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-004.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-004",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-004",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-004.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-004.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_09_08-005",
+      "segment": "act2_01_sample",
+      "shot_id": "08-005",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-005: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-005.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-005.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-005",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-005: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-005",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-005.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-005.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_10_08-006",
+      "segment": "act2_01_sample",
+      "shot_id": "08-006",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-006: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-006.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-006.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-006",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-006: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-006",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-006.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-006.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_11_08-007",
+      "segment": "act2_01_sample",
+      "shot_id": "08-007",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-007: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-007.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-007.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-007",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-007: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-007",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-007.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-007.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_12_08-008",
+      "segment": "act2_01_sample",
+      "shot_id": "08-008",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-008: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-008.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-008.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-008",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-008: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-008",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-008.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-008.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_13_08-009",
+      "segment": "act2_01_sample",
+      "shot_id": "08-009",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+      "prompt": "Adult 2D ninja action anime shot 08-009: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_08-009.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-009.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "08-009",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+            "prompt": "Adult 2D ninja action anime shot 08-009: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "08-009",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/08-009.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_08-009.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_14_09-001",
+      "segment": "act2_01_sample",
+      "shot_id": "09-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 09-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_09-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/09-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "09-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 09-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "09-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/09-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_09-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_15_09-002",
+      "segment": "act2_01_sample",
+      "shot_id": "09-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 09-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_09-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/09-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "09-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 09-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "09-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/09-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_09-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_16_10-001",
+      "segment": "act2_01_sample",
+      "shot_id": "10-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 10-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_10-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/10-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "10-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 10-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "10-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/10-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_10-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_17_10-002",
+      "segment": "act2_01_sample",
+      "shot_id": "10-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 10-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_10-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/10-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "10-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 10-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "10-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/10-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_10-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_18_11-001",
+      "segment": "act2_01_sample",
+      "shot_id": "11-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 11-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_11-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/11-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "11-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 11-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "11-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/11-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_11-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_19_11-002",
+      "segment": "act2_01_sample",
+      "shot_id": "11-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 11-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_11-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/11-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "11-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 11-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "11-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/11-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_11-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_20_11-003",
+      "segment": "act2_01_sample",
+      "shot_id": "11-003",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+      "prompt": "Adult 2D ninja action anime shot 11-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_11-003.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/11-003.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "11-003",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+            "prompt": "Adult 2D ninja action anime shot 11-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "11-003",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/11-003.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_11-003.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_21_11-004",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+      "prompt": "Adult 2D ninja action anime shot 11-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_11-004.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/11-004.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "11-004",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+            "prompt": "Adult 2D ninja action anime shot 11-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "11-004",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/11-004.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_11-004.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_22_11-005",
+      "segment": "act2_01_sample",
+      "shot_id": "11-005",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+      "prompt": "Adult 2D ninja action anime shot 11-005: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_11-005.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/11-005.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "11-005",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+            "prompt": "Adult 2D ninja action anime shot 11-005: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "11-005",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/11-005.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_11-005.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_23_12-001",
+      "segment": "act2_01_sample",
+      "shot_id": "12-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 12-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_12-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/12-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "12-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 12-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "12-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/12-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_12-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_24_12-002",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 12-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_12-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/12-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "12-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 12-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "12-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/12-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_12-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_25_12-003",
+      "segment": "act2_01_sample",
+      "shot_id": "12-003",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+      "prompt": "Adult 2D ninja action anime shot 12-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_12-003.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/12-003.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "12-003",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+            "prompt": "Adult 2D ninja action anime shot 12-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "12-003",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/12-003.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_12-003.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_26_13-001",
+      "segment": "act2_01_sample",
+      "shot_id": "13-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 13-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_13-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/13-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "13-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 13-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "13-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/13-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_13-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_27_13-002",
+      "segment": "act2_01_sample",
+      "shot_id": "13-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 13-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_13-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/13-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "13-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 13-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "13-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/13-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_13-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_28_14-001",
+      "segment": "act2_01_sample",
+      "shot_id": "14-001",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+      "prompt": "Adult 2D ninja action anime shot 14-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_14-001.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/14-001.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "14-001",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+            "prompt": "Adult 2D ninja action anime shot 14-001: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "14-001",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/14-001.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_14-001.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_29_14-002",
+      "segment": "act2_01_sample",
+      "shot_id": "14-002",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+      "prompt": "Adult 2D ninja action anime shot 14-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_14-002.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/14-002.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "14-002",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+            "prompt": "Adult 2D ninja action anime shot 14-002: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "14-002",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/14-002.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_14-002.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_30_14-003",
+      "segment": "act2_01_sample",
+      "shot_id": "14-003",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+      "prompt": "Adult 2D ninja action anime shot 14-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_14-003.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/14-003.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "14-003",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+            "prompt": "Adult 2D ninja action anime shot 14-003: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "14-003",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/14-003.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_14-003.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    },
+    {
+      "job_id": "act2_01_sample_31_14-004",
+      "segment": "act2_01_sample",
+      "shot_id": "14-004",
+      "duration_seconds": 2.0,
+      "fps": 24,
+      "resolution": "1920x1080",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
+      "prompt": "Adult 2D ninja action anime shot 14-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+      ],
+      "provider_routes": {
+        "keyframe": {
+          "preferred": [
+            "openai_image",
+            "gemini"
+          ],
+          "fallback": "local_2d_fallback",
+          "output": "anime_project/episode_segments/act2_01_sample/final/key_14-004.png"
+        },
+        "i2v_motion": {
+          "preferred": [
+            "kling_i2v",
+            "seedance_i2v",
+            "runway",
+            "luma",
+            "pika",
+            "comfyui_svd",
+            "animatediff"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "chunks": [
+            {
+              "index": 1,
+              "start_seconds": 0.0,
+              "duration_seconds": 2.0
+            }
+          ],
+          "output": "anime_project/episode_segments/act2_01_sample/external_i2v/14-004.mp4"
+        },
+        "code_render": {
+          "preferred": [
+            "remotion",
+            "hyperframes"
+          ],
+          "fallback": "local_2d_fallback",
+          "composition_props": {
+            "shotId": "14-004",
+            "durationSeconds": 2.0,
+            "sourceVideo": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
+            "prompt": "Adult 2D ninja action anime shot 14-004: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation."
+          }
+        },
+        "previs": {
+          "preferred": [
+            "blender",
+            "unreal"
+          ],
+          "fallback": "remotion_or_local_2d_fallback",
+          "layout_request": {
+            "shotId": "14-004",
+            "durationSeconds": 2.0,
+            "camera": "derive from storyboard camera field and local fallback",
+            "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+          },
+          "output": "anime_project/episode_segments/act2_01_sample/previs/14-004.mp4"
+        },
+        "review": {
+          "preferred": [
+            "gemini"
+          ],
+          "fallback": "director_risk_manifest_review",
+          "review_inputs": [
+            "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
+            "anime_project/episode_segments/act2_01_sample/final/key_14-004.png"
+          ]
+        }
+      },
+      "status": "local_fallback_completed_external_pending"
+    }
+  ]
+}

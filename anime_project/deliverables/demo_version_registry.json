@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-055",
+  "stage": "demo_version_registry",
+  "current_version": "producer_demo_v02",
+  "current_manifest": "anime_project\\deliverables\\current_demo\\current_demo_manifest.json",
+  "versions": [
+    {
+      "version": "producer_demo_v01",
+      "current": false,
+      "decision": "packaged_for_internal_producer_demo",
+      "manifest": "anime_project\\deliverables\\producer_demo_v01\\producer_demo_manifest.json",
+      "zip": "anime_project\\deliverables\\producer_demo_v01.zip",
+      "zip_bytes": 21396995,
+      "artifact_count": 19,
+      "master_video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4"
+    },
+    {
+      "version": "producer_demo_v02",
+      "current": true,
+      "decision": "packaged_for_reviewed_local_polish_producer_demo_v02",
+      "manifest": "anime_project\\deliverables\\producer_demo_v02\\producer_demo_v02_manifest.json",
+      "zip": "anime_project\\deliverables\\producer_demo_v02.zip",
+      "zip_bytes": 21945876,
+      "artifact_count": 18,
+      "master_video": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_local_polish.mp4"
+    }
+  ],
+  "next_step": "Use current_demo as the stable producer handoff, then route selected shots to configured external providers for the next high-quality pass."
+}

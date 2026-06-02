@@ -1,0 +1,154 @@
+{
+  "task_id": "TASK-057",
+  "stage": "hq_provider_handoff_package",
+  "decision": "current_demo_hq_provider_handoff_packaged",
+  "submit_status": "not_submitted_blocked_by_submit_gate",
+  "current_demo": {
+    "manifest": "anime_project\\deliverables\\current_demo\\current_demo_manifest.json",
+    "current_version": "producer_demo_v02",
+    "current_video": "anime_project\\deliverables\\current_demo\\video\\kage_current_demo.mp4",
+    "current_zip": "anime_project\\deliverables\\current_demo\\current_producer_demo.zip"
+  },
+  "launch_manifest": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_manifest.json",
+  "selected_shot_count": 5,
+  "selected_provider_count": 2,
+  "estimated_first_pass_cost_usd": 2.84,
+  "provider_packets": [
+    {
+      "provider": "kling_i2v",
+      "packet": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\kling_i2v_launch_packet.json",
+      "shot_count": 4,
+      "estimated_cost_usd": 2.52
+    },
+    {
+      "provider": "pika",
+      "packet": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\pika_launch_packet.json",
+      "shot_count": 1,
+      "estimated_cost_usd": 0.32
+    }
+  ],
+  "artifact_count": 16,
+  "missing_artifact_count": 0,
+  "artifacts": [
+    {
+      "role": "launch_manifest",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_manifest.json",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\manifests\\high_quality_provider_launch_manifest.json",
+      "exists": true,
+      "bytes": 15827
+    },
+    {
+      "role": "launch_report",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_report.md",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\reports\\high_quality_provider_launch_report.md",
+      "exists": true,
+      "bytes": 1581
+    },
+    {
+      "role": "provider_config_template",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\external_provider_config.current_demo_hq.template.json",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\config\\external_provider_config.current_demo_hq.template.json",
+      "exists": true,
+      "bytes": 968
+    },
+    {
+      "role": "env_example",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\.env.current_demo_hq.example",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\config\\.env.current_demo_hq.example",
+      "exists": true,
+      "bytes": 430
+    },
+    {
+      "role": "selected_launch_rows",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\selected_provider_launch_rows.jsonl",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\manifests\\selected_provider_launch_rows.jsonl",
+      "exists": true,
+      "bytes": 11052
+    },
+    {
+      "role": "current_demo_manifest",
+      "source": "anime_project\\deliverables\\current_demo\\current_demo_manifest.json",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo\\current_demo_manifest.json",
+      "exists": true,
+      "bytes": 3167
+    },
+    {
+      "role": "current_demo_readme",
+      "source": "anime_project\\deliverables\\current_demo\\CURRENT_PRODUCER_DEMO.md",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo\\CURRENT_PRODUCER_DEMO.md",
+      "exists": true,
+      "bytes": 787
+    },
+    {
+      "role": "provider_packet:kling_i2v",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\kling_i2v_launch_packet.json",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\providers\\kling_i2v_launch_packet.json",
+      "exists": true,
+      "bytes": 11110
+    },
+    {
+      "role": "provider_packet:pika",
+      "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\pika_launch_packet.json",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\providers\\pika_launch_packet.json",
+      "exists": true,
+      "bytes": 2918
+    },
+    {
+      "role": "keyframe:POLISH-001",
+      "source": "anime_project\\pipeline\\director_review_v02\\keyframes\\onsen_01_sample\\ON-008_v02_master_mid.png",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\keyframes\\POLISH-001_onsen_01_sample_ON-008.png",
+      "exists": true,
+      "bytes": 73652
+    },
+    {
+      "role": "keyframe:POLISH-002",
+      "source": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-003_v02_master_mid.png",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\keyframes\\POLISH-002_act2_01_sample_08-003.png",
+      "exists": true,
+      "bytes": 276552
+    },
+    {
+      "role": "keyframe:POLISH-003",
+      "source": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-004_v02_master_mid.png",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\keyframes\\POLISH-003_act2_01_sample_08-004.png",
+      "exists": true,
+      "bytes": 184849
+    },
+    {
+      "role": "keyframe:POLISH-004",
+      "source": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\11-004_v02_master_mid.png",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\keyframes\\POLISH-004_act2_01_sample_11-004.png",
+      "exists": true,
+      "bytes": 569386
+    },
+    {
+      "role": "keyframe:POLISH-005",
+      "source": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\keyframes\\POLISH-005_act2_01_sample_12-002.png",
+      "exists": true,
+      "bytes": 524544
+    },
+    {
+      "role": "handoff_readme",
+      "source": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\README_CURRENT_DEMO_HQ_PROVIDER_HANDOFF.md",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\README_CURRENT_DEMO_HQ_PROVIDER_HANDOFF.md",
+      "exists": true,
+      "bytes": 2954
+    },
+    {
+      "role": "handoff_manifest",
+      "source": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo_hq_provider_handoff_manifest.json",
+      "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo_hq_provider_handoff_manifest.json",
+      "exists": true,
+      "bytes": 6914
+    }
+  ],
+  "readme": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\README_CURRENT_DEMO_HQ_PROVIDER_HANDOFF.md",
+  "zip": {
+    "path": "anime_project\\deliverables\\current_demo_hq_provider_handoff_v01.zip",
+    "exists": true,
+    "bytes": 1621891,
+    "entry_count": 16
+  },
+  "next_step": "Configure provider credentials and cost cap, rerun ExternalSubmitGateAgent, then submit only the approved provider rows."
+}

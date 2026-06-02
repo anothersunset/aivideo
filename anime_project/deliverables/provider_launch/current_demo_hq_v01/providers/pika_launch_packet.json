@@ -1,0 +1,70 @@
+{
+  "provider": "pika",
+  "stage": "manual_or_api_launch_packet",
+  "submission_policy": "Prepared only. Do not submit until gate checks pass.",
+  "launch_rows": [
+    {
+      "task_id": "TASK-056",
+      "queue_id": "POLISH-005",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "label": "Chiyo restraint beat",
+      "provider": "pika",
+      "route": "fast_short_variant",
+      "duration_seconds": 2.0,
+      "estimated_usd": 0.32,
+      "cost_cap_env": "KAGE_PIKA_COST_CAP_USD",
+      "approval_env": "KAGE_PIKA_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_PIKA_ENDPOINT",
+      "token_env": "KAGE_PIKA_TOKEN",
+      "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
+      "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
+      "motion_prompt": "Chiyo restraint beat, silent emotional acting through hands and props, no child pain process, still rain atmosphere. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "risk_rules": [
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "review_focus": "Silent emotional expression through props/hands; avoid pain-process depiction.",
+      "fallback_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "gate_status": {
+        "allowed_to_submit": false,
+        "blockers": [
+          "has_endpoint",
+          "has_token",
+          "submit_approved",
+          "cost_cap_configured",
+          "cost_within_cap"
+        ],
+        "checks": {
+          "has_endpoint": false,
+          "has_token": false,
+          "submit_approved": false,
+          "cost_cap_configured": false,
+          "cost_within_cap": false,
+          "has_submissions": true
+        }
+      },
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "status": "launch_ready_blocked_by_submit_gate"
+    }
+  ]
+}

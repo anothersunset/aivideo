@@ -1,0 +1,14 @@
+[
+  {
+    "provider": "pika",
+    "job_id": "act2_01_sample_09_08-005",
+    "shot_id": "08-005",
+    "chunk_index": 1,
+    "duration_seconds": 2.0,
+    "source_keyframe": "anime_project/episode_segments/act2_01_sample/final/key_08-005.png",
+    "motion_prompt": "Adult 2D ninja action anime shot 08-005: grim late-Edo fantasy, rain or fog, restrained body-horror, clear blade action, original silhouettes and symbols, no direct imitation.\nAnimate this chunk from 0.0s for 2.0s. Keep character identity, shot scale, and restrained adult-action tone consistent.",
+    "negative_prompt": "no modern objects, no comedy, no copied iconic compositions, no excessive gore",
+    "expected_output": "anime_project/episode_segments/act2_01_sample/external_i2v/08-005_pika_chunk01.mp4",
+    "mode": "dry_run_request_packet"
+  }
+]

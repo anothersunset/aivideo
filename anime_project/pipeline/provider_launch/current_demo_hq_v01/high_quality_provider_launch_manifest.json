@@ -1,0 +1,338 @@
+{
+  "task_id": "TASK-056",
+  "stage": "high_quality_provider_launch_package",
+  "decision": "current_demo_hq_launch_ready_blocked_by_submit_gate",
+  "current_demo": {
+    "manifest": "anime_project\\deliverables\\current_demo\\current_demo_manifest.json",
+    "current_version": "producer_demo_v02",
+    "current_video": "anime_project\\deliverables\\current_demo\\video\\kage_current_demo.mp4",
+    "current_zip": "anime_project\\deliverables\\current_demo\\current_producer_demo.zip"
+  },
+  "source_polish_queue": "anime_project\\pipeline\\polish_queue\\polish_queue_manifest.json",
+  "source_director_review_v02": "anime_project\\pipeline\\director_review_v02\\director_risk_review_v02_manifest.json",
+  "source_submit_gate": "anime_project\\pipeline\\submit_gate\\external_submit_gate_manifest.json",
+  "source_provider_registry": "anime_project\\pipeline\\provider_registry.json",
+  "selected_shot_count": 5,
+  "selected_provider_count": 2,
+  "estimated_first_pass_cost_usd": 2.84,
+  "provider_packets": [
+    {
+      "provider": "kling_i2v",
+      "packet": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\kling_i2v_launch_packet.json",
+      "shot_count": 4,
+      "estimated_cost_usd": 2.52
+    },
+    {
+      "provider": "pika",
+      "packet": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\pika_launch_packet.json",
+      "shot_count": 1,
+      "estimated_cost_usd": 0.32
+    }
+  ],
+  "launch_rows": [
+    {
+      "task_id": "TASK-056",
+      "queue_id": "POLISH-001",
+      "priority": "P0",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "label": "Onsen replacement action test",
+      "provider": "kling_i2v",
+      "route": "primary_i2v_motion",
+      "duration_seconds": 8.0,
+      "estimated_usd": 1.44,
+      "cost_cap_env": "KAGE_KLING_I2V_COST_CAP_USD",
+      "approval_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
+      "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\onsen_01_sample\\ON-008_v02_master_mid.png",
+      "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\onsen_01_sample\\ON-008_v02_master_mid.png",
+      "motion_prompt": "Rainy onsen action beat, sharp 2D limited-animation silhouette motion, blade impact readable through rain, no camera chaos, preserve dark restrained palette. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "Confirm this remains a workflow-quality replacement, not final character-style approval.",
+        "Current replacement is workflow-approved only; high-quality vendor output still requires director review."
+      ],
+      "risk_rules": [
+        "Confirm this remains a local-polish demo candidate, not final character-style approval."
+      ],
+      "review_focus": "Local-polish promotion traceability, action readability, rain/silhouette energy.",
+      "fallback_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "gate_status": {
+        "allowed_to_submit": false,
+        "blockers": [
+          "has_endpoint",
+          "has_token",
+          "submit_approved",
+          "cost_cap_configured",
+          "cost_within_cap"
+        ],
+        "checks": {
+          "has_endpoint": false,
+          "has_token": false,
+          "submit_approved": false,
+          "cost_cap_configured": false,
+          "cost_within_cap": false,
+          "has_submissions": true
+        }
+      },
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "status": "launch_ready_blocked_by_submit_gate"
+    },
+    {
+      "task_id": "TASK-056",
+      "queue_id": "POLISH-002",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "label": "Rating-risk hidden impact",
+      "provider": "kling_i2v",
+      "route": "primary_i2v_motion",
+      "duration_seconds": 2.0,
+      "estimated_usd": 0.36,
+      "cost_cap_env": "KAGE_KLING_I2V_COST_CAP_USD",
+      "approval_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
+      "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-003_v02_master_mid.png",
+      "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-003_v02_master_mid.png",
+      "motion_prompt": "Hidden impact beat, no face and no pain expression, communicate danger through props, silhouette timing, and one clean action accent. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "08-003 must not show face or pain expression."
+      ],
+      "risk_rules": [
+        "08-003 must not show face or pain expression."
+      ],
+      "review_focus": "No face, no pain expression, action clarity through body/prop language.",
+      "fallback_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "gate_status": {
+        "allowed_to_submit": false,
+        "blockers": [
+          "has_endpoint",
+          "has_token",
+          "submit_approved",
+          "cost_cap_configured",
+          "cost_within_cap"
+        ],
+        "checks": {
+          "has_endpoint": false,
+          "has_token": false,
+          "submit_approved": false,
+          "cost_cap_configured": false,
+          "cost_within_cap": false,
+          "has_submissions": true
+        }
+      },
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v.mp4",
+      "status": "launch_ready_blocked_by_submit_gate"
+    },
+    {
+      "task_id": "TASK-056",
+      "queue_id": "POLISH-003",
+      "priority": "P0",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "label": "Iron centipede replacement test",
+      "provider": "kling_i2v",
+      "route": "primary_i2v_motion",
+      "duration_seconds": 2.0,
+      "estimated_usd": 0.36,
+      "cost_cap_env": "KAGE_KLING_I2V_COST_CAP_USD",
+      "approval_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
+      "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-004_v02_master_mid.png",
+      "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\08-004_v02_master_mid.png",
+      "motion_prompt": "Iron centipede creature motion test, low dark silhouette, segmented body readability, one strong strike rhythm, restrained horror. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "Replacement must be approved before manifest promotion.",
+        "Current replacement is workflow-approved only; high-quality vendor output still requires director review."
+      ],
+      "risk_rules": [
+        "Local-polish candidate must remain traceable to an accepted render."
+      ],
+      "review_focus": "Promoted local-polish continuity, creature silhouette, edit rhythm.",
+      "fallback_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "gate_status": {
+        "allowed_to_submit": false,
+        "blockers": [
+          "has_endpoint",
+          "has_token",
+          "submit_approved",
+          "cost_cap_configured",
+          "cost_within_cap"
+        ],
+        "checks": {
+          "has_endpoint": false,
+          "has_token": false,
+          "submit_approved": false,
+          "cost_cap_configured": false,
+          "cost_within_cap": false,
+          "has_submissions": true
+        }
+      },
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "status": "launch_ready_blocked_by_submit_gate"
+    },
+    {
+      "task_id": "TASK-056",
+      "queue_id": "POLISH-004",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "label": "Hirumaru parasite limit",
+      "provider": "kling_i2v",
+      "route": "primary_i2v_motion",
+      "duration_seconds": 2.0,
+      "estimated_usd": 0.36,
+      "cost_cap_env": "KAGE_KLING_I2V_COST_CAP_USD",
+      "approval_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
+      "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\11-004_v02_master_mid.png",
+      "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\11-004_v02_master_mid.png",
+      "motion_prompt": "Hirumaru parasite staging, keep parasite count at or below eight, clear body spacing, readable threat without gore escalation. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "11-004 parasite count limit: 8."
+      ],
+      "risk_rules": [
+        "11-004 parasite count limit: 8."
+      ],
+      "review_focus": "Parasite staging must remain readable without escalating body horror.",
+      "fallback_routes": [
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "gate_status": {
+        "allowed_to_submit": false,
+        "blockers": [
+          "has_endpoint",
+          "has_token",
+          "submit_approved",
+          "cost_cap_configured",
+          "cost_within_cap"
+        ],
+        "checks": {
+          "has_endpoint": false,
+          "has_token": false,
+          "submit_approved": false,
+          "cost_cap_configured": false,
+          "cost_within_cap": false,
+          "has_submissions": true
+        }
+      },
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v.mp4",
+      "status": "launch_ready_blocked_by_submit_gate"
+    },
+    {
+      "task_id": "TASK-056",
+      "queue_id": "POLISH-005",
+      "priority": "P1",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "label": "Chiyo restraint beat",
+      "provider": "pika",
+      "route": "fast_short_variant",
+      "duration_seconds": 2.0,
+      "estimated_usd": 0.32,
+      "cost_cap_env": "KAGE_PIKA_COST_CAP_USD",
+      "approval_env": "KAGE_PIKA_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_PIKA_ENDPOINT",
+      "token_env": "KAGE_PIKA_TOKEN",
+      "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
+      "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
+      "motion_prompt": "Chiyo restraint beat, silent emotional acting through hands and props, no child pain process, still rain atmosphere. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "risk_rules": [
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "review_focus": "Silent emotional expression through props/hands; avoid pain-process depiction.",
+      "fallback_routes": [
+        {
+          "provider": "remotion",
+          "route": "local_code_video_baseline",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        },
+        {
+          "provider": "comfyui_svd",
+          "route": "local_open_source_test",
+          "estimated_usd": 0.0,
+          "requires_submit_gate": false
+        }
+      ],
+      "gate_status": {
+        "allowed_to_submit": false,
+        "blockers": [
+          "has_endpoint",
+          "has_token",
+          "submit_approved",
+          "cost_cap_configured",
+          "cost_within_cap"
+        ],
+        "checks": {
+          "has_endpoint": false,
+          "has_token": false,
+          "submit_approved": false,
+          "cost_cap_configured": false,
+          "cost_within_cap": false,
+          "has_submissions": true
+        }
+      },
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "status": "launch_ready_blocked_by_submit_gate"
+    }
+  ],
+  "config_template": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\external_provider_config.current_demo_hq.template.json",
+  "env_example": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\.env.current_demo_hq.example",
+  "selected_rows_jsonl": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\selected_provider_launch_rows.jsonl",
+  "report": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_report.md",
+  "next_step": "Configure one provider endpoint/token/approval/cost cap, rerun ExternalSubmitGateAgent, then run ExternalProviderSubmitAgent."
+}

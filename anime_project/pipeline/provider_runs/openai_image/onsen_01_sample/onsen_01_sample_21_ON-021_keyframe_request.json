@@ -1,0 +1,17 @@
+{
+  "provider": "openai_image",
+  "job_id": "onsen_01_sample_21_ON-021",
+  "model": "gpt-image-1",
+  "size": "1920x1080",
+  "prompt": "Adult 2D ninja action anime shot ON-021: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation.\nCreate one production keyframe for an original adult 2D ninja action anime. Use strong silhouettes, restrained violence, no copied protected composition.",
+  "reference": {
+    "local_fallback_video": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
+    "risk_rules": [
+      "Maintain original project identity; do not copy protected compositions or character designs.",
+      "Keep violence readable but restrained for international cut options.",
+      "For child-harm-adjacent scenes, use props, reaction, and silence instead of pain-process depiction."
+    ]
+  },
+  "expected_output": "anime_project/episode_segments/onsen_01_sample/final/key_ON-021.png",
+  "mode": "dry_run_request_packet"
+}

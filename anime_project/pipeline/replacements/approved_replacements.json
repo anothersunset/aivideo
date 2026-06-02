@@ -1,0 +1,54 @@
+{
+  "task_id": "TASK-REVIEWED-REPLACE",
+  "stage": "replacement_review",
+  "approved_count": 2,
+  "replacements": [
+    {
+      "task_id": "TASK-REVIEWED-REPLACE",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "provider": "remotion",
+      "source_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
+      "duration_seconds": 8.0,
+      "expected_duration_seconds": 8.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/remotion/onsen_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    },
+    {
+      "task_id": "TASK-REVIEWED-REPLACE",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "provider": "remotion",
+      "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/remotion/act2_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\act2_01_sample\\08-004\\08-004_remotion_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    }
+  ],
+  "report": "anime_project\\pipeline\\replacements\\replacement_review.md"
+}

@@ -1,0 +1,164 @@
+{
+  "task_id": "TASK-043",
+  "stage": "master_acceptance",
+  "decision": "ready_for_director_producer_review",
+  "final_release_ready": false,
+  "master": {
+    "manifest": "anime_project\\episode_segments\\master_preview\\manifest_with_replacements.json",
+    "video": {
+      "path": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4",
+      "exists": true,
+      "bytes": 20335654
+    },
+    "shot_count": 52,
+    "duration_seconds": 184.0,
+    "ffprobe_duration_seconds": 184.021333,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24.0,
+    "video_codec": "h264",
+    "has_video": true,
+    "has_audio": true,
+    "audio_codec": "aac",
+    "status": "needs_director_review"
+  },
+  "segments": [
+    {
+      "segment": "onsen_01_sample",
+      "manifest": "anime_project\\episode_segments\\onsen_01_sample\\manifest_with_replacements.json",
+      "video": {
+        "path": "anime_project\\episode_segments\\onsen_01_sample\\final\\onsen_01_sample_with_replacements.mp4",
+        "exists": true,
+        "bytes": 12784391
+      },
+      "audio": {
+        "path": "anime_project\\episode_segments\\onsen_01_sample\\audio\\temp_mix.wav",
+        "exists": true,
+        "bytes": 23424044
+      },
+      "shot_count": 21,
+      "shot_video_count": 21,
+      "missing_shot_count": 0,
+      "missing_shots": [],
+      "replacement_count": 1,
+      "duration_seconds": 122.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "review_status": "Needs DirectorAgent/RiskAgent review"
+    },
+    {
+      "segment": "act2_01_sample",
+      "manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest_with_replacements.json",
+      "video": {
+        "path": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_with_replacements.mp4",
+        "exists": true,
+        "bytes": 7552646
+      },
+      "audio": {
+        "path": "anime_project\\episode_segments\\act2_01_sample\\audio\\temp_mix.wav",
+        "exists": true,
+        "bytes": 11904044
+      },
+      "shot_count": 31,
+      "shot_video_count": 31,
+      "missing_shot_count": 0,
+      "missing_shots": [],
+      "replacement_count": 1,
+      "duration_seconds": 62.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "review_status": "Needs DirectorAgent/RiskAgent review"
+    }
+  ],
+  "checklist": {
+    "checks": {
+      "video_format_pass": true,
+      "segment_completeness_pass": true,
+      "master_continuity_pass": true,
+      "external_review_gate_pass": true,
+      "replacement_traceability_pass": true,
+      "submit_safety_pass": true
+    },
+    "passed_count": 6,
+    "failed_count": 0
+  },
+  "risk_rules": {
+    "status": "rule_markers_present",
+    "rules": [
+      "08-003: no face or pain expression.",
+      "11-004: parasite count limit is 8.",
+      "12-001 to 12-003: no child pain process; use props, hands, and silence."
+    ],
+    "required_shots_present": {
+      "08-003": true,
+      "11-004": true,
+      "12-001": true,
+      "12-002": true,
+      "12-003": true
+    },
+    "note": "Machine check verifies shot IDs and attached production rules; DirectorAgent/RiskAgent still need visual review."
+  },
+  "external_reviews": {
+    "manifest": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+    "reviewed_count": 2,
+    "approved_count": 2,
+    "returned_count": 0,
+    "report": "anime_project\\pipeline\\external_reviews\\external_result_review.md"
+  },
+  "replacements": {
+    "manifest": "anime_project\\pipeline\\replacements\\candidate_manifest.json",
+    "mode": "approved_external_results_from_review",
+    "replacement_count": 2,
+    "items": [
+      {
+        "task_id": "TASK-REVIEWED-REPLACE",
+        "segment": "onsen_01_sample",
+        "shot_id": "ON-008",
+        "provider": "remotion",
+        "source_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+        "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
+        "duration_seconds": 8.0,
+        "expected_duration_seconds": 8.0,
+        "request_packet_source": "anime_project/pipeline/provider_runs/remotion/onsen_01_sample",
+        "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+        "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+        "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion_mid.png",
+        "status": "approved_external_result_pending_replacement",
+        "notes": "Approved external review result promoted to replacement candidate."
+      },
+      {
+        "task_id": "TASK-REVIEWED-REPLACE",
+        "segment": "act2_01_sample",
+        "shot_id": "08-004",
+        "provider": "remotion",
+        "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+        "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+        "duration_seconds": 2.0,
+        "expected_duration_seconds": 2.0,
+        "request_packet_source": "anime_project/pipeline/provider_runs/remotion/act2_01_sample",
+        "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+        "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+        "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\act2_01_sample\\08-004\\08-004_remotion_mid.png",
+        "status": "approved_external_result_pending_replacement",
+        "notes": "Approved external review result promoted to replacement candidate."
+      }
+    ]
+  },
+  "submit_gate": {
+    "manifest": "anime_project\\pipeline\\submit_gate\\external_submit_gate_manifest.json",
+    "allowed_provider_count": 0,
+    "blocked_provider_count": 5,
+    "total_estimated_cost_usd": 9.8,
+    "approval_request": "anime_project\\pipeline\\submit_gate\\external_submit_approval_request.md"
+  },
+  "provider_submit": {
+    "manifest": "anime_project\\pipeline\\submit_runs\\external_video\\submit_run_manifest.json",
+    "submitted_count": 0,
+    "blocked_provider_count": 5,
+    "failed_count": 0
+  },
+  "report": "anime_project\\pipeline\\acceptance\\master_acceptance_report.md",
+  "next_step": "DirectorAgent and RiskAgent should do human visual review before finance-facing release."
+}

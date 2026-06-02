@@ -1,0 +1,17 @@
+{
+  "provider": "blender",
+  "job_id": "onsen_01_sample_21_ON-021",
+  "shot_id": "ON-021",
+  "task": "3d_or_realtime_previs",
+  "layout_request": {
+    "shotId": "ON-021",
+    "durationSeconds": 10.0,
+    "camera": "derive from storyboard camera field and local fallback",
+    "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+  },
+  "duration_seconds": 10.0,
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/onsen_01_sample/previs/ON-021_blender.mp4",
+  "mode": "dry_run_request_packet"
+}

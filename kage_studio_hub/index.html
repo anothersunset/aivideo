@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kage Studio Hub</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div>
+            <h1>Kage Studio Hub</h1>
+            <p>Agent animation production hub</p>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <button class="nav-item active" data-view="dashboard">Overview</button>
+          <button class="nav-item" data-view="documents">Files</button>
+          <button class="nav-item" data-view="shots">Shots</button>
+          <button class="nav-item" data-view="agents">Agent Tasks</button>
+          <button class="nav-item" data-view="pipeline">Pipeline</button>
+          <button class="nav-item" data-view="risks">Risk & Budget</button>
+        </nav>
+        <section class="sidebar-card">
+          <span class="eyebrow">Project</span>
+          <strong>Kage Raksasa Scroll</strong>
+          <p>Adult 2D ninja action animated feature</p>
+        </section>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <span class="eyebrow">KAGE / FEATURE / MVP</span>
+            <h2 id="viewTitle">Overview</h2>
+          </div>
+          <div class="status-pill">
+            <span class="pulse"></span>
+            Agent production system v0.2
+          </div>
+        </header>
+
+        <section id="dashboard" class="view active-view">
+          <div class="metric-grid">
+            <article class="metric">
+              <span>Development files</span>
+              <strong id="docCount">0</strong>
+              <p>Planning, script, sample, production, financing, and tech docs</p>
+            </article>
+            <article class="metric">
+              <span>Sample shots</span>
+              <strong>21</strong>
+              <p>Rainy Night Onsen, approximately 112 seconds</p>
+            </article>
+            <article class="metric">
+              <span>S shots</span>
+              <strong>7</strong>
+              <p>Priority animation, comp, and sound resources</p>
+            </article>
+            <article class="metric">
+              <span>Recommended sample budget</span>
+              <strong>$120k</strong>
+              <p>Recommended midpoint, 8-week cycle</p>
+            </article>
+          </div>
+
+          <div class="two-column">
+            <section class="panel">
+              <div class="panel-header">
+                <h3>Production Decision</h3>
+                <span class="tag red">Director / Producer</span>
+              </div>
+              <ul class="decision-list">
+                <li>Production route is now multi-agent first, with human final approval.</li>
+                <li>Build Kage Studio Hub MVP before full sample production.</li>
+                <li>Validate rain, smoke, poison membrane, and action readability in the sample.</li>
+                <li>Keep originality boundary locked: aligned mood, original characters and shots.</li>
+              </ul>
+            </section>
+
+            <section class="panel">
+              <div class="panel-header">
+                <h3>4-Week Software Path</h3>
+                <span class="tag">MVP</span>
+              </div>
+              <ol class="timeline">
+                <li><strong>W1</strong><span>Import files and create shot/asset data.</span></li>
+                <li><strong>W2</strong><span>Add script-to-shot parsing and agent tasks.</span></li>
+                <li><strong>W3</strong><span>Connect visual generation workflow and tests.</span></li>
+                <li><strong>W4</strong><span>Produce animatic v0.1 and feasibility report.</span></li>
+              </ol>
+            </section>
+          </div>
+        </section>
+
+        <section id="documents" class="view">
+          <div class="toolbar">
+            <label>
+              Filter
+              <select id="docFilter">
+                <option value="all">All</option>
+                <option value="Overview">Overview</option>
+                <option value="Script">Script</option>
+                <option value="Sample">Sample</option>
+                <option value="Production">Production</option>
+                <option value="Finance">Finance</option>
+                <option value="Art">Art</option>
+                <option value="Tech">Tech</option>
+              </select>
+            </label>
+          </div>
+          <div id="documentList" class="document-grid"></div>
+        </section>
+
+        <section id="shots" class="view">
+          <div class="board" id="shotBoard"></div>
+        </section>
+
+        <section id="agents" class="view">
+          <div class="agent-grid" id="agentGrid"></div>
+        </section>
+
+        <section id="pipeline" class="view">
+          <div class="metric-grid" id="pipelineGrid"></div>
+          <div id="pipelineMaster" class="pipeline-master"></div>
+          <div id="pipelineSegments" class="pipeline-segments"></div>
+          <div id="providerMatrix" class="provider-matrix"></div>
+          <section class="panel artifact-panel">
+            <div class="panel-header">
+              <h3>Key Artifacts</h3>
+              <span class="tag">Generated files</span>
+            </div>
+            <div id="pipelineArtifacts" class="artifact-list"></div>
+          </section>
+        </section>
+
+        <section id="risks" class="view">
+          <div class="two-column">
+            <section class="panel">
+              <div class="panel-header">
+                <h3>Budget Split</h3>
+                <span class="tag">$120k recommended</span>
+              </div>
+              <div id="budgetBars" class="budget-bars"></div>
+            </section>
+            <section class="panel">
+              <div class="panel-header">
+                <h3>High-Risk Items</h3>
+                <span class="tag red">Review needed</span>
+              </div>
+              <div id="riskList" class="risk-list"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

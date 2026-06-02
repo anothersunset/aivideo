@@ -1,0 +1,15 @@
+{
+  "provider": "remotion",
+  "composition": "ShotPackage",
+  "job_id": "onsen_01_sample_20_ON-020",
+  "props": {
+    "shotId": "ON-020",
+    "durationSeconds": 8.0,
+    "sourceVideo": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
+    "prompt": "Adult 2D ninja action anime shot ON-020: rainy mountain onsen, night, hard silhouettes, restrained violence, clear readable action, original character and enemy design, no direct imitation."
+  },
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/onsen_01_sample/remotion/ON-020.mp4",
+  "mode": "dry_run_request_packet"
+}

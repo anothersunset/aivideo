@@ -1,0 +1,302 @@
+{
+  "version": "0.1",
+  "delivery_standard": {
+    "resolution": "1920x1080",
+    "fps": 24,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "mastering": "segment manifests -> master preview manifest"
+  },
+  "providers": {
+    "local_2d_fallback": {
+      "role": [
+        "visual_design",
+        "shot_animation",
+        "audio",
+        "edit"
+      ],
+      "status": "active",
+      "adapter": "sample_production_agent.py / onsen_segment_agent.py / master_edit_agent.py",
+      "strength": "deterministic, no external account, full pipeline proof",
+      "output": [
+        "png",
+        "wav",
+        "mp4",
+        "json"
+      ]
+    },
+    "remotion": {
+      "role": [
+        "code_video",
+        "edit",
+        "captions",
+        "motion_graphics"
+      ],
+      "status": "active_local_adapter",
+      "adapter": "code_video_adapter_agent.py",
+      "strength": "code-defined video packets, repeatable local renders, strong for packaging and compositing",
+      "expected_inputs": [
+        "composition_props.json",
+        "assets",
+        "audio"
+      ],
+      "expected_outputs": [
+        "shot.mp4",
+        "segment.mp4"
+      ]
+    },
+    "hyperframes": {
+      "role": [
+        "html_to_video",
+        "agentic_video_layout"
+      ],
+      "status": "planned_adapter",
+      "adapter": "adapters/hyperframes_adapter.ts",
+      "strength": "agent-friendly HTML/CSS/JS video scene construction",
+      "expected_inputs": [
+        "html_scene.html",
+        "assets",
+        "render_manifest.json"
+      ],
+      "expected_outputs": [
+        "shot.mp4"
+      ]
+    },
+    "openai_image": {
+      "role": [
+        "keyframe",
+        "character_sheet",
+        "background_plate",
+        "asset_variation"
+      ],
+      "status": "planned_api_adapter",
+      "adapter": "adapters/openai_image_adapter.py",
+      "strength": "keyframe and design image generation before I2V",
+      "expected_inputs": [
+        "image_prompt",
+        "reference_images",
+        "safety_notes"
+      ],
+      "expected_outputs": [
+        "keyframe.png",
+        "asset.png"
+      ]
+    },
+    "gemini": {
+      "role": [
+        "multimodal_review",
+        "continuity_check",
+        "image_prompting"
+      ],
+      "status": "planned_api_adapter",
+      "adapter": "adapters/gemini_review_adapter.py",
+      "strength": "review frames, compare manifests, check continuity and risk",
+      "expected_inputs": [
+        "frames",
+        "shot_manifest",
+        "risk_rules"
+      ],
+      "expected_outputs": [
+        "review.json",
+        "review.md"
+      ]
+    },
+    "kling_i2v": {
+      "role": [
+        "image_to_video",
+        "shot_motion_refinement"
+      ],
+      "status": "api_adapter_ready_config_required",
+      "adapter": "external_video_provider_agent.py",
+      "strength": "turn approved keyframes into high-quality motion clips",
+      "expected_inputs": [
+        "keyframe.png",
+        "motion_prompt",
+        "duration"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4"
+      ]
+    },
+    "seedance_i2v": {
+      "role": [
+        "image_to_video",
+        "shot_motion_refinement"
+      ],
+      "status": "api_adapter_ready_config_required",
+      "adapter": "external_video_provider_agent.py",
+      "strength": "alternate I2V provider for style/motion A-B tests",
+      "expected_inputs": [
+        "keyframe.png",
+        "motion_prompt",
+        "duration"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4"
+      ]
+    },
+    "runway": {
+      "role": [
+        "image_to_video",
+        "text_to_video",
+        "shot_motion_refinement"
+      ],
+      "status": "api_adapter_ready_config_required",
+      "adapter": "external_video_provider_agent.py",
+      "strength": "commercial video generation option for high-quality shot variants",
+      "expected_inputs": [
+        "keyframe.png",
+        "motion_prompt",
+        "duration",
+        "camera_notes"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4"
+      ]
+    },
+    "luma": {
+      "role": [
+        "image_to_video",
+        "text_to_video",
+        "camera_motion"
+      ],
+      "status": "api_adapter_ready_config_required",
+      "adapter": "external_video_provider_agent.py",
+      "strength": "cinematic motion exploration and alternate shot variants",
+      "expected_inputs": [
+        "keyframe.png",
+        "motion_prompt",
+        "duration"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4"
+      ]
+    },
+    "pika": {
+      "role": [
+        "image_to_video",
+        "stylized_motion",
+        "short_shot_variants"
+      ],
+      "status": "api_adapter_ready_config_required",
+      "adapter": "external_video_provider_agent.py",
+      "strength": "fast creative iteration for short motion tests",
+      "expected_inputs": [
+        "keyframe.png",
+        "motion_prompt",
+        "duration"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4"
+      ]
+    },
+    "comfyui_svd": {
+      "role": [
+        "local_image_to_video",
+        "open_source_workflow",
+        "batch_generation"
+      ],
+      "status": "planned_local_adapter",
+      "adapter": "adapters/comfyui_svd_adapter.py",
+      "strength": "local controllable workflows, lower vendor lock-in, batch queues",
+      "expected_inputs": [
+        "workflow.json",
+        "keyframe.png",
+        "motion_prompt"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4",
+        "workflow_outputs"
+      ]
+    },
+    "animatediff": {
+      "role": [
+        "local_image_to_video",
+        "motion_lora_tests",
+        "anime_motion"
+      ],
+      "status": "planned_local_adapter",
+      "adapter": "adapters/animatediff_adapter.py",
+      "strength": "open-source anime-style motion experiments when local GPU is available",
+      "expected_inputs": [
+        "keyframe.png",
+        "motion_prompt",
+        "workflow_settings"
+      ],
+      "expected_outputs": [
+        "shot_video.mp4"
+      ]
+    },
+    "blender": {
+      "role": [
+        "3d_layout",
+        "camera_previs",
+        "background_projection"
+      ],
+      "status": "planned_local_adapter",
+      "adapter": "adapters/blender_previs_adapter.py",
+      "strength": "repeatable camera layout, props, blocking, and previsualization",
+      "expected_inputs": [
+        "scene_layout.json",
+        "camera_path.json",
+        "assets"
+      ],
+      "expected_outputs": [
+        "previs.mp4",
+        "layout_frames"
+      ]
+    },
+    "unreal": {
+      "role": [
+        "realtime_previs",
+        "virtual_camera",
+        "lighting_reference"
+      ],
+      "status": "planned_manual_or_local_adapter",
+      "adapter": "adapters/unreal_previs_adapter.py",
+      "strength": "real-time staging and lighting reference if production needs 3D layout",
+      "expected_inputs": [
+        "scene_layout.json",
+        "camera_path.json"
+      ],
+      "expected_outputs": [
+        "previs.mp4"
+      ]
+    }
+  },
+  "routing_policy": {
+    "default": "Use local_2d_fallback for proof and scheduled output. Use external providers only when credentials and approval are available.",
+    "visual_design": [
+      "openai_image",
+      "gemini",
+      "local_2d_fallback"
+    ],
+    "shot_animation": [
+      "kling_i2v",
+      "seedance_i2v",
+      "runway",
+      "luma",
+      "pika",
+      "comfyui_svd",
+      "animatediff",
+      "remotion",
+      "hyperframes",
+      "local_2d_fallback"
+    ],
+    "previs": [
+      "blender",
+      "unreal",
+      "remotion",
+      "local_2d_fallback"
+    ],
+    "edit": [
+      "remotion",
+      "local_2d_fallback"
+    ],
+    "review": [
+      "gemini",
+      "local_2d_fallback"
+    ],
+    "duration_chunking": "For external I2V adapters, split shots longer than 5 seconds into chunks unless the provider supports the full duration."
+  }
+}

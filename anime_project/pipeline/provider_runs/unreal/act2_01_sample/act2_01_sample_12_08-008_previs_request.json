@@ -1,0 +1,17 @@
+{
+  "provider": "unreal",
+  "job_id": "act2_01_sample_12_08-008",
+  "shot_id": "08-008",
+  "task": "3d_or_realtime_previs",
+  "layout_request": {
+    "shotId": "08-008",
+    "durationSeconds": 2.0,
+    "camera": "derive from storyboard camera field and local fallback",
+    "blocking": "ronin, medic/archer, enemy silhouette, weather/space FX"
+  },
+  "duration_seconds": 2.0,
+  "fps": 24,
+  "resolution": "1920x1080",
+  "expected_output": "anime_project/episode_segments/act2_01_sample/previs/08-008_unreal.mp4",
+  "mode": "dry_run_request_packet"
+}
