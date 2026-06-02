@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import argparse
 import json
-import subprocess
 from pathlib import Path
+
+from pipeline_common import resolve_workspace_path, run_checked
 
 
 ROOT = Path(__file__).resolve().parent
@@ -31,7 +32,7 @@ def write_json(path: Path, payload: dict | list) -> None:
 
 
 def ffprobe_frames(path: Path) -> int:
-    result = subprocess.run(
+    result = run_checked(
         [
             "ffprobe",
             "-v",
@@ -44,24 +45,20 @@ def ffprobe_frames(path: Path) -> int:
             "default=nokey=1:noprint_wrappers=1",
             str(path),
         ],
-        check=True,
         cwd=str(WORKSPACE),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        encoding="utf-8",
+        capture_text=True,
     )
     raw = result.stdout.strip()
     return int(raw) if raw.isdigit() else 0
 
 
 def extract_review_frame(item: dict) -> str:
-    source = WORKSPACE / item["path"]
+    source = resolve_workspace_path(WORKSPACE, item["path"])
     frame_dir = REVIEW_DIR / "frames" / item["provider"] / item["segment"] / item["shot_id"]
     frame_dir.mkdir(parents=True, exist_ok=True)
     frame_path = frame_dir / f"{item['shot_id']}_{item['provider']}_mid.png"
     midpoint = max(0.0, float(item.get("actual_duration_seconds", 0) or 0) / 2)
-    subprocess.run(
+    run_checked(
         [
             "ffmpeg",
             "-y",
@@ -73,10 +70,7 @@ def extract_review_frame(item: dict) -> str:
             "1",
             str(frame_path),
         ],
-        check=True,
         cwd=str(WORKSPACE),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
     )
     return rel(frame_path)
 
@@ -98,7 +92,7 @@ def risk_rules_for(item: dict) -> list[str]:
 
 
 def review_item(item: dict, task_id: str) -> dict:
-    source = WORKSPACE / item["path"]
+    source = resolve_workspace_path(WORKSPACE, item["path"])
     frame_count = ffprobe_frames(source)
     frame_path = extract_review_frame(item)
     technical_checks = item.get("checks", {})

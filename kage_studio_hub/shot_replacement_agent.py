@@ -2,8 +2,18 @@ from __future__ import annotations
 
 import argparse
 import json
-import subprocess
 from pathlib import Path
+
+from pipeline_common import (
+    TARGET_SHOTS as SELECTED_SHOTS,
+    PROVIDER_PRIORITY,
+    WIDTH,
+    HEIGHT,
+    FPS,
+    CommandError,
+    resolve_workspace_path,
+    run_checked,
+)
 
 
 ROOT = Path(__file__).resolve().parent
@@ -14,25 +24,6 @@ REPLACEMENT_DIR = PIPELINE_DIR / "replacements"
 SEGMENT_DIR = ANIME_PROJECT / "episode_segments"
 VALIDATED_RESULTS_PATH = PIPELINE_DIR / "external_results" / "manifests" / "validated_external_results.json"
 APPROVED_EXTERNAL_RESULTS_PATH = PIPELINE_DIR / "external_reviews" / "approved_external_results.json"
-
-SELECTED_SHOTS = [
-    {"segment": "onsen_01_sample", "shot_id": "ON-008", "provider": "kling_i2v"},
-    {"segment": "act2_01_sample", "shot_id": "08-004", "provider": "runway"},
-]
-
-PROVIDER_PRIORITY = {
-    "kling_i2v": 100,
-    "seedance_i2v": 95,
-    "runway": 90,
-    "luma": 85,
-    "pika": 80,
-    "comfyui_svd": 60,
-    "animatediff": 55,
-    "hyperframes": 50,
-    "remotion": 30,
-    "blender": 25,
-    "unreal": 25,
-}
 
 
 def rel(path: Path) -> str:
@@ -69,7 +60,7 @@ def encode_candidate(source: Path, output: Path, provider: str) -> None:
         "runway": "eq=contrast=1.10:saturation=0.92:brightness=-0.015,unsharp=3:3:0.55",
         "seedance_i2v": "eq=contrast=1.14:saturation=0.88:brightness=-0.025,unsharp=5:5:0.60",
     }.get(provider, "eq=contrast=1.08:saturation=0.90,unsharp=3:3:0.45")
-    subprocess.run(
+    run_checked(
         [
             "ffmpeg",
             "-y",
@@ -86,12 +77,11 @@ def encode_candidate(source: Path, output: Path, provider: str) -> None:
             "21",
             "-pix_fmt",
             "yuv420p",
+            "-r",
+            str(FPS),
             str(output),
         ],
-        check=True,
         cwd=str(WORKSPACE),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
     )
 
 
@@ -176,7 +166,7 @@ def generate_candidates(task_id: str) -> dict:
     replacements = []
     for item in SELECTED_SHOTS:
         job = find_job(item["segment"], item["shot_id"])
-        source = WORKSPACE / job["current_local_output"]
+        source = resolve_workspace_path(WORKSPACE, job["current_local_output"])
         output = candidate_path(item["segment"], item["shot_id"], item["provider"])
         encode_candidate(source, output, item["provider"])
         replacements.append(
@@ -212,9 +202,9 @@ def review_candidates(task_id: str) -> dict:
     report_lines = [
         "# Replacement Candidate Review",
         "",
-        f"任务：{task_id}",
+        f"\u4efb\u52a1\uff1a{task_id}",
         "",
-        "结论：Approved for replacement workflow test。候选镜头用于验证外部高质量工具回填流程，不代表最终正片质量锁定。",
+        "\u7ed3\u8bba\uff1aApproved for replacement workflow test\u3002\u5019\u9009\u955c\u5934\u7528\u4e8e\u9a8c\u8bc1\u5916\u90e8\u9ad8\u8d28\u91cf\u5de5\u5177\u56de\u586b\u6d41\u7a0b\uff0c\u4e0d\u4ee3\u8868\u6700\u7ec8\u6b63\u7247\u8d28\u91cf\u9501\u5b9a\u3002",
         "",
     ]
     for item in manifest["replacements"]:
@@ -248,45 +238,64 @@ def review_candidates(task_id: str) -> dict:
     return review_manifest
 
 
+def _verify_output(path: Path) -> None:
+    probe = run_checked(
+        ["ffprobe", "-v", "error", "-show_entries",
+         "stream=width,height,r_frame_rate", "-show_entries", "format=duration",
+         "-of", "json", str(path)],
+        cwd=str(WORKSPACE), capture_text=True,
+    )
+    data = json.loads(probe.stdout)
+    video = next((s for s in data.get("streams", []) if s.get("width")), {})
+    width = int(video.get("width", 0) or 0)
+    height = int(video.get("height", 0) or 0)
+    if (width, height) != (WIDTH, HEIGHT):
+        raise CommandError(
+            f"concat output resolution {width}x{height} != {WIDTH}x{HEIGHT}: {path}"
+        )
+
+
 def concat_videos(video_paths: list[Path], output_path: Path, audio_path: Path | None = None) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    concat_path = output_path.parent / f"{output_path.stem}_concat.txt"
-    concat_path.write_text("\n".join(f"file '{path.resolve().as_posix()}'" for path in video_paths), encoding="utf-8")
+    if not video_paths:
+        raise ValueError("concat_videos requires at least one input clip")
+    # Re-encode + normalize every clip (resolution / fps / pixfmt / SAR) BEFORE
+    # concatenation. The old concat-demuxer "-c copy" approach silently corrupted
+    # or failed whenever clips had mismatched codec params (new provider
+    # candidates vs. the original animation shots).
+    cmd = ["ffmpeg", "-y"]
+    for path in video_paths:
+        cmd += ["-i", str(path)]
+    n = len(video_paths)
+    filters = []
+    labels = ""
+    for i in range(n):
+        filters.append(
+            f"[{i}:v:0]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
+            f"crop={WIDTH}:{HEIGHT},fps={FPS},format=yuv420p,setsar=1[v{i}]"
+        )
+        labels += f"[v{i}]"
+    filter_complex = ";".join(filters) + f";{labels}concat=n={n}:v=1:a=0[outv]"
     silent_path = output_path.parent / f"{output_path.stem}_silent.mp4"
-    subprocess.run(
-        ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_path), "-c", "copy", str(silent_path)],
-        check=True,
-        cwd=str(WORKSPACE),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
+    cmd += [
+        "-filter_complex", filter_complex,
+        "-map", "[outv]",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+        "-pix_fmt", "yuv420p", "-r", str(FPS),
+        "-movflags", "+faststart",
+        str(silent_path),
+    ]
+    run_checked(cmd, cwd=str(WORKSPACE))
     if audio_path and audio_path.exists():
-        subprocess.run(
-            [
-                "ffmpeg",
-                "-y",
-                "-i",
-                str(silent_path),
-                "-i",
-                str(audio_path),
-                "-c:v",
-                "copy",
-                "-c:a",
-                "aac",
-                "-b:a",
-                "160k",
-                "-shortest",
-                "-movflags",
-                "+faststart",
-                str(output_path),
-            ],
-            check=True,
+        run_checked(
+            ["ffmpeg", "-y", "-i", str(silent_path), "-i", str(audio_path),
+             "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest",
+             "-movflags", "+faststart", str(output_path)],
             cwd=str(WORKSPACE),
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
         )
     else:
         output_path.write_bytes(silent_path.read_bytes())
+    _verify_output(output_path)
 
 
 def apply_replacements(task_id: str) -> dict:
@@ -312,11 +321,11 @@ def apply_replacements(task_id: str) -> dict:
             else:
                 video = shot["video"]
                 replacement = None
-            shot_videos.append(WORKSPACE / video)
+            shot_videos.append(resolve_workspace_path(WORKSPACE, video))
             shot_records.append({**shot, "video": video, "replacement": replacement})
 
         final_path = base / "final" / f"{segment}_with_replacements.mp4"
-        audio_path = WORKSPACE / manifest["audio"] if manifest.get("audio") else None
+        audio_path = resolve_workspace_path(WORKSPACE, manifest["audio"]) if manifest.get("audio") else None
         concat_videos(shot_videos, final_path, audio_path)
         replaced_manifest = {
             **manifest,
@@ -352,6 +361,9 @@ def master_with_replacements(task_id: str) -> dict:
     segments = ["onsen_01_sample", "act2_01_sample"]
     segment_manifests = []
     videos = []
+    duration_seconds = 0.0
+    shot_count = 0
+    stats_incomplete = []
     for segment in segments:
         base = SEGMENT_DIR / segment
         manifest_path = base / "manifest_with_replacements.json"
@@ -359,17 +371,30 @@ def master_with_replacements(task_id: str) -> dict:
             manifest_path = base / "manifest.json"
         manifest = load_json(manifest_path)
         segment_manifests.append(rel(manifest_path))
-        videos.append(WORKSPACE / manifest["video"])
+        videos.append(resolve_workspace_path(WORKSPACE, manifest["video"]))
+
+        seg_duration = manifest.get("duration_seconds")
+        if seg_duration is None:
+            stats_incomplete.append(rel(manifest_path))
+        duration_seconds += float(seg_duration or 0)
+
+        seg_shots = manifest.get("shot_count")
+        if seg_shots is None:
+            # Fall back to counting shot records instead of silently writing 0.
+            seg_shots = len(manifest.get("shots", []))
+            if rel(manifest_path) not in stats_incomplete:
+                stats_incomplete.append(rel(manifest_path))
+        shot_count += int(seg_shots or 0)
+
     output = SEGMENT_DIR / "master_preview" / "final" / "kage_preview_with_replacements.mp4"
     concat_videos(videos, output)
-    duration_seconds = sum(float(load_json(WORKSPACE / path).get("duration_seconds", 0)) for path in segment_manifests)
-    shot_count = sum(int(load_json(WORKSPACE / path).get("shot_count", 0)) for path in segment_manifests)
     manifest = {
         "task_id": task_id,
         "stage": "master_preview_with_replacements",
         "segment_manifests": segment_manifests,
         "shot_count": shot_count,
         "duration_seconds": duration_seconds,
+        "stats_incomplete_sources": stats_incomplete,
         "video": rel(output),
         "status": "needs_director_review",
     }

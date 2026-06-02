@@ -5,8 +5,18 @@ NO external API call. NO HTTP submit/poll. NO API key. NO secrets.
 Verified against repo schema: tool_jobs/{segment}/shot_jobs.json -> jobs[].
 """
 from __future__ import annotations
-import argparse, json, subprocess
+import argparse
+import json
 from pathlib import Path
+
+from pipeline_common import (
+    TARGET_SHOTS,
+    WIDTH as W,
+    HEIGHT as H,
+    FPS,
+    resolve_workspace_path,
+    run_checked,
+)
 
 ROOT = Path(__file__).resolve().parent
 WORKSPACE = ROOT.parent
@@ -17,29 +27,30 @@ INBOX = PIPE / "external_results" / "inbox"
 MANIFEST_DIR = PIPE / "external_results" / "manifests"
 MANIFEST = MANIFEST_DIR / "simulated_hq_provider_returns.json"
 
-W, H, FPS = 1920, 1080, 24
-TARGETS = [
-    {"segment": "onsen_01_sample", "shot_id": "ON-008", "provider": "kling_i2v"},
-    {"segment": "act2_01_sample",  "shot_id": "08-004", "provider": "runway"},
-]
+# Single source of truth (see pipeline_common.TARGET_SHOTS).
+TARGETS = TARGET_SHOTS
+
 
 # Light cinematic grade only - no story/character changes.
 # fps=24 -> ffprobe r_frame_rate "24/1"; scale+crop guarantees EXACT 1920x1080.
 def provider_vf(provider):
     grades = {
         "kling_i2v": "eq=contrast=1.12:saturation=1.10:brightness=-0.01,unsharp=5:5:0.6",
-        "runway":    "eq=contrast=1.08:saturation=1.06,unsharp=3:3:0.45",
+        "runway": "eq=contrast=1.08:saturation=1.06,unsharp=3:3:0.45",
     }
     grade = grades.get(provider, "eq=contrast=1.06:saturation=1.05,unsharp=3:3:0.4")
     return (f"fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,"
             f"crop={W}:{H},{grade},format=yuv420p")
 
+
 def rel(p):
     return str(p.relative_to(WORKSPACE))
+
 
 def load_jobs(segment):
     path = TOOL_JOBS / segment / "shot_jobs.json"
     return json.loads(path.read_text(encoding="utf-8"))["jobs"]
+
 
 def find_job(segment, shot_id):
     for j in load_jobs(segment):
@@ -47,25 +58,32 @@ def find_job(segment, shot_id):
             return j
     raise KeyError(f"{segment}/{shot_id} not in shot_jobs.json")
 
+
 def resolve_local(raw):
-    # current_local_output uses Windows backslashes; normalize for cross-platform.
-    p = Path(raw.replace("\\\\", "/").replace("\\", "/"))
-    return p if p.is_absolute() else WORKSPACE / p
+    # current_local_output may use Windows backslashes; normalize cross-platform.
+    return resolve_workspace_path(WORKSPACE, raw)
+
 
 def probe_duration(path):
-    out = subprocess.run(["ffprobe","-v","error","-show_entries",
-        "format=duration","-of","default=nw=1:nk=1",str(path)],
-        check=True, capture_output=True, text=True).stdout.strip()
+    out = run_checked(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "default=nw=1:nk=1", str(path)],
+        cwd=str(WORKSPACE), capture_text=True,
+    ).stdout.strip()
     return round(float(out), 3)
+
 
 def render(src, dst, seconds, provider):
     dst.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run(["ffmpeg","-y","-i",str(src),"-t",f"{seconds:.3f}",
-        "-vf",provider_vf(provider),"-r",str(FPS),
-        "-c:v","libx264","-preset","veryfast","-crf","20",
-        "-pix_fmt","yuv420p","-an","-movflags","+faststart",str(dst)],
-        check=True, cwd=str(WORKSPACE))
+    run_checked(
+        ["ffmpeg", "-y", "-i", str(src), "-t", f"{seconds:.3f}",
+         "-vf", provider_vf(provider), "-r", str(FPS),
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+         "-pix_fmt", "yuv420p", "-an", "-movflags", "+faststart", str(dst)],
+        cwd=str(WORKSPACE),
+    )
     assert dst.exists() and dst.stat().st_size > 100_000, f"output too small: {dst}"
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -104,6 +122,7 @@ def main():
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     if not args.quiet:
         print(f"[sim] wrote {rel(MANIFEST)}")
+
 
 if __name__ == "__main__":
     main()

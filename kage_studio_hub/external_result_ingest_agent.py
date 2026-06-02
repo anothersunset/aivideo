@@ -2,8 +2,14 @@ from __future__ import annotations
 
 import argparse
 import json
-import subprocess
 from pathlib import Path
+
+from pipeline_common import (
+    SEGMENTS,
+    VIDEO_PROVIDERS,
+    MissingToolError,
+    run_checked,
+)
 
 
 ROOT = Path(__file__).resolve().parent
@@ -14,20 +20,6 @@ TOOL_JOBS_DIR = PIPELINE_DIR / "tool_jobs"
 RESULT_DIR = PIPELINE_DIR / "external_results"
 INBOX_DIR = RESULT_DIR / "inbox"
 MANIFEST_DIR = RESULT_DIR / "manifests"
-VIDEO_PROVIDERS = [
-    "kling_i2v",
-    "seedance_i2v",
-    "runway",
-    "luma",
-    "pika",
-    "comfyui_svd",
-    "animatediff",
-    "remotion",
-    "hyperframes",
-    "blender",
-    "unreal",
-]
-SEGMENTS = ["onsen_01_sample", "act2_01_sample"]
 
 
 def rel(path: Path) -> str:
@@ -48,13 +40,16 @@ def load_jobs(segment: str) -> list[dict]:
     return load_json(path)["jobs"]
 
 
-def build_expected_manifest() -> dict:
+def build_expected_manifest(create_dirs: bool = False) -> dict:
+    # `create_dirs` is only for `prepare` mode. `scan` must NOT create the full
+    # provider x shot directory tree (462 empty dirs) as a side effect.
     expected = []
     for segment in SEGMENTS:
         for job in load_jobs(segment):
             for provider in VIDEO_PROVIDERS:
                 drop_dir = INBOX_DIR / provider / segment / job["shot_id"]
-                drop_dir.mkdir(parents=True, exist_ok=True)
+                if create_dirs:
+                    drop_dir.mkdir(parents=True, exist_ok=True)
                 expected_name = f"{job['shot_id']}_{provider}.mp4"
                 expected.append(
                     {
@@ -81,7 +76,7 @@ def build_expected_manifest() -> dict:
 
 
 def ffprobe(path: Path) -> dict:
-    result = subprocess.run(
+    result = run_checked(
         [
             "ffprobe",
             "-v",
@@ -94,12 +89,8 @@ def ffprobe(path: Path) -> dict:
             "json",
             str(path),
         ],
-        check=True,
         cwd=str(WORKSPACE),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        encoding="utf-8",
+        capture_text=True,
     )
     return json.loads(result.stdout)
 
@@ -159,7 +150,9 @@ def validate_result(path: Path, job: dict, provider: str, segment: str, shot_id:
 
 
 def scan_inbox() -> dict:
-    build_expected_manifest()
+    build_expected_manifest(create_dirs=False)
+    # Ensure only the inbox root exists for scanning; do not fan out 462 dirs.
+    INBOX_DIR.mkdir(parents=True, exist_ok=True)
     lookup = index_jobs()
     accepted = []
     rejected = []
@@ -176,8 +169,19 @@ def scan_inbox() -> dict:
             continue
         try:
             result = validate_result(path, job, provider, segment, shot_id)
+        except MissingToolError:
+            # Environment error (ffprobe not installed) must NOT be misread as a
+            # content/quality rejection; abort the scan with a clear error.
+            raise
         except Exception as exc:  # noqa: BLE001
-            rejected.append({"path": rel(path), "provider": provider, "segment": segment, "shot_id": shot_id, "error": str(exc)})
+            rejected.append({
+                "path": rel(path),
+                "provider": provider,
+                "segment": segment,
+                "shot_id": shot_id,
+                "error": str(exc),
+                "error_kind": "probe_failed",
+            })
             continue
         if result["accepted"]:
             accepted.append(result)
@@ -230,7 +234,7 @@ def main() -> None:
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
     if args.mode == "prepare":
-        manifest = build_expected_manifest()
+        manifest = build_expected_manifest(create_dirs=True)
         write_readme()
         output_path = MANIFEST_DIR / "expected_external_results.json"
     else:
