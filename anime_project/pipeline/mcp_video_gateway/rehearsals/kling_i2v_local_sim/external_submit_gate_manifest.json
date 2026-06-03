@@ -1,11 +1,11 @@
 {
-  "task_id": "TASK-SUBMIT-GATE-PROVIDER-PROFILES",
+  "task_id": "TASK-062-MCP-LOCAL-SIM-GATE",
   "stage": "external_submit_gate",
   "mode": "approval_and_cost_gate",
-  "created_at": 1780478430,
+  "created_at": 1780478426,
   "provider_count": 5,
-  "allowed_provider_count": 0,
-  "blocked_provider_count": 5,
+  "allowed_provider_count": 1,
+  "blocked_provider_count": 4,
   "total_submission_count": 15,
   "total_estimated_cost_usd": 9.8,
   "providers": [
@@ -17,7 +17,7 @@
       "total_duration_seconds": 10.0,
       "estimated_usd_per_second": 0.18,
       "estimated_cost_usd": 1.8,
-      "cost_cap_usd": 0.0,
+      "cost_cap_usd": 5.0,
       "approval_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
       "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
       "token_env": "KAGE_KLING_I2V_TOKEN",
@@ -25,7 +25,7 @@
         "KAGE_KLING_I2V_TOKEN",
         "KAGE_KLING_I2V_API_KEY"
       ],
-      "token_env_used": "",
+      "token_env_used": "KAGE_KLING_I2V_TOKEN",
       "adapter_readiness": {
         "provider": "kling_i2v",
         "display_name": "Kling image-to-video",
@@ -42,21 +42,15 @@
         "ready_for_api_submit": false
       },
       "checks": {
-        "has_endpoint": false,
-        "has_token": false,
-        "submit_approved": false,
-        "cost_cap_configured": false,
-        "cost_within_cap": false,
+        "has_endpoint": true,
+        "has_token": true,
+        "submit_approved": true,
+        "cost_cap_configured": true,
+        "cost_within_cap": true,
         "has_submissions": true
       },
-      "allowed_to_submit": false,
-      "blockers": [
-        "has_endpoint",
-        "has_token",
-        "submit_approved",
-        "cost_cap_configured",
-        "cost_within_cap"
-      ]
+      "allowed_to_submit": true,
+      "blockers": []
     },
     {
       "provider": "luma",

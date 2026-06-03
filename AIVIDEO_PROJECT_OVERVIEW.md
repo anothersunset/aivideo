@@ -65,3 +65,5 @@ The repo is structured so that real providers can replace local simulation stage
 The invariant is that provider outputs must return as traceable MP4 files under `anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/`, then pass ingest, review, and replacement before becoming part of the demo.
 
 The real-provider adapter layer now uses `anime_project/pipeline/external_provider_profiles.json` for response parsing, so job-id/status/media-url extraction can be adjusted per provider without storing secrets or rewriting the whole pipeline. `anime_project/MCP_VIDEO_GATEWAY_PLAN.md` defines the future MCP gateway path for mainstream video/image models and local render tools.
+
+`MCPVideoGatewayAgent` now has a local bridge rehearsal path: `anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_report.md`. It proves MCP-style JSON dispatch can produce real H.264 MP4 chunks while keeping paid provider submit gates blocked by default.

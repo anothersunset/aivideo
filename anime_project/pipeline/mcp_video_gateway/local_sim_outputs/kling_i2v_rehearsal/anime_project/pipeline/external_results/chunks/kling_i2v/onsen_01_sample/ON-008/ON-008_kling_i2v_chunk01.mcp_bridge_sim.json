@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "simulated": true,
+  "external_api_call": false,
+  "job_id": "mcp-local-sim-kling_i2v-onsen_01_sample-ON-008-1780478428",
+  "provider": "kling_i2v",
+  "segment": "onsen_01_sample",
+  "shot_id": "ON-008",
+  "chunk_index": 1,
+  "source_keyframe": "anime_project\\pipeline\\director_review_v02\\keyframes\\onsen_01_sample\\ON-008_v02_master_mid.png",
+  "output_path": "anime_project\\pipeline\\mcp_video_gateway\\local_sim_outputs\\kling_i2v_rehearsal\\anime_project\\pipeline\\external_results\\chunks\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v_chunk01.mp4",
+  "video_url": "file:///D:/codex/aivideo_upload_staging/anime_project/pipeline/mcp_video_gateway/local_sim_outputs/kling_i2v_rehearsal/anime_project/pipeline/external_results/chunks/kling_i2v/onsen_01_sample/ON-008/ON-008_kling_i2v_chunk01.mp4",
+  "probe": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "24/1",
+    "duration_seconds": 5.0,
+    "size_bytes": 382215
+  }
+}

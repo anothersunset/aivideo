@@ -906,11 +906,11 @@
     "status": "Completed",
     "priority": "High",
     "review": "Needs review",
-    "output": "MCPVideoGatewayAgent prepared 15 MCP video dispatch payloads; 0 submitted, 0 prepared, 15 blocked. Report: anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_report.md",
+    "output": "MCPVideoGatewayAgent prepared 15 MCP video dispatch payloads and proved local bridge execution for 3 Kling chunks with real H.264 MP4 outputs. Main submit gate restored to blocked. Report: anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_report.md",
     "created_at": 1780506596,
     "updated_at": 1780506596,
     "manifest_file": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_manifest.json",
     "output_file": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_report.md",
-    "review_note": "MCP dispatch payloads are ready, but real provider execution remains blocked until MCP bridge, credentials, approval, and cost cap are configured."
+    "review_note": "Local MCP bridge rehearsal completed without external API call: 3 Kling chunks rendered under anime_project\\pipeline\\mcp_video_gateway\\local_sim_outputs\\kling_i2v_rehearsal. Real provider execution remains blocked until MCP bridge, credentials, approval, and cost cap are configured."
   }
 ]

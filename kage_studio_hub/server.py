@@ -441,7 +441,16 @@ def summarize_provider_poll_runs() -> dict:
 
 def summarize_mcp_video_gateway() -> dict:
     manifest_path = ANIME_PROJECT / "pipeline" / "mcp_video_gateway" / "mcp_video_gateway_manifest.json"
+    rehearsal_path = (
+        ANIME_PROJECT
+        / "pipeline"
+        / "mcp_video_gateway"
+        / "rehearsals"
+        / "kling_i2v_local_sim"
+        / "mcp_video_gateway_rehearsal_summary.json"
+    )
     manifest = read_json(manifest_path, {})
+    rehearsal = read_json(rehearsal_path, {})
     return {
         "manifest": str(manifest_path.relative_to(WORKSPACE)) if manifest_path.exists() else "",
         "stage": manifest.get("stage", ""),
@@ -455,6 +464,14 @@ def summarize_mcp_video_gateway() -> dict:
         "dispatch_queue": manifest.get("dispatch_queue", ""),
         "report": manifest.get("report", ""),
         "providers": manifest.get("providers", []),
+        "latest_rehearsal": {
+            "summary": str(rehearsal_path.relative_to(WORKSPACE)) if rehearsal_path.exists() else "",
+            "decision": rehearsal.get("decision", ""),
+            "provider": rehearsal.get("provider", ""),
+            "submitted_count": rehearsal.get("submitted_count", 0),
+            "failed_count": rehearsal.get("failed_count", 0),
+            "output_count": len(rehearsal.get("outputs", [])),
+        },
         "next_step": manifest.get("next_step", ""),
     }
 

@@ -19,6 +19,8 @@ The provider implementation can be HTTP API, MCP tool, local software, or manual
 - Provider credential env names use `KAGE_{PROVIDER}_TOKEN` first and accept `KAGE_{PROVIDER}_API_KEY` as a legacy alias.
 - `anime_project/pipeline/external_provider_profiles.json` defines provider response parsing for job ids, statuses, and media URLs.
 - `MCPVideoGatewayAgent` prepares standard MCP `submit_video_job` payloads from the existing provider queues.
+- `mcp_video_bridge_sim.py` is a local bridge rehearsal command that consumes one MCP payload on stdin and renders a real H.264 MP4 chunk without any external API call.
+- A Kling local bridge rehearsal exists at `anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/`.
 - Current simulated HQ returns prove the ingest/review/replacement chain without calling an external model.
 
 ## MCP Gateway Shape
@@ -77,6 +79,7 @@ The current implementation already prepares the contract:
 - Profiles: `anime_project/pipeline/external_provider_profiles.json`
 - MCP dispatch queue: `anime_project/pipeline/mcp_video_gateway/mcp_video_dispatch_queue.jsonl`
 - MCP gateway manifest: `anime_project/pipeline/mcp_video_gateway/mcp_video_gateway_manifest.json`
+- MCP local bridge rehearsal: `anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_report.md`
 - Submit gate: `anime_project/pipeline/submit_gate/external_submit_gate_manifest.json`
 - Returned chunks: `anime_project/pipeline/external_results/chunks/{provider}/{segment}/{shot_id}/`
 - Final returned shots: `anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/`
