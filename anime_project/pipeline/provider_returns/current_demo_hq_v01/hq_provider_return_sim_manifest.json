@@ -1,0 +1,339 @@
+{
+  "task_id": "TASK-058",
+  "stage": "hq_provider_return_simulation",
+  "mode": "simulated_provider_return_no_external_api_call",
+  "external_api_called": false,
+  "decision": "simulated_provider_returns_ready_for_ingest",
+  "source_launch_manifest": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_manifest.json",
+  "source_local_polish_manifest": "anime_project\\pipeline\\polish_outputs\\local_remotion\\local_polish_render_manifest.json",
+  "return_count": 5,
+  "generated_count": 5,
+  "accepted_count": 5,
+  "rejected_count": 0,
+  "provider_counts": {
+    "kling_i2v": 4,
+    "pika": 1
+  },
+  "contact_sheet": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\review_frames\\hq_provider_return_sim_contact_sheet.png",
+  "returns": [
+    {
+      "task_id": "TASK-058",
+      "queue_id": "POLISH-001",
+      "provider": "kling_i2v",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "label": "Onsen replacement action test",
+      "source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\onsen_01_sample\\ON-008\\ON-008_local_polish.mp4",
+      "source_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\onsen_01_sample\\ON-008\\ON-008_local_polish.mp4",
+      "source_mode": "local_polish_render",
+      "output": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "target_duration_seconds": 8.0,
+      "actual_duration_seconds": 8.0,
+      "duration_seconds": 8.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": 192,
+        "duration_seconds": 8.0,
+        "size_bytes": 892126
+      },
+      "review_frame": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\review_frames\\kling_i2v\\onsen_01_sample\\ON-008_kling_i2v_sim_mid.png",
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 2.352,
+        "stddev_luma": 8.455,
+        "luma_min": 0,
+        "luma_max": 95,
+        "unique_color_sample_count": 258,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "simulated_provider_return_ready",
+      "mode": "simulated_provider_return_no_external_api_call",
+      "external_api_called": false,
+      "simulation_notice": "simulated_provider_return_no_external_api_call",
+      "risk_rules": [
+        "Confirm this remains a local-polish demo candidate, not final character-style approval."
+      ],
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "Confirm this remains a workflow-quality replacement, not final character-style approval.",
+        "Current replacement is workflow-approved only; high-quality vendor output still requires director review."
+      ]
+    },
+    {
+      "task_id": "TASK-058",
+      "queue_id": "POLISH-002",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "label": "Rating-risk hidden impact",
+      "source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-003\\08-003_local_polish.mp4",
+      "source_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-003\\08-003_local_polish.mp4",
+      "source_mode": "local_polish_render",
+      "output": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v.mp4",
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "target_duration_seconds": 2.0,
+      "actual_duration_seconds": 2.0,
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": 48,
+        "duration_seconds": 2.0,
+        "size_bytes": 330380
+      },
+      "review_frame": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\review_frames\\kling_i2v\\act2_01_sample\\08-003_kling_i2v_sim_mid.png",
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 4.394,
+        "stddev_luma": 12.368,
+        "luma_min": 0,
+        "luma_max": 102,
+        "unique_color_sample_count": 383,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "simulated_provider_return_ready",
+      "mode": "simulated_provider_return_no_external_api_call",
+      "external_api_called": false,
+      "simulation_notice": "simulated_provider_return_no_external_api_call",
+      "risk_rules": [
+        "08-003 must not show face or pain expression."
+      ],
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "08-003 must not show face or pain expression."
+      ]
+    },
+    {
+      "task_id": "TASK-058",
+      "queue_id": "POLISH-003",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "label": "Iron centipede replacement test",
+      "source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-004\\08-004_local_polish.mp4",
+      "source_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\08-004\\08-004_local_polish.mp4",
+      "source_mode": "local_polish_render",
+      "output": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "target_duration_seconds": 2.0,
+      "actual_duration_seconds": 2.0,
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": 48,
+        "duration_seconds": 2.0,
+        "size_bytes": 409898
+      },
+      "review_frame": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\review_frames\\kling_i2v\\act2_01_sample\\08-004_kling_i2v_sim_mid.png",
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 4.464,
+        "stddev_luma": 12.957,
+        "luma_min": 0,
+        "luma_max": 116,
+        "unique_color_sample_count": 400,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "simulated_provider_return_ready",
+      "mode": "simulated_provider_return_no_external_api_call",
+      "external_api_called": false,
+      "simulation_notice": "simulated_provider_return_no_external_api_call",
+      "risk_rules": [
+        "Local-polish candidate must remain traceable to an accepted render."
+      ],
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "Replacement must be approved before manifest promotion.",
+        "Current replacement is workflow-approved only; high-quality vendor output still requires director review."
+      ]
+    },
+    {
+      "task_id": "TASK-058",
+      "queue_id": "POLISH-004",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "label": "Hirumaru parasite limit",
+      "source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\11-004\\11-004_local_polish.mp4",
+      "source_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\11-004\\11-004_local_polish.mp4",
+      "source_mode": "local_polish_render",
+      "output": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v.mp4",
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "target_duration_seconds": 2.0,
+      "actual_duration_seconds": 2.0,
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": 48,
+        "duration_seconds": 2.0,
+        "size_bytes": 570726
+      },
+      "review_frame": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\review_frames\\kling_i2v\\act2_01_sample\\11-004_kling_i2v_sim_mid.png",
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 5.153,
+        "stddev_luma": 14.565,
+        "luma_min": 0,
+        "luma_max": 122,
+        "unique_color_sample_count": 556,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "simulated_provider_return_ready",
+      "mode": "simulated_provider_return_no_external_api_call",
+      "external_api_called": false,
+      "simulation_notice": "simulated_provider_return_no_external_api_call",
+      "risk_rules": [
+        "11-004 parasite count limit: 8."
+      ],
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "11-004 parasite count limit: 8."
+      ]
+    },
+    {
+      "task_id": "TASK-058",
+      "queue_id": "POLISH-005",
+      "provider": "pika",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "label": "Chiyo restraint beat",
+      "source": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\12-002\\12-002_local_polish.mp4",
+      "source_video": "anime_project\\pipeline\\polish_outputs\\local_remotion\\act2_01_sample\\12-002\\12-002_local_polish.mp4",
+      "source_mode": "local_polish_render",
+      "output": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "expected_return_path": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "target_duration_seconds": 2.0,
+      "actual_duration_seconds": 2.0,
+      "duration_seconds": 2.0,
+      "probe": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": 48,
+        "duration_seconds": 2.0,
+        "size_bytes": 469000
+      },
+      "review_frame": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\review_frames\\pika\\act2_01_sample\\12-002_pika_sim_mid.png",
+      "frame_metrics": {
+        "width": 1920,
+        "height": 1080,
+        "mean_luma": 9.048,
+        "stddev_luma": 15.208,
+        "luma_min": 0,
+        "luma_max": 109,
+        "unique_color_sample_count": 829,
+        "nonblank": true
+      },
+      "checks": {
+        "exists": true,
+        "h264": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true,
+        "nonblank_frame": true
+      },
+      "accepted": true,
+      "status": "simulated_provider_return_ready",
+      "mode": "simulated_provider_return_no_external_api_call",
+      "external_api_called": false,
+      "simulation_notice": "simulated_provider_return_no_external_api_call",
+      "risk_rules": [
+        "12-001 to 12-003 must not show a child pain process."
+      ],
+      "safety_notes": [
+        "Preserve original project identity; do not copy protected character designs or iconic compositions.",
+        "Return H.264 MP4 at 1920x1080 and 24fps, matching shot duration.",
+        "Do not submit to paid providers until submit gate approval and cost cap are configured.",
+        "12-001 to 12-003 must not show a child pain process."
+      ]
+    }
+  ],
+  "report": "anime_project\\pipeline\\provider_returns\\current_demo_hq_v01\\hq_provider_return_sim_report.md",
+  "next_step": "Run ExternalResultIngestAgent, ExternalResultReviewAgent, then ShotReplacementAgent to rehearse provider return backfill."
+}

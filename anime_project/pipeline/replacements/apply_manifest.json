@@ -1,17 +1,17 @@
 {
-  "task_id": "TASK-REVIEWED-REPLACE",
+  "task_id": "TASK-061",
   "stage": "replacement_manifest_apply",
   "segments": [
-    {
-      "segment": "onsen_01_sample",
-      "manifest": "anime_project\\episode_segments\\onsen_01_sample\\manifest_with_replacements.json",
-      "video": "anime_project\\episode_segments\\onsen_01_sample\\final\\onsen_01_sample_with_replacements.mp4",
-      "replacement_count": 1
-    },
     {
       "segment": "act2_01_sample",
       "manifest": "anime_project\\episode_segments\\act2_01_sample\\manifest_with_replacements.json",
       "video": "anime_project\\episode_segments\\act2_01_sample\\final\\act2_01_sample_with_replacements.mp4",
+      "replacement_count": 4
+    },
+    {
+      "segment": "onsen_01_sample",
+      "manifest": "anime_project\\episode_segments\\onsen_01_sample\\manifest_with_replacements.json",
+      "video": "anime_project\\episode_segments\\onsen_01_sample\\final\\onsen_01_sample_with_replacements.mp4",
       "replacement_count": 1
     }
   ],

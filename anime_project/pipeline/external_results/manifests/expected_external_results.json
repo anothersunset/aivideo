@@ -9,8 +9,8 @@
     "pika",
     "comfyui_svd",
     "animatediff",
-    "remotion",
     "hyperframes",
+    "remotion",
     "blender",
     "unreal"
   ],
@@ -85,20 +85,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-001",
-      "duration_seconds": 5.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-001\\ON-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-001",
       "duration_seconds": 5.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-001\\ON-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-001",
+      "duration_seconds": 5.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-001\\ON-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\01_ON-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -184,20 +184,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-002",
-      "duration_seconds": 4.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-002\\ON-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-002",
       "duration_seconds": 4.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-002\\ON-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-002",
+      "duration_seconds": 4.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-002\\ON-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\02_ON-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -283,20 +283,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-003",
-      "duration_seconds": 5.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-003\\ON-003_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-003",
       "duration_seconds": 5.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-003\\ON-003_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-003",
+      "duration_seconds": 5.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-003\\ON-003_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\03_ON-003.mp4",
       "status": "waiting_for_external_result"
     },
@@ -382,20 +382,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-004",
-      "duration_seconds": 4.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-004\\ON-004_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-004",
       "duration_seconds": 4.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-004\\ON-004_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-004",
+      "duration_seconds": 4.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-004\\ON-004_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\04_ON-004.mp4",
       "status": "waiting_for_external_result"
     },
@@ -481,20 +481,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-005",
-      "duration_seconds": 6.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-005\\ON-005_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-005",
       "duration_seconds": 6.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-005\\ON-005_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-005",
+      "duration_seconds": 6.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-005\\ON-005_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\05_ON-005.mp4",
       "status": "waiting_for_external_result"
     },
@@ -580,20 +580,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-006",
-      "duration_seconds": 3.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-006\\ON-006_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-006",
       "duration_seconds": 3.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-006\\ON-006_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-006",
+      "duration_seconds": 3.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-006\\ON-006_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\06_ON-006.mp4",
       "status": "waiting_for_external_result"
     },
@@ -679,20 +679,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-007",
-      "duration_seconds": 7.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-007\\ON-007_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-007",
       "duration_seconds": 7.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-007\\ON-007_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-007",
+      "duration_seconds": 7.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-007\\ON-007_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\07_ON-007.mp4",
       "status": "waiting_for_external_result"
     },
@@ -778,20 +778,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-008",
-      "duration_seconds": 8.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-008",
       "duration_seconds": 8.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-008\\ON-008_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "duration_seconds": 8.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
       "status": "waiting_for_external_result"
     },
@@ -877,20 +877,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-009",
-      "duration_seconds": 4.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-009\\ON-009_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-009",
       "duration_seconds": 4.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-009\\ON-009_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-009",
+      "duration_seconds": 4.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-009\\ON-009_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\09_ON-009.mp4",
       "status": "waiting_for_external_result"
     },
@@ -976,20 +976,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-010",
-      "duration_seconds": 5.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-010\\ON-010_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-010",
       "duration_seconds": 5.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-010\\ON-010_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-010",
+      "duration_seconds": 5.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-010\\ON-010_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\10_ON-010.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1075,20 +1075,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-011",
-      "duration_seconds": 4.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-011\\ON-011_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-011",
       "duration_seconds": 4.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-011\\ON-011_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-011",
+      "duration_seconds": 4.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-011\\ON-011_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\11_ON-011.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1174,20 +1174,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-012",
-      "duration_seconds": 6.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-012\\ON-012_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-012",
       "duration_seconds": 6.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-012\\ON-012_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-012",
+      "duration_seconds": 6.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-012\\ON-012_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\12_ON-012.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1273,20 +1273,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-013",
-      "duration_seconds": 5.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-013\\ON-013_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-013",
       "duration_seconds": 5.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-013\\ON-013_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-013",
+      "duration_seconds": 5.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-013\\ON-013_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\13_ON-013.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1372,20 +1372,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-014",
-      "duration_seconds": 5.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-014\\ON-014_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-014",
       "duration_seconds": 5.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-014\\ON-014_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-014",
+      "duration_seconds": 5.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-014\\ON-014_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\14_ON-014.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1471,20 +1471,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-015",
-      "duration_seconds": 8.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-015\\ON-015_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-015",
       "duration_seconds": 8.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-015\\ON-015_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-015",
+      "duration_seconds": 8.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-015\\ON-015_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\15_ON-015.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1570,20 +1570,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-016",
-      "duration_seconds": 5.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-016\\ON-016_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-016",
       "duration_seconds": 5.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-016\\ON-016_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-016",
+      "duration_seconds": 5.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-016\\ON-016_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\16_ON-016.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1669,20 +1669,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-017",
-      "duration_seconds": 6.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-017\\ON-017_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-017",
       "duration_seconds": 6.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-017\\ON-017_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-017",
+      "duration_seconds": 6.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-017\\ON-017_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\17_ON-017.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1768,20 +1768,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-018",
-      "duration_seconds": 7.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-018\\ON-018_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-018",
       "duration_seconds": 7.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-018\\ON-018_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-018",
+      "duration_seconds": 7.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-018\\ON-018_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\18_ON-018.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1867,20 +1867,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-019",
-      "duration_seconds": 7.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-019\\ON-019_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-019",
       "duration_seconds": 7.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-019\\ON-019_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-019",
+      "duration_seconds": 7.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-019\\ON-019_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\19_ON-019.mp4",
       "status": "waiting_for_external_result"
     },
@@ -1966,20 +1966,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-020",
-      "duration_seconds": 8.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-020\\ON-020_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-020",
       "duration_seconds": 8.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-020\\ON-020_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-020",
+      "duration_seconds": 8.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-020\\ON-020_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\20_ON-020.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2065,20 +2065,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "onsen_01_sample",
-      "shot_id": "ON-021",
-      "duration_seconds": 10.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-021\\ON-021_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "onsen_01_sample",
       "shot_id": "ON-021",
       "duration_seconds": 10.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\onsen_01_sample\\ON-021\\ON-021_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-021",
+      "duration_seconds": 10.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-021\\ON-021_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\21_ON-021.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2164,20 +2164,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "07-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-001\\07-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "07-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\07-001\\07-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "07-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-001\\07-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\01_07-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2263,20 +2263,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "07-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-002\\07-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "07-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\07-002\\07-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "07-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-002\\07-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\02_07-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2362,20 +2362,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "07-003",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-003\\07-003_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "07-003",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\07-003\\07-003_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "07-003",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-003\\07-003_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\03_07-003.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2461,20 +2461,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "07-004",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-004\\07-004_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "07-004",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\07-004\\07-004_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "07-004",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\07-004\\07-004_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\04_07-004.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2560,20 +2560,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-001\\08-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-001\\08-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-001\\08-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\05_08-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2659,20 +2659,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-002\\08-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-002\\08-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-002\\08-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\06_08-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2758,20 +2758,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-003",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-003\\08-003_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-003",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-003\\08-003_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-003\\08-003_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2857,20 +2857,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-004",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-004",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-004\\08-004_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
       "status": "waiting_for_external_result"
     },
@@ -2956,20 +2956,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-005",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-005\\08-005_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-005",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-005\\08-005_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-005",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-005\\08-005_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\09_08-005.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3055,20 +3055,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-006",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-006\\08-006_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-006",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-006\\08-006_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-006",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-006\\08-006_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\10_08-006.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3154,20 +3154,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-007",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-007\\08-007_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-007",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-007\\08-007_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-007",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-007\\08-007_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\11_08-007.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3253,20 +3253,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-008",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-008\\08-008_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-008",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-008\\08-008_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-008",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-008\\08-008_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\12_08-008.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3352,20 +3352,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "08-009",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-009\\08-009_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "08-009",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\08-009\\08-009_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-009",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-009\\08-009_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\13_08-009.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3451,20 +3451,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "09-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\09-001\\09-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "09-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\09-001\\09-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "09-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\09-001\\09-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\14_09-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3550,20 +3550,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "09-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\09-002\\09-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "09-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\09-002\\09-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "09-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\09-002\\09-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\15_09-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3649,20 +3649,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "10-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\10-001\\10-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "10-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\10-001\\10-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "10-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\10-001\\10-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\16_10-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3748,20 +3748,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "10-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\10-002\\10-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "10-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\10-002\\10-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "10-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\10-002\\10-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\17_10-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3847,20 +3847,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "11-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-001\\11-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "11-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\11-001\\11-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "11-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-001\\11-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\18_11-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -3946,20 +3946,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "11-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-002\\11-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "11-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\11-002\\11-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "11-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-002\\11-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\19_11-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4045,20 +4045,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "11-003",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-003\\11-003_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "11-003",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\11-003\\11-003_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "11-003",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-003\\11-003_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\20_11-003.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4144,20 +4144,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "11-004",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-004\\11-004_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "11-004",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\11-004\\11-004_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-004\\11-004_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4243,20 +4243,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "11-005",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-005\\11-005_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "11-005",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\11-005\\11-005_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "11-005",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\11-005\\11-005_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\22_11-005.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4342,20 +4342,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "12-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\12-001\\12-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "12-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\12-001\\12-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "12-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\12-001\\12-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\23_12-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4441,20 +4441,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "12-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\12-002\\12-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "12-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\12-002\\12-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\12-002\\12-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4540,20 +4540,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "12-003",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\12-003\\12-003_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "12-003",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\12-003\\12-003_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "12-003",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\12-003\\12-003_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\25_12-003.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4639,20 +4639,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "13-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\13-001\\13-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "13-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\13-001\\13-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "13-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\13-001\\13-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\26_13-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4738,20 +4738,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "13-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\13-002\\13-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "13-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\13-002\\13-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "13-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\13-002\\13-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\27_13-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4837,20 +4837,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "14-001",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-001\\14-001_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "14-001",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\14-001\\14-001_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "14-001",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-001\\14-001_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\28_14-001.mp4",
       "status": "waiting_for_external_result"
     },
@@ -4936,20 +4936,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "14-002",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-002\\14-002_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "14-002",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\14-002\\14-002_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "14-002",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-002\\14-002_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\29_14-002.mp4",
       "status": "waiting_for_external_result"
     },
@@ -5035,20 +5035,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "14-003",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-003\\14-003_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "14-003",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\14-003\\14-003_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "14-003",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-003\\14-003_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\30_14-003.mp4",
       "status": "waiting_for_external_result"
     },
@@ -5134,20 +5134,20 @@
       "status": "waiting_for_external_result"
     },
     {
-      "provider": "remotion",
-      "segment": "act2_01_sample",
-      "shot_id": "14-004",
-      "duration_seconds": 2.0,
-      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-004\\14-004_remotion.mp4",
-      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
-      "status": "waiting_for_external_result"
-    },
-    {
       "provider": "hyperframes",
       "segment": "act2_01_sample",
       "shot_id": "14-004",
       "duration_seconds": 2.0,
       "expected_path": "anime_project\\pipeline\\external_results\\inbox\\hyperframes\\act2_01_sample\\14-004\\14-004_hyperframes.mp4",
+      "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
+      "status": "waiting_for_external_result"
+    },
+    {
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "14-004",
+      "duration_seconds": 2.0,
+      "expected_path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\14-004\\14-004_remotion.mp4",
       "current_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\31_14-004.mp4",
       "status": "waiting_for_external_result"
     },

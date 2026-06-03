@@ -31,6 +31,9 @@ MANIFEST_DIR = EXTERNAL / "manifests"
 REVIEW_DIR = PIPE / "external_reviews"
 SEGMENT_DIR = ANIME / "episode_segments"
 SIM_MANIFEST = MANIFEST_DIR / "simulated_hq_provider_returns.json"
+HUB_SIM_MANIFEST = PIPE / "provider_returns" / "current_demo_hq_v01" / "hq_provider_return_sim_manifest.json"
+HUB_SIM_REPORT = PIPE / "provider_returns" / "current_demo_hq_v01" / "hq_provider_return_sim_report.md"
+LAUNCH_MANIFEST = PIPE / "provider_launch" / "current_demo_hq_v01" / "high_quality_provider_launch_manifest.json"
 VALIDATED_MANIFEST = MANIFEST_DIR / "validated_external_results.json"
 REVIEW_MANIFEST = REVIEW_DIR / "approved_external_results.json"
 REVIEW_REPORT = REVIEW_DIR / "external_result_review.md"
@@ -60,22 +63,24 @@ def rel_win(path: Path) -> str:
 
 
 def stage_058() -> None:
-    run("hq_provider_return_sim_agent.py", "--quiet")
+    run("hq_provider_return_sim_agent.py", "--task-id", "TASK-058", "--quiet")
     m = load_json(SIM_MANIFEST)
+    expected = int(load_json(LAUNCH_MANIFEST).get("selected_shot_count", 0) or 0)
     if m.get("external_api_called") is not False:
         raise GateError("TASK-058: external_api_called must be false")
     if m.get("mode") != "simulated_provider_return_no_external_api_call":
         raise GateError("TASK-058: mode flag mismatch")
-    if m.get("return_count", 0) < 2:
-        raise GateError("TASK-058: expected >= 2 simulated returns")
+    if expected and m.get("return_count", 0) != expected:
+        raise GateError(f"TASK-058: return_count={m.get('return_count')} expected={expected}")
     print(f"[058] OK return_count={m.get('return_count')}")
 
 
 def stage_059() -> None:
     run("external_result_ingest_agent.py", "--mode", "scan", "--quiet")
     m = load_json(VALIDATED_MANIFEST)
-    if m.get("accepted_count", 0) < 2:
-        raise GateError(f"TASK-059: accepted_count={m.get('accepted_count')} (<2)")
+    expected = int(load_json(LAUNCH_MANIFEST).get("selected_shot_count", 0) or 0)
+    if m.get("accepted_count", 0) < expected:
+        raise GateError(f"TASK-059: accepted_count={m.get('accepted_count')} (<{expected})")
     if m.get("rejected_count", 0) != 0:
         raise GateError(f"TASK-059: rejected_count={m.get('rejected_count')} (!=0)")
     if m.get("unknown_count", 0) != 0:
@@ -86,10 +91,11 @@ def stage_059() -> None:
 def stage_060() -> None:
     run("external_result_review_agent.py", "--task-id", "TASK-060", "--quiet")
     m = load_json(REVIEW_MANIFEST)
-    if m.get("reviewed_count", 0) < 2:
-        raise GateError(f"TASK-060: reviewed_count={m.get('reviewed_count')} (<2)")
-    if m.get("approved_count", 0) < 2:
-        raise GateError(f"TASK-060: approved_count={m.get('approved_count')} (<2)")
+    expected = int(load_json(LAUNCH_MANIFEST).get("selected_shot_count", 0) or 0)
+    if m.get("reviewed_count", 0) < expected:
+        raise GateError(f"TASK-060: reviewed_count={m.get('reviewed_count')} (<{expected})")
+    if m.get("approved_count", 0) < expected:
+        raise GateError(f"TASK-060: approved_count={m.get('approved_count')} (<{expected})")
     if m.get("returned_count", 0) != 0:
         raise GateError(f"TASK-060: returned_count={m.get('returned_count')} (!=0)")
     print(f"[060] OK reviewed={m.get('reviewed_count')} approved={m.get('approved_count')} returned=0")
@@ -111,11 +117,11 @@ def update_agent_tasks() -> None:
     defs = [
         {
             "id": "TASK-058", "agent": "HQProviderReturnSimAgent",
-            "title": "Simulate HQ provider returns for ON-008 and 08-004",
-            "prompt": "Generate simulated HQ provider-return MP4s (kling_i2v/runway) into the external_results inbox. No external API call.",
+            "title": "Simulate HQ provider returns for current-demo launch rows",
+            "prompt": "Generate simulated HQ provider-return MP4s for all current-demo launch rows into the external_results inbox. No external API call.",
             "status": "Approved", "review": "Approved",
-            "manifest_file": rel_win(SIM_MANIFEST), "output_file": "",
-            "output": "Simulated provider returns generated into external_results inbox.",
+            "manifest_file": rel_win(HUB_SIM_MANIFEST), "output_file": rel_win(HUB_SIM_REPORT),
+            "output": "Simulated provider returns generated for current-demo launch rows into external_results inbox.",
             "review_note": "HQ provider return simulation completed; no external API call.",
         },
         {

@@ -13,10 +13,12 @@ import subprocess
 from pathlib import Path, PureWindowsPath
 
 
-# --- Single source of truth: target shots for the replacement chain --------
+# Fallback target shots used only when no reviewed external results exist.
+# TASK-058 itself uses provider_launch/current_demo_hq_v01 launch_rows as the
+# source of truth so it stays aligned with the current operator handoff package.
 TARGET_SHOTS: list[dict] = [
     {"segment": "onsen_01_sample", "shot_id": "ON-008", "provider": "kling_i2v"},
-    {"segment": "act2_01_sample", "shot_id": "08-004", "provider": "runway"},
+    {"segment": "act2_01_sample", "shot_id": "08-004", "provider": "kling_i2v"},
 ]
 
 # Segments that participate in the simulated provider-return chain.
