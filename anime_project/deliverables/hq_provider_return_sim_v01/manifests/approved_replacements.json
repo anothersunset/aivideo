@@ -1,0 +1,123 @@
+{
+  "task_id": "TASK-061",
+  "stage": "replacement_review",
+  "approved_count": 5,
+  "replacements": [
+    {
+      "task_id": "TASK-061",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "provider": "kling_i2v",
+      "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\07_08-003.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/kling_i2v/act2_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    },
+    {
+      "task_id": "TASK-061",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "provider": "kling_i2v",
+      "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\08_08-004.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/kling_i2v/act2_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    },
+    {
+      "task_id": "TASK-061",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "provider": "kling_i2v",
+      "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\21_11-004.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/kling_i2v/act2_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    },
+    {
+      "task_id": "TASK-061",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "provider": "pika",
+      "source_local_output": "anime_project\\episode_segments\\act2_01_sample\\shots\\24_12-002.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/pika/act2_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\pika\\act2_01_sample\\12-002\\12-002_pika_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    },
+    {
+      "task_id": "TASK-061",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "provider": "kling_i2v",
+      "source_local_output": "anime_project\\episode_segments\\onsen_01_sample\\shots\\08_ON-008.mp4",
+      "candidate_video": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "duration_seconds": 8.0,
+      "expected_duration_seconds": 8.0,
+      "request_packet_source": "anime_project/pipeline/provider_runs/kling_i2v/onsen_01_sample",
+      "validated_result_source": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+      "review_manifest_source": "anime_project\\pipeline\\external_reviews\\approved_external_results.json",
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v_mid.png",
+      "status": "approved_for_manifest_replacement",
+      "notes": "Approved external review result promoted to replacement candidate.",
+      "approved": true,
+      "review_notes": [
+        "duration preserved",
+        "provider route traceable",
+        "risk rules remain controlled by original shot job",
+        "candidate can replace local fallback for re-edit test"
+      ]
+    }
+  ],
+  "report": "anime_project\\pipeline\\replacements\\replacement_review.md"
+}

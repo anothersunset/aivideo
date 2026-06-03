@@ -10,6 +10,7 @@ It is packaged as a handoff bundle for another AI workspace or Notion AI: the re
 - Current demo MP4: `anime_project/deliverables/current_demo/video/kage_current_demo.mp4`
 - Reviewed local-polish master: `anime_project/episode_segments/master_preview/final/kage_preview_with_local_polish.mp4`
 - HQ provider handoff zip: `anime_project/deliverables/current_demo_hq_provider_handoff_v01.zip`
+- HQ provider return simulation package: `anime_project/deliverables/hq_provider_return_sim_v01.zip`
 - Hub entrypoint: `kage_studio_hub/server.py`
 - Hub task record: `kage_studio_hub/data/agent_tasks.json`
 
@@ -30,14 +31,14 @@ The intended production model is multi-video assembly: each shot or segment can 
 
 The video generation/replacement pipeline was paused before executing the newly queued HQ provider return simulation tasks. The repo includes the code and task records created up to that pause point, but no real external provider submission has been made.
 
-Pending task chain at pause:
+The previously pending TASK-058..061 simulation chain has now been run and packaged:
 
 - `TASK-058` `HQProviderReturnSimAgent`
 - `TASK-059` `ExternalResultIngestAgent`
 - `TASK-060` `ExternalResultReviewAgent`
 - `TASK-061` `ShotReplacementAgent`
 
-These are intended to rehearse high-quality provider return ingest/review/replacement using simulated MP4 returns, explicitly marked as `simulated_provider_return_no_external_api_call`.
+These rehearse high-quality provider return ingest/review/replacement using simulated MP4 returns, explicitly marked as `simulated_provider_return_no_external_api_call`. The rebuilt replacement master remains `needs_director_review`.
 
 ## Notion AI Handoff Notes
 
@@ -48,6 +49,7 @@ Use this repository as the source of truth for the project state. Start with:
 - `anime_project/EXTERNAL_VIDEO_PIPELINE_RUNBOOK.md` for provider ingest/review/replacement workflow.
 - `kage_studio_hub/data/agent_tasks.json` for approved, queued, and paused tasks.
 - `anime_project/deliverables/current_demo/current_demo_manifest.json` for current demo artifacts.
+- `anime_project/deliverables/hq_provider_return_sim_v01/README_HQ_PROVIDER_RETURN_SIM_V01.md` for the simulated HQ return chain package.
 
 ## Future Provider Integration
 

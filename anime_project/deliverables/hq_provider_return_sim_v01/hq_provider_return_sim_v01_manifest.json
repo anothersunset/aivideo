@@ -1,0 +1,32 @@
+{
+  "package_id": "hq_provider_return_sim_v01",
+  "stage": "hq_provider_return_simulation_handoff",
+  "mode": "simulated_provider_return_no_external_api_call",
+  "external_api_called": false,
+  "decision": "packaged_for_notion_ai_and_downstream_agent_review",
+  "master_status": "needs_director_review",
+  "summary": {
+    "simulated_return_count": 5,
+    "simulated_return_accepted_count": 5,
+    "ingest_accepted_count": 7,
+    "ingest_rejected_count": 0,
+    "review_approved_count": 7,
+    "review_returned_count": 0,
+    "providers": {
+      "kling_i2v": 4,
+      "pika": 1
+    }
+  },
+  "artifacts": {
+    "readme": "anime_project\\deliverables\\hq_provider_return_sim_v01\\README_HQ_PROVIDER_RETURN_SIM_V01.md",
+    "master_video": "anime_project\\deliverables\\hq_provider_return_sim_v01\\video\\kage_preview_with_hq_sim_replacements.mp4",
+    "hub_manifest": "anime_project\\deliverables\\hq_provider_return_sim_v01\\manifests\\hq_provider_return_sim_manifest.json",
+    "chain_manifest": "anime_project\\deliverables\\hq_provider_return_sim_v01\\manifests\\simulated_hq_provider_returns.json",
+    "validated_results": "anime_project\\deliverables\\hq_provider_return_sim_v01\\manifests\\validated_external_results.json",
+    "approved_results": "anime_project\\deliverables\\hq_provider_return_sim_v01\\manifests\\approved_external_results.json",
+    "master_manifest": "anime_project\\deliverables\\hq_provider_return_sim_v01\\manifests\\master_manifest_with_hq_sim_replacements.json",
+    "contact_sheet": "anime_project\\deliverables\\hq_provider_return_sim_v01\\review_frames\\hq_provider_return_sim_contact_sheet.png"
+  },
+  "next_step": "Director/producer review should decide whether the simulated replacement master is useful as a rehearsal artifact. Real external provider outputs should use the same inbox/review/replacement flow before promotion."
+}
+

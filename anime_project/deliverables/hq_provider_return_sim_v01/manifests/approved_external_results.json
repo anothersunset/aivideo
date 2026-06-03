@@ -1,0 +1,455 @@
+{
+  "task_id": "TASK-060",
+  "stage": "external_result_review",
+  "source_manifest": "anime_project\\pipeline\\external_results\\manifests\\validated_external_results.json",
+  "reviewed_count": 7,
+  "approved_count": 7,
+  "returned_count": 0,
+  "reviews": [
+    {
+      "task_id": "TASK-060",
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
+      "duration_seconds": 8.0,
+      "expected_duration_seconds": 8.0,
+      "frame_count": 192,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\act2_01_sample\\08-004\\08-004_remotion_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "pika",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\pika\\act2_01_sample\\12-002\\12-002_pika_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability.",
+        "Child-harm-adjacent shots must use props, hands, and silence instead of pain-process depiction."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "duration_seconds": 8.0,
+      "expected_duration_seconds": 8.0,
+      "frame_count": 192,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability.",
+        "08-003 must not show face or pain expression."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability.",
+        "11-004 parasite count limit: 8."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    }
+  ],
+  "approved_results": [
+    {
+      "task_id": "TASK-060",
+      "provider": "remotion",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion.mp4",
+      "duration_seconds": 8.0,
+      "expected_duration_seconds": 8.0,
+      "frame_count": 192,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\onsen_01_sample\\ON-008\\ON-008_remotion_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "remotion",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\remotion\\act2_01_sample\\08-004\\08-004_remotion.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\remotion\\act2_01_sample\\08-004\\08-004_remotion_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "pika",
+      "segment": "act2_01_sample",
+      "shot_id": "12-002",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\pika\\act2_01_sample\\12-002\\12-002_pika.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\pika\\act2_01_sample\\12-002\\12-002_pika_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability.",
+        "Child-harm-adjacent shots must use props, hands, and silence instead of pain-process depiction."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "onsen_01_sample",
+      "shot_id": "ON-008",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v.mp4",
+      "duration_seconds": 8.0,
+      "expected_duration_seconds": 8.0,
+      "frame_count": 192,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\onsen_01_sample\\ON-008\\ON-008_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-003",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\08-003\\08-003_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability.",
+        "08-003 must not show face or pain expression."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "08-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\08-004\\08-004_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    },
+    {
+      "task_id": "TASK-060",
+      "provider": "kling_i2v",
+      "segment": "act2_01_sample",
+      "shot_id": "11-004",
+      "path": "anime_project\\pipeline\\external_results\\inbox\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v.mp4",
+      "duration_seconds": 2.0,
+      "expected_duration_seconds": 2.0,
+      "frame_count": 48,
+      "review_frame": "anime_project\\pipeline\\external_reviews\\frames\\kling_i2v\\act2_01_sample\\11-004\\11-004_kling_i2v_mid.png",
+      "risk_rules": [
+        "Maintain original project identity; do not copy protected compositions or character designs.",
+        "Keep violence readable but restrained for international cut options.",
+        "Returned video must preserve duration, resolution, and provider traceability.",
+        "11-004 parasite count limit: 8."
+      ],
+      "technical_checks": {
+        "has_video": true,
+        "resolution_1920x1080": true,
+        "fps_24": true,
+        "duration_close": true,
+        "non_empty": true
+      },
+      "approved": true,
+      "status": "approved_for_replacement",
+      "review_notes": [
+        "technical checks passed",
+        "provider route traceable",
+        "mid-frame extracted for director review",
+        "risk rules attached for final human review"
+      ]
+    }
+  ],
+  "returned_results": [],
+  "report": "anime_project\\pipeline\\external_reviews\\external_result_review.md",
+  "next_step": "ShotReplacementAgent can promote approved_results into replacement manifests."
+}

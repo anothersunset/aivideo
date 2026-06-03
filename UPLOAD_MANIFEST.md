@@ -35,6 +35,6 @@ Git LFS tracks media and delivery artifacts:
 
 ## Current Pipeline Status
 
-The active video-generation work is intentionally paused for upload. Newly queued HQ provider simulation/review/replacement tasks are present but should not be executed as part of this upload. No paid or external provider call has been made.
+The HQ provider simulation/review/replacement rehearsal has been executed and packaged as `anime_project/deliverables/hq_provider_return_sim_v01.zip`. No paid or external provider call has been made, and the rebuilt replacement master remains `needs_director_review`.
 
 This upload is intended to let Notion AI or another downstream agent accept the work from the current state without needing hidden local context.
