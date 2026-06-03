@@ -157,6 +157,7 @@ AGENTS = [
     ["ExternalSubmitGateAgent", "Blocks external submits until credentials, producer approval, and cost caps are configured.", "MVP"],
     ["ExternalProviderSubmitAgent", "Submits only providers that pass the gate and records pending external jobs.", "MVP"],
     ["ExternalProviderPollAgent", "Polls/downloads submitted provider jobs when external polling is configured.", "MVP"],
+    ["MCPVideoGatewayAgent", "Prepares or executes MCP video-model dispatch payloads for approved provider queues.", "MVP"],
     ["ExternalResultReviewAgent", "Reviews accepted external MP4s before replacement edit approval.", "MVP"],
     ["ShotReplacementAgent", "Tests external-shot replacement, review, manifest backfill, and re-edit workflow.", "MVP"],
     ["MasterAcceptanceAgent", "Aggregates master video, segment, replacement, review, and submit-gate acceptance evidence.", "MVP"],
@@ -435,6 +436,26 @@ def summarize_provider_poll_runs() -> dict:
         "downloaded_count": poll.get("downloaded_count", 0),
         "poll_results": poll.get("poll_results", []),
         "next_step": poll.get("next_step", ""),
+    }
+
+
+def summarize_mcp_video_gateway() -> dict:
+    manifest_path = ANIME_PROJECT / "pipeline" / "mcp_video_gateway" / "mcp_video_gateway_manifest.json"
+    manifest = read_json(manifest_path, {})
+    return {
+        "manifest": str(manifest_path.relative_to(WORKSPACE)) if manifest_path.exists() else "",
+        "stage": manifest.get("stage", ""),
+        "mode": manifest.get("mode", ""),
+        "provider_count": manifest.get("provider_count", 0),
+        "dispatch_count": manifest.get("dispatch_count", 0),
+        "submitted_count": manifest.get("submitted_count", 0),
+        "prepared_count": manifest.get("prepared_count", 0),
+        "blocked_count": manifest.get("blocked_count", 0),
+        "failed_count": manifest.get("failed_count", 0),
+        "dispatch_queue": manifest.get("dispatch_queue", ""),
+        "report": manifest.get("report", ""),
+        "providers": manifest.get("providers", []),
+        "next_step": manifest.get("next_step", ""),
     }
 
 
@@ -763,6 +784,7 @@ def pipeline_status() -> dict:
         "submit_gate": summarize_submit_gate(),
         "provider_submit": summarize_provider_submit_runs(),
         "provider_poll": summarize_provider_poll_runs(),
+        "mcp_video_gateway": summarize_mcp_video_gateway(),
         "external_results": summarize_external_results(),
         "external_reviews": summarize_external_reviews(),
         "replacements": summarize_replacements(),
@@ -2536,6 +2558,30 @@ def simulate_agent_output(task: dict) -> str:
         return (
             f"HQProviderReturnSimAgent generated {manifest['generated_count']} simulated provider MP4 returns; "
             f"{manifest['accepted_count']} accepted, {manifest['rejected_count']} rejected. Report: {manifest['report']}"
+        )
+    if agent == "MCPVideoGatewayAgent":
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "mcp_video_gateway_agent.py"),
+                "--task-id",
+                task["id"],
+                "--quiet",
+            ],
+            check=True,
+            cwd=str(WORKSPACE),
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        manifest_file = result.stdout.strip()
+        manifest = json.loads((WORKSPACE / manifest_file).read_text(encoding="utf-8"))
+        task["manifest_file"] = manifest_file
+        task["output_file"] = manifest.get("report", manifest_file)
+        return (
+            f"MCPVideoGatewayAgent prepared {manifest['dispatch_count']} MCP video dispatch payloads; "
+            f"{manifest['submitted_count']} submitted, {manifest['prepared_count']} prepared, "
+            f"{manifest['blocked_count']} blocked. Report: {manifest['report']}"
         )
     if agent == "LocalPolishRenderAgent":
         result = subprocess.run(

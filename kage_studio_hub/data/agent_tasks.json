@@ -897,5 +897,20 @@
     "manifest_file": "anime_project\\episode_segments\\master_preview\\manifest_with_replacements.json",
     "review_note": "Replacement workflow completed; master preview requires director review before final release.",
     "output_file": "anime_project\\episode_segments\\master_preview\\final\\kage_preview_with_replacements.mp4"
+  },
+  {
+    "id": "TASK-062",
+    "agent": "MCPVideoGatewayAgent",
+    "title": "Prepare MCP video gateway dispatch payloads",
+    "prompt": "Read the external submit gate and provider submission queues, then prepare MCP submit_video_job payloads for mainstream video-model gateways. Do not execute paid providers unless MCP bridge execution is explicitly enabled.",
+    "status": "Completed",
+    "priority": "High",
+    "review": "Needs review",
+    "output": "MCPVideoGatewayAgent prepared 15 MCP video dispatch payloads; 0 submitted, 0 prepared, 15 blocked. Report: anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_report.md",
+    "created_at": 1780506596,
+    "updated_at": 1780506596,
+    "manifest_file": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_manifest.json",
+    "output_file": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_report.md",
+    "review_note": "MCP dispatch payloads are ready, but real provider execution remains blocked until MCP bridge, credentials, approval, and cost cap are configured."
   }
 ]

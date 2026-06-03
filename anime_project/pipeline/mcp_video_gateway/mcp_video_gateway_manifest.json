@@ -1,0 +1,63 @@
+{
+  "task_id": "TASK-062",
+  "stage": "mcp_video_gateway",
+  "mode": "prepare_only",
+  "created_at": 1780477915,
+  "submit_gate": "anime_project\\pipeline\\submit_gate\\external_submit_gate_manifest.json",
+  "dispatch_queue": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_dispatch_queue.jsonl",
+  "provider_count": 5,
+  "dispatch_count": 15,
+  "submitted_count": 0,
+  "prepared_count": 0,
+  "blocked_count": 15,
+  "failed_count": 0,
+  "providers": [
+    {
+      "provider": "kling_i2v",
+      "dispatch_count": 3,
+      "submitted_count": 0,
+      "prepared_count": 0,
+      "blocked_count": 3,
+      "provider_bridge_command_env": "KAGE_KLING_I2V_MCP_COMMAND",
+      "global_bridge_command_env": "KAGE_MCP_VIDEO_GATEWAY_COMMAND"
+    },
+    {
+      "provider": "luma",
+      "dispatch_count": 3,
+      "submitted_count": 0,
+      "prepared_count": 0,
+      "blocked_count": 3,
+      "provider_bridge_command_env": "KAGE_LUMA_MCP_COMMAND",
+      "global_bridge_command_env": "KAGE_MCP_VIDEO_GATEWAY_COMMAND"
+    },
+    {
+      "provider": "pika",
+      "dispatch_count": 3,
+      "submitted_count": 0,
+      "prepared_count": 0,
+      "blocked_count": 3,
+      "provider_bridge_command_env": "KAGE_PIKA_MCP_COMMAND",
+      "global_bridge_command_env": "KAGE_MCP_VIDEO_GATEWAY_COMMAND"
+    },
+    {
+      "provider": "runway",
+      "dispatch_count": 3,
+      "submitted_count": 0,
+      "prepared_count": 0,
+      "blocked_count": 3,
+      "provider_bridge_command_env": "KAGE_RUNWAY_MCP_COMMAND",
+      "global_bridge_command_env": "KAGE_MCP_VIDEO_GATEWAY_COMMAND"
+    },
+    {
+      "provider": "seedance_i2v",
+      "dispatch_count": 3,
+      "submitted_count": 0,
+      "prepared_count": 0,
+      "blocked_count": 3,
+      "provider_bridge_command_env": "KAGE_SEEDANCE_I2V_MCP_COMMAND",
+      "global_bridge_command_env": "KAGE_MCP_VIDEO_GATEWAY_COMMAND"
+    }
+  ],
+  "report": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_gateway_report.md",
+  "next_step": "Configure MCP bridge command plus submit gate approval/cost controls, then rerun gateway execution."
+}

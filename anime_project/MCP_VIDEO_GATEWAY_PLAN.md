@@ -18,6 +18,7 @@ The provider implementation can be HTTP API, MCP tool, local software, or manual
 - Generic HTTP submit/poll agents exist and are blocked by endpoint, token, approval, and cost cap gates.
 - Provider credential env names use `KAGE_{PROVIDER}_TOKEN` first and accept `KAGE_{PROVIDER}_API_KEY` as a legacy alias.
 - `anime_project/pipeline/external_provider_profiles.json` defines provider response parsing for job ids, statuses, and media URLs.
+- `MCPVideoGatewayAgent` prepares standard MCP `submit_video_job` payloads from the existing provider queues.
 - Current simulated HQ returns prove the ingest/review/replacement chain without calling an external model.
 
 ## MCP Gateway Shape
@@ -74,6 +75,8 @@ The current implementation already prepares the contract:
 
 - Requests: `anime_project/pipeline/adapter_runs/external_video/{provider}/submission_queue.jsonl`
 - Profiles: `anime_project/pipeline/external_provider_profiles.json`
+- MCP dispatch queue: `anime_project/pipeline/mcp_video_gateway/mcp_video_dispatch_queue.jsonl`
+- MCP gateway manifest: `anime_project/pipeline/mcp_video_gateway/mcp_video_gateway_manifest.json`
 - Submit gate: `anime_project/pipeline/submit_gate/external_submit_gate_manifest.json`
 - Returned chunks: `anime_project/pipeline/external_results/chunks/{provider}/{segment}/{shot_id}/`
 - Final returned shots: `anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/`
@@ -81,4 +84,6 @@ The current implementation already prepares the contract:
 
 ## Next Implementation Step
 
-Create `MCPVideoGatewayAgent` as a thin adapter that reads the same submission queues and calls MCP tools when a matching provider server is installed. Until that MCP server exists, the generic HTTP and manual handoff paths remain the working fallback.
+Install or implement a real MCP provider bridge that accepts one JSON payload on stdin and returns JSON on stdout. Then set either `KAGE_MCP_VIDEO_GATEWAY_COMMAND` or a provider-specific command such as `KAGE_KLING_I2V_MCP_COMMAND`, configure submit-gate credentials/approval/cost caps, and rerun `MCPVideoGatewayAgent` with `KAGE_MCP_VIDEO_GATEWAY_ENABLE_EXEC=true`.
+
+Until that MCP bridge exists, the generic HTTP and manual handoff paths remain the working fallback.
