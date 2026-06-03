@@ -99,3 +99,4 @@ http://127.0.0.1:8765/api/tasks
 GitHub Actions entrypoint:
 
 - `.github/workflows/verify-handoff.yml`
+- `https://github.com/anothersunset/aivideo/actions/workflows/verify-handoff.yml`

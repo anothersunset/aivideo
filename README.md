@@ -1,5 +1,7 @@
 # AI Video Anime Production
 
+[![Verify Notion handoff](https://github.com/anothersunset/aivideo/actions/workflows/verify-handoff.yml/badge.svg)](https://github.com/anothersunset/aivideo/actions/workflows/verify-handoff.yml)
+
 This repository is the handoff source of truth for the Kage Studio AI-anime production prototype.
 
 It contains a real, playable 2D limited-animation demo pipeline: scripts, Hub UI, manifests, rendered MP4/WAV/PNG assets, provider handoff packets, simulated provider returns, and MCP video-gateway rehearsal evidence.
@@ -76,6 +78,12 @@ python scripts\verify_notion_handoff.py
 ```
 
 The same check is also defined in `.github/workflows/verify-handoff.yml`.
+
+GitHub Actions status:
+
+```text
+https://github.com/anothersunset/aivideo/actions/workflows/verify-handoff.yml
+```
 
 ## Key Documents
 
