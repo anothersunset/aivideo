@@ -33,5 +33,11 @@ jobs:
       - name: Check frontend JavaScript
         run: node --check kage_studio_hub/app.js
 
+      - name: Install pytest
+        run: python -m pip install --upgrade pip pytest
+
+      - name: Run unit tests
+        run: python -m pytest
+
       - name: Verify GitHub/Notion handoff evidence
         run: python scripts/verify_notion_handoff.py
