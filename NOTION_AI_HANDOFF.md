@@ -84,6 +84,7 @@ These MP4 chunks are real local renders and explicitly marked as no external API
 ```powershell
 python -m py_compile kage_studio_hub\server.py kage_studio_hub\*.py
 node --check kage_studio_hub\app.js
+python scripts\verify_notion_handoff.py
 python kage_studio_hub\server.py
 ```
 
@@ -94,3 +95,7 @@ http://127.0.0.1:8765/api/status
 http://127.0.0.1:8765/api/pipeline
 http://127.0.0.1:8765/api/tasks
 ```
+
+GitHub Actions entrypoint:
+
+- `.github/workflows/verify-handoff.yml`

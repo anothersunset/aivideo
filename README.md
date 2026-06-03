@@ -67,6 +67,16 @@ Useful API endpoints:
 - `http://127.0.0.1:8765/api/pipeline`
 - `http://127.0.0.1:8765/api/tasks`
 
+## Verification
+
+Run the GitHub/Notion handoff verifier:
+
+```powershell
+python scripts\verify_notion_handoff.py
+```
+
+The same check is also defined in `.github/workflows/verify-handoff.yml`.
+
 ## Key Documents
 
 - `NOTION_AI_HANDOFF.md`
