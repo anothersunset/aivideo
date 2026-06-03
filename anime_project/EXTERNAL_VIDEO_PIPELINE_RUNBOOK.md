@@ -76,6 +76,14 @@ HTTP poll remains disabled unless:
 
 - `KAGE_EXTERNAL_VIDEO_ENABLE_HTTP_POLL=true`
 
+## Provider Profiles
+
+- Provider response parsing is configured in `anime_project/pipeline/external_provider_profiles.json`.
+- Profiles define where to find provider job ids, remote status values, and returned video URLs in submit/poll JSON responses.
+- Do not store real endpoints or tokens in profiles. Keep credentials in env vars only.
+- For a new or changed provider API, update the profile paths first, then rerun `ExternalVideoProviderAgent`, `ExternalSubmitGateAgent`, `ExternalProviderSubmitAgent`, and `ExternalProviderPollAgent`.
+- MCP-based provider tools should follow `anime_project/MCP_VIDEO_GATEWAY_PLAN.md` and write outputs to the same inbox paths.
+
 ## Current Verified Outputs
 
 - `anime_project/episode_segments/master_preview/final/kage_preview_with_replacements.mp4`

@@ -4,7 +4,7 @@
   "submission_policy": "Prepared only. Do not submit until gate checks pass.",
   "launch_rows": [
     {
-      "task_id": "TASK-HQ-LAUNCH-ENV-ALIAS",
+      "task_id": "TASK-HQ-LAUNCH-PROVIDER-PROFILES",
       "queue_id": "POLISH-001",
       "priority": "P0",
       "segment": "onsen_01_sample",
@@ -66,7 +66,7 @@
       "status": "launch_ready_blocked_by_submit_gate"
     },
     {
-      "task_id": "TASK-HQ-LAUNCH-ENV-ALIAS",
+      "task_id": "TASK-HQ-LAUNCH-PROVIDER-PROFILES",
       "queue_id": "POLISH-002",
       "priority": "P1",
       "segment": "act2_01_sample",
@@ -133,7 +133,7 @@
       "status": "launch_ready_blocked_by_submit_gate"
     },
     {
-      "task_id": "TASK-HQ-LAUNCH-ENV-ALIAS",
+      "task_id": "TASK-HQ-LAUNCH-PROVIDER-PROFILES",
       "queue_id": "POLISH-003",
       "priority": "P0",
       "segment": "act2_01_sample",
@@ -195,7 +195,7 @@
       "status": "launch_ready_blocked_by_submit_gate"
     },
     {
-      "task_id": "TASK-HQ-LAUNCH-ENV-ALIAS",
+      "task_id": "TASK-HQ-LAUNCH-PROVIDER-PROFILES",
       "queue_id": "POLISH-004",
       "priority": "P1",
       "segment": "act2_01_sample",

@@ -50,6 +50,7 @@ Use this repository as the source of truth for the project state. Start with:
 - `kage_studio_hub/data/agent_tasks.json` for approved, queued, and paused tasks.
 - `anime_project/deliverables/current_demo/current_demo_manifest.json` for current demo artifacts.
 - `anime_project/deliverables/hq_provider_return_sim_v01/README_HQ_PROVIDER_RETURN_SIM_V01.md` for the simulated HQ return chain package.
+- `anime_project/MCP_VIDEO_GATEWAY_PLAN.md` for the MCP-based provider gateway plan.
 
 ## Future Provider Integration
 
@@ -62,3 +63,5 @@ The repo is structured so that real providers can replace local simulation stage
 - Local/open-source fallbacks such as Remotion, ComfyUI/SVD, AnimateDiff, or Hyperframes-like code-video pipelines
 
 The invariant is that provider outputs must return as traceable MP4 files under `anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/`, then pass ingest, review, and replacement before becoming part of the demo.
+
+The real-provider adapter layer now uses `anime_project/pipeline/external_provider_profiles.json` for response parsing, so job-id/status/media-url extraction can be adjusted per provider without storing secrets or rewriting the whole pipeline. `anime_project/MCP_VIDEO_GATEWAY_PLAN.md` defines the future MCP gateway path for mainstream video/image models and local render tools.

@@ -10,6 +10,7 @@
     "download_target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/",
     "post_download_gate": "ExternalResultIngestAgent validates 1920x1080, 24fps, duration, non-empty MP4."
   },
+  "provider_profiles": "anime_project\\pipeline\\external_provider_profiles.json",
   "providers": {
     "kling_i2v": {
       "display_name": "Kling image-to-video",

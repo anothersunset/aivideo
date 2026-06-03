@@ -4,7 +4,7 @@
   "submission_policy": "Prepared only. Do not submit until gate checks pass.",
   "launch_rows": [
     {
-      "task_id": "TASK-HQ-LAUNCH-ENV-ALIAS",
+      "task_id": "TASK-HQ-LAUNCH-PROVIDER-PROFILES",
       "queue_id": "POLISH-005",
       "priority": "P1",
       "segment": "act2_01_sample",

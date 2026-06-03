@@ -6,6 +6,11 @@ import time
 from pathlib import Path
 
 try:
+    from .provider_profile import PROFILES_PATH, write_default_profiles
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_profile import PROFILES_PATH, write_default_profiles
+
+try:
     from .provider_env import readiness_for_env, token_env_candidates
 except ImportError:  # pragma: no cover - supports direct script execution.
     from provider_env import readiness_for_env, token_env_candidates
@@ -128,6 +133,7 @@ def build_submission_item(provider: str, packet_path: Path, chunk: dict) -> dict
 
 
 def write_config_example() -> str:
+    write_default_profiles(PROFILES_PATH)
     example = {
         "purpose": "Fill these values through environment variables before enabling external submit.",
         "safety_policy": {
@@ -135,6 +141,7 @@ def write_config_example() -> str:
             "download_target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/",
             "post_download_gate": "ExternalResultIngestAgent validates 1920x1080, 24fps, duration, non-empty MP4.",
         },
+        "provider_profiles": rel(PROFILES_PATH),
         "providers": PROVIDER_CONFIG,
         "token_aliases": {
             provider: token_env_candidates(provider)

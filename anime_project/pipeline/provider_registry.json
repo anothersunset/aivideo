@@ -7,6 +7,7 @@
     "audio_codec": "aac",
     "mastering": "segment manifests -> master preview manifest"
   },
+  "external_provider_profiles": "anime_project\\pipeline\\external_provider_profiles.json",
   "providers": {
     "local_2d_fallback": {
       "role": [

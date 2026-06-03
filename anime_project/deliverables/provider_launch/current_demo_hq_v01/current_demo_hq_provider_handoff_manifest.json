@@ -1,5 +1,5 @@
 {
-  "task_id": "TASK-HQ-PROVIDER-HANDOFF-ENV-ALIAS",
+  "task_id": "TASK-HQ-HANDOFF-PROVIDER-PROFILES",
   "stage": "hq_provider_handoff_package",
   "decision": "current_demo_hq_provider_handoff_packaged",
   "submit_status": "not_submitted_blocked_by_submit_gate",
@@ -35,14 +35,14 @@
       "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_manifest.json",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\manifests\\high_quality_provider_launch_manifest.json",
       "exists": true,
-      "bytes": 16463
+      "bytes": 16511
     },
     {
       "role": "launch_report",
       "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\high_quality_provider_launch_report.md",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\reports\\high_quality_provider_launch_report.md",
       "exists": true,
-      "bytes": 1710
+      "bytes": 1718
     },
     {
       "role": "provider_config_template",
@@ -63,7 +63,7 @@
       "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\selected_provider_launch_rows.jsonl",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\manifests\\selected_provider_launch_rows.jsonl",
       "exists": true,
-      "bytes": 11502
+      "bytes": 11542
     },
     {
       "role": "current_demo_manifest",
@@ -84,14 +84,14 @@
       "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\kling_i2v_launch_packet.json",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\providers\\kling_i2v_launch_packet.json",
       "exists": true,
-      "bytes": 11614
+      "bytes": 11646
     },
     {
       "role": "provider_packet:pika",
       "source": "anime_project\\pipeline\\provider_launch\\current_demo_hq_v01\\providers\\pika_launch_packet.json",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\providers\\pika_launch_packet.json",
       "exists": true,
-      "bytes": 3034
+      "bytes": 3042
     },
     {
       "role": "keyframe:POLISH-001",
@@ -133,21 +133,21 @@
       "source": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\README_CURRENT_DEMO_HQ_PROVIDER_HANDOFF.md",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\README_CURRENT_DEMO_HQ_PROVIDER_HANDOFF.md",
       "exists": true,
-      "bytes": 2981
+      "bytes": 2980
     },
     {
       "role": "handoff_manifest",
       "source": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo_hq_provider_handoff_manifest.json",
       "package_path": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\current_demo_hq_provider_handoff_manifest.json",
       "exists": true,
-      "bytes": 6941
+      "bytes": 6940
     }
   ],
   "readme": "anime_project\\deliverables\\provider_launch\\current_demo_hq_v01\\README_CURRENT_DEMO_HQ_PROVIDER_HANDOFF.md",
   "zip": {
     "path": "anime_project\\deliverables\\current_demo_hq_provider_handoff_v01.zip",
     "exists": true,
-    "bytes": 1622287,
+    "bytes": 1622302,
     "entry_count": 16
   },
   "next_step": "Configure provider credentials and cost cap, rerun ExternalSubmitGateAgent, then submit only the approved provider rows."

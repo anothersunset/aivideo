@@ -8,6 +8,23 @@ import urllib.request
 from pathlib import Path
 
 try:
+    from .provider_profile import (
+        extract_media_url,
+        extract_provider_job_id as extract_profile_provider_job_id,
+        extract_remote_status,
+        provider_profile,
+        success_statuses,
+    )
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_profile import (
+        extract_media_url,
+        extract_provider_job_id as extract_profile_provider_job_id,
+        extract_remote_status,
+        provider_profile,
+        success_statuses,
+    )
+
+try:
     from .provider_env import poll_endpoint_env, token_env, token_env_candidates, token_value
 except ImportError:  # pragma: no cover - supports direct script execution.
     from provider_env import poll_endpoint_env, token_env, token_env_candidates, token_value
@@ -38,10 +55,8 @@ def write_json(path: Path, payload: dict | list) -> None:
 
 def extract_provider_job_id(item: dict) -> str:
     response = item.get("provider_response", {}).get("response", {})
-    for key in ["job_id", "id", "task_id", "generation_id"]:
-        if isinstance(response, dict) and response.get(key):
-            return str(response[key])
-    return ""
+    provider = item.get("provider", "")
+    return extract_profile_provider_job_id(provider, response) if isinstance(response, dict) else ""
 
 
 def http_json_get(url: str, token: str, provider: str) -> dict:
@@ -99,10 +114,16 @@ def poll_submitted_item(item: dict, http_enabled: bool) -> dict:
     url = f"{poll_endpoint}{separator}id={provider_job_id}"
     result = http_json_get(url, token, provider)
     response = result.get("response", {})
-    media_url = response.get("video_url") if isinstance(response, dict) else ""
-    remote_status = response.get("status") if isinstance(response, dict) else ""
-    if media_url and str(remote_status).lower() in {"succeeded", "complete", "completed", "done", "success"}:
-        return {**base, "status": "ready_for_download", "poll_result": result, "media_url": media_url}
+    media_url = extract_media_url(provider, response) if isinstance(response, dict) else ""
+    remote_status = extract_remote_status(provider, response) if isinstance(response, dict) else ""
+    if media_url and str(remote_status).lower() in success_statuses(provider):
+        return {
+            **base,
+            "status": "ready_for_download",
+            "poll_result": result,
+            "media_url": media_url,
+            "provider_profile": provider_profile(provider).get("schema_version", ""),
+        }
     return {**base, "status": "poll_pending", "poll_result": result, "remote_status": remote_status}
 
 

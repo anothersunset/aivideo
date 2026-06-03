@@ -4,7 +4,7 @@
   "provider": "seedance_i2v",
   "selected_only": true,
   "status": "waiting_for_provider_credentials",
-  "created_at": 1780476898,
+  "created_at": 1780477472,
   "readiness": {
     "provider": "seedance_i2v",
     "display_name": "Seedance image-to-video",

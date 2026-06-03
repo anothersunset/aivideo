@@ -1,6 +1,6 @@
 # External Video Submit Approval Request
 
-Task: TASK-SUBMIT-GATE-ENV-ALIAS-VERIFY
+Task: TASK-SUBMIT-GATE-PROVIDER-PROFILES
 
 No external request is submitted by this gate. A provider is allowed only when endpoint, token, approval, and cost cap are all present.
 

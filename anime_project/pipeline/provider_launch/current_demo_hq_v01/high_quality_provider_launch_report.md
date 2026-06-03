@@ -1,6 +1,6 @@
 # High Quality Provider Launch Package
 
-Task: TASK-HQ-LAUNCH-ENV-ALIAS
+Task: TASK-HQ-LAUNCH-PROVIDER-PROFILES
 Decision: current_demo_hq_launch_ready_blocked_by_submit_gate
 Current demo: producer_demo_v02
 Selected shots: 5

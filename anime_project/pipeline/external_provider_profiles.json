@@ -1,0 +1,322 @@
+{
+  "schema_version": "kage_external_provider_profiles_v1",
+  "purpose": "Configurable response parsing for real video provider submit/poll adapters.",
+  "secret_policy": "Do not store endpoints or tokens here; use environment variables only.",
+  "providers": {
+    "kling_i2v": {
+      "schema_version": "kage_external_provider_profile_v1",
+      "auth": "bearer_token_header",
+      "submit": {
+        "method": "POST",
+        "payload_mode": "kage_standard_i2v_json",
+        "response_job_id_paths": [
+          "job_id",
+          "id",
+          "task_id",
+          "generation_id",
+          "data.job_id",
+          "data.id",
+          "data.task_id",
+          "data.generation_id",
+          "result.job_id",
+          "result.id"
+        ]
+      },
+      "poll": {
+        "method": "GET",
+        "query_param": "id",
+        "response_status_paths": [
+          "status",
+          "state",
+          "data.status",
+          "data.state",
+          "result.status",
+          "result.state",
+          "task.status"
+        ],
+        "response_media_url_paths": [
+          "video_url",
+          "media_url",
+          "output_url",
+          "data.video_url",
+          "data.media_url",
+          "data.output_url",
+          "data.result.video_url",
+          "data.result.media_url",
+          "result.video_url",
+          "result.media_url",
+          "output.video_url",
+          "output.media_url",
+          "outputs.0.video_url",
+          "outputs.0.url"
+        ],
+        "success_statuses": [
+          "succeeded",
+          "complete",
+          "completed",
+          "done",
+          "success",
+          "finished"
+        ]
+      },
+      "download": {
+        "mode": "operator_or_adapter_download_to_inbox",
+        "target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/"
+      },
+      "display_name": "Kling image-to-video",
+      "notes": "Configure with the current Kling/Kuaishou API or manual portal response shape."
+    },
+    "seedance_i2v": {
+      "schema_version": "kage_external_provider_profile_v1",
+      "auth": "bearer_token_header",
+      "submit": {
+        "method": "POST",
+        "payload_mode": "kage_standard_i2v_json",
+        "response_job_id_paths": [
+          "job_id",
+          "id",
+          "task_id",
+          "generation_id",
+          "data.job_id",
+          "data.id",
+          "data.task_id",
+          "data.generation_id",
+          "result.job_id",
+          "result.id"
+        ]
+      },
+      "poll": {
+        "method": "GET",
+        "query_param": "id",
+        "response_status_paths": [
+          "status",
+          "state",
+          "data.status",
+          "data.state",
+          "result.status",
+          "result.state",
+          "task.status"
+        ],
+        "response_media_url_paths": [
+          "video_url",
+          "media_url",
+          "output_url",
+          "data.video_url",
+          "data.media_url",
+          "data.output_url",
+          "data.result.video_url",
+          "data.result.media_url",
+          "result.video_url",
+          "result.media_url",
+          "output.video_url",
+          "output.media_url",
+          "outputs.0.video_url",
+          "outputs.0.url"
+        ],
+        "success_statuses": [
+          "succeeded",
+          "complete",
+          "completed",
+          "done",
+          "success",
+          "finished"
+        ]
+      },
+      "download": {
+        "mode": "operator_or_adapter_download_to_inbox",
+        "target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/"
+      },
+      "display_name": "Seedance image-to-video",
+      "notes": "Configure with the current Seedance/ByteDance API or manual portal response shape."
+    },
+    "runway": {
+      "schema_version": "kage_external_provider_profile_v1",
+      "auth": "bearer_token_header",
+      "submit": {
+        "method": "POST",
+        "payload_mode": "kage_standard_i2v_json",
+        "response_job_id_paths": [
+          "job_id",
+          "id",
+          "task_id",
+          "generation_id",
+          "data.job_id",
+          "data.id",
+          "data.task_id",
+          "data.generation_id",
+          "result.job_id",
+          "result.id"
+        ]
+      },
+      "poll": {
+        "method": "GET",
+        "query_param": "id",
+        "response_status_paths": [
+          "status",
+          "state",
+          "data.status",
+          "data.state",
+          "result.status",
+          "result.state",
+          "task.status"
+        ],
+        "response_media_url_paths": [
+          "video_url",
+          "media_url",
+          "output_url",
+          "data.video_url",
+          "data.media_url",
+          "data.output_url",
+          "data.result.video_url",
+          "data.result.media_url",
+          "result.video_url",
+          "result.media_url",
+          "output.video_url",
+          "output.media_url",
+          "outputs.0.video_url",
+          "outputs.0.url"
+        ],
+        "success_statuses": [
+          "succeeded",
+          "complete",
+          "completed",
+          "done",
+          "success",
+          "finished"
+        ]
+      },
+      "download": {
+        "mode": "operator_or_adapter_download_to_inbox",
+        "target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/"
+      },
+      "display_name": "Runway video generation",
+      "notes": "Configure with the current Runway task/generation response shape."
+    },
+    "luma": {
+      "schema_version": "kage_external_provider_profile_v1",
+      "auth": "bearer_token_header",
+      "submit": {
+        "method": "POST",
+        "payload_mode": "kage_standard_i2v_json",
+        "response_job_id_paths": [
+          "job_id",
+          "id",
+          "task_id",
+          "generation_id",
+          "data.job_id",
+          "data.id",
+          "data.task_id",
+          "data.generation_id",
+          "result.job_id",
+          "result.id"
+        ]
+      },
+      "poll": {
+        "method": "GET",
+        "query_param": "id",
+        "response_status_paths": [
+          "status",
+          "state",
+          "data.status",
+          "data.state",
+          "result.status",
+          "result.state",
+          "task.status"
+        ],
+        "response_media_url_paths": [
+          "video_url",
+          "media_url",
+          "output_url",
+          "data.video_url",
+          "data.media_url",
+          "data.output_url",
+          "data.result.video_url",
+          "data.result.media_url",
+          "result.video_url",
+          "result.media_url",
+          "output.video_url",
+          "output.media_url",
+          "outputs.0.video_url",
+          "outputs.0.url"
+        ],
+        "success_statuses": [
+          "succeeded",
+          "complete",
+          "completed",
+          "done",
+          "success",
+          "finished"
+        ]
+      },
+      "download": {
+        "mode": "operator_or_adapter_download_to_inbox",
+        "target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/"
+      },
+      "display_name": "Luma video generation",
+      "notes": "Configure with the current Luma generation response shape."
+    },
+    "pika": {
+      "schema_version": "kage_external_provider_profile_v1",
+      "auth": "bearer_token_header",
+      "submit": {
+        "method": "POST",
+        "payload_mode": "kage_standard_i2v_json",
+        "response_job_id_paths": [
+          "job_id",
+          "id",
+          "task_id",
+          "generation_id",
+          "data.job_id",
+          "data.id",
+          "data.task_id",
+          "data.generation_id",
+          "result.job_id",
+          "result.id"
+        ]
+      },
+      "poll": {
+        "method": "GET",
+        "query_param": "id",
+        "response_status_paths": [
+          "status",
+          "state",
+          "data.status",
+          "data.state",
+          "result.status",
+          "result.state",
+          "task.status"
+        ],
+        "response_media_url_paths": [
+          "video_url",
+          "media_url",
+          "output_url",
+          "data.video_url",
+          "data.media_url",
+          "data.output_url",
+          "data.result.video_url",
+          "data.result.media_url",
+          "result.video_url",
+          "result.media_url",
+          "output.video_url",
+          "output.media_url",
+          "outputs.0.video_url",
+          "outputs.0.url"
+        ],
+        "success_statuses": [
+          "succeeded",
+          "complete",
+          "completed",
+          "done",
+          "success",
+          "finished"
+        ]
+      },
+      "download": {
+        "mode": "operator_or_adapter_download_to_inbox",
+        "target": "anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/"
+      },
+      "display_name": "Pika video generation",
+      "notes": "Configure with the current Pika task/generation response shape."
+    }
+  }
+}

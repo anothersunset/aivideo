@@ -9,6 +9,11 @@ import urllib.request
 from pathlib import Path
 
 try:
+    from .provider_profile import provider_profile
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_profile import provider_profile
+
+try:
     from .provider_env import endpoint_env, endpoint_value, token_env, token_env_candidates, token_value
 except ImportError:  # pragma: no cover - supports direct script execution.
     from provider_env import endpoint_env, endpoint_value, token_env, token_env_candidates, token_value
@@ -109,6 +114,7 @@ def submit_allowed_provider(provider_gate: dict, task_id: str, http_enabled: boo
         "endpoint_env": endpoint_env(provider),
         "token_env": token_env(provider),
         "token_env_candidates": token_env_candidates(provider),
+        "provider_profile": provider_profile(provider).get("schema_version", ""),
         "submission_count": len(submissions),
         "submitted_count": len(submitted),
         "failed_count": len(failed),
