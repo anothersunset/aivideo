@@ -2,9 +2,13 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import time
 from pathlib import Path
+
+try:
+    from .provider_env import readiness_for_env, token_env_candidates
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_env import readiness_for_env, token_env_candidates
 
 
 ROOT = Path(__file__).resolve().parent
@@ -26,31 +30,31 @@ PROVIDER_CONFIG = {
     "kling_i2v": {
         "display_name": "Kling image-to-video",
         "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
-        "token_env": "KAGE_KLING_I2V_API_KEY",
+        "token_env": "KAGE_KLING_I2V_TOKEN",
         "submit_mode": "api_http_json_or_manual_portal",
     },
     "seedance_i2v": {
         "display_name": "Seedance image-to-video",
         "endpoint_env": "KAGE_SEEDANCE_I2V_ENDPOINT",
-        "token_env": "KAGE_SEEDANCE_I2V_API_KEY",
+        "token_env": "KAGE_SEEDANCE_I2V_TOKEN",
         "submit_mode": "api_http_json_or_manual_portal",
     },
     "runway": {
         "display_name": "Runway video generation",
         "endpoint_env": "KAGE_RUNWAY_ENDPOINT",
-        "token_env": "KAGE_RUNWAY_API_KEY",
+        "token_env": "KAGE_RUNWAY_TOKEN",
         "submit_mode": "api_http_json_or_manual_portal",
     },
     "luma": {
         "display_name": "Luma video generation",
         "endpoint_env": "KAGE_LUMA_ENDPOINT",
-        "token_env": "KAGE_LUMA_API_KEY",
+        "token_env": "KAGE_LUMA_TOKEN",
         "submit_mode": "api_http_json_or_manual_portal",
     },
     "pika": {
         "display_name": "Pika video generation",
         "endpoint_env": "KAGE_PIKA_ENDPOINT",
-        "token_env": "KAGE_PIKA_API_KEY",
+        "token_env": "KAGE_PIKA_TOKEN",
         "submit_mode": "api_http_json_or_manual_portal",
     },
 }
@@ -75,18 +79,7 @@ def safe_name(value: str) -> str:
 
 def readiness_for(provider: str) -> dict:
     config = PROVIDER_CONFIG[provider]
-    endpoint = os.environ.get(config["endpoint_env"], "")
-    token = os.environ.get(config["token_env"], "")
-    return {
-        "provider": provider,
-        "display_name": config["display_name"],
-        "submit_mode": config["submit_mode"],
-        "endpoint_env": config["endpoint_env"],
-        "token_env": config["token_env"],
-        "has_endpoint": bool(endpoint),
-        "has_token": bool(token),
-        "ready_for_api_submit": bool(endpoint and token),
-    }
+    return readiness_for_env(provider, config["display_name"], config["submit_mode"])
 
 
 def selected_packet_paths(provider: str, selected_only: bool) -> list[Path]:
@@ -143,6 +136,10 @@ def write_config_example() -> str:
             "post_download_gate": "ExternalResultIngestAgent validates 1920x1080, 24fps, duration, non-empty MP4.",
         },
         "providers": PROVIDER_CONFIG,
+        "token_aliases": {
+            provider: token_env_candidates(provider)
+            for provider in VIDEO_PROVIDERS
+        },
     }
     path = PIPELINE_DIR / "external_provider_config.example.json"
     write_json(path, example)

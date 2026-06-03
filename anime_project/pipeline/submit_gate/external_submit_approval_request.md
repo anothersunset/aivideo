@@ -1,6 +1,6 @@
 # External Video Submit Approval Request
 
-Task: TASK-038
+Task: TASK-SUBMIT-GATE-ENV-ALIAS-VERIFY
 
 No external request is submitted by this gate. A provider is allowed only when endpoint, token, approval, and cost cap are all present.
 
@@ -16,5 +16,6 @@ Approval controls:
 
 - Set `KAGE_{PROVIDER}_SUBMIT_APPROVED=true` only after producer/director approval.
 - Set `KAGE_{PROVIDER}_COST_CAP_USD` or `KAGE_EXTERNAL_VIDEO_COST_CAP_USD` before submit.
+- Set `KAGE_{PROVIDER}_TOKEN`; older `KAGE_{PROVIDER}_API_KEY` names are still accepted.
 - Keep returned chunks under `anime_project/pipeline/external_results/chunks/...`.
 - Run `ExternalChunkAssemblyAgent`, then `ExternalResultIngestAgent`, then replacement review.

@@ -6,6 +6,10 @@
       "enabled": false,
       "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
       "token_env": "KAGE_KLING_I2V_TOKEN",
+      "token_env_candidates": [
+        "KAGE_KLING_I2V_TOKEN",
+        "KAGE_KLING_I2V_API_KEY"
+      ],
       "submit_approved_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
       "cost_cap_env": "KAGE_KLING_I2V_COST_CAP_USD",
       "suggested_cost_cap_usd": 2.52,
@@ -15,6 +19,10 @@
       "enabled": false,
       "endpoint_env": "KAGE_PIKA_ENDPOINT",
       "token_env": "KAGE_PIKA_TOKEN",
+      "token_env_candidates": [
+        "KAGE_PIKA_TOKEN",
+        "KAGE_PIKA_API_KEY"
+      ],
       "submit_approved_env": "KAGE_PIKA_SUBMIT_APPROVED",
       "cost_cap_env": "KAGE_PIKA_COST_CAP_USD",
       "suggested_cost_cap_usd": 0.32,

@@ -4,13 +4,18 @@
   "provider": "kling_i2v",
   "selected_only": true,
   "status": "waiting_for_provider_credentials",
-  "created_at": 1780375510,
+  "created_at": 1780476898,
   "readiness": {
     "provider": "kling_i2v",
     "display_name": "Kling image-to-video",
     "submit_mode": "api_http_json_or_manual_portal",
     "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
-    "token_env": "KAGE_KLING_I2V_API_KEY",
+    "token_env": "KAGE_KLING_I2V_TOKEN",
+    "token_env_candidates": [
+      "KAGE_KLING_I2V_TOKEN",
+      "KAGE_KLING_I2V_API_KEY"
+    ],
+    "token_env_used": "",
     "has_endpoint": false,
     "has_token": false,
     "ready_for_api_submit": false

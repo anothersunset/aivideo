@@ -29,9 +29,9 @@ The intended production model is multi-video assembly: each shot or segment can 
 
 ## Current Pause Point
 
-The video generation/replacement pipeline was paused before executing the newly queued HQ provider return simulation tasks. The repo includes the code and task records created up to that pause point, but no real external provider submission has been made.
+The video generation/replacement pipeline is paused before any real paid external provider submission. The HQ provider return simulation chain has been run and packaged, so the repo now includes both executable code and return-chain evidence, but no real external provider request has been made.
 
-The previously pending TASK-058..061 simulation chain has now been run and packaged:
+The TASK-058..061 simulation chain has been run and packaged:
 
 - `TASK-058` `HQProviderReturnSimAgent`
 - `TASK-059` `ExternalResultIngestAgent`

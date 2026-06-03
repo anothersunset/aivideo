@@ -62,7 +62,8 @@ Each provider receives 3 chunks:
 For one provider, configure:
 
 - Endpoint env, for example `KAGE_KLING_I2V_ENDPOINT`.
-- Token env, for example `KAGE_KLING_I2V_API_KEY`.
+- Token env, preferred example `KAGE_KLING_I2V_TOKEN`.
+- Legacy token alias, still accepted: `KAGE_KLING_I2V_API_KEY`.
 - Approval env, for example `KAGE_KLING_I2V_SUBMIT_APPROVED=true`.
 - Cost cap env, for example `KAGE_KLING_I2V_COST_CAP_USD=5`.
 - Optional global cap: `KAGE_EXTERNAL_VIDEO_COST_CAP_USD=10`.

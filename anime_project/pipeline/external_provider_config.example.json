@@ -14,32 +14,54 @@
     "kling_i2v": {
       "display_name": "Kling image-to-video",
       "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
-      "token_env": "KAGE_KLING_I2V_API_KEY",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
       "submit_mode": "api_http_json_or_manual_portal"
     },
     "seedance_i2v": {
       "display_name": "Seedance image-to-video",
       "endpoint_env": "KAGE_SEEDANCE_I2V_ENDPOINT",
-      "token_env": "KAGE_SEEDANCE_I2V_API_KEY",
+      "token_env": "KAGE_SEEDANCE_I2V_TOKEN",
       "submit_mode": "api_http_json_or_manual_portal"
     },
     "runway": {
       "display_name": "Runway video generation",
       "endpoint_env": "KAGE_RUNWAY_ENDPOINT",
-      "token_env": "KAGE_RUNWAY_API_KEY",
+      "token_env": "KAGE_RUNWAY_TOKEN",
       "submit_mode": "api_http_json_or_manual_portal"
     },
     "luma": {
       "display_name": "Luma video generation",
       "endpoint_env": "KAGE_LUMA_ENDPOINT",
-      "token_env": "KAGE_LUMA_API_KEY",
+      "token_env": "KAGE_LUMA_TOKEN",
       "submit_mode": "api_http_json_or_manual_portal"
     },
     "pika": {
       "display_name": "Pika video generation",
       "endpoint_env": "KAGE_PIKA_ENDPOINT",
-      "token_env": "KAGE_PIKA_API_KEY",
+      "token_env": "KAGE_PIKA_TOKEN",
       "submit_mode": "api_http_json_or_manual_portal"
     }
+  },
+  "token_aliases": {
+    "kling_i2v": [
+      "KAGE_KLING_I2V_TOKEN",
+      "KAGE_KLING_I2V_API_KEY"
+    ],
+    "seedance_i2v": [
+      "KAGE_SEEDANCE_I2V_TOKEN",
+      "KAGE_SEEDANCE_I2V_API_KEY"
+    ],
+    "runway": [
+      "KAGE_RUNWAY_TOKEN",
+      "KAGE_RUNWAY_API_KEY"
+    ],
+    "luma": [
+      "KAGE_LUMA_TOKEN",
+      "KAGE_LUMA_API_KEY"
+    ],
+    "pika": [
+      "KAGE_PIKA_TOKEN",
+      "KAGE_PIKA_API_KEY"
+    ]
   }
 }

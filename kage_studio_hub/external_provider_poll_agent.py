@@ -7,6 +7,11 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+try:
+    from .provider_env import poll_endpoint_env, token_env, token_env_candidates, token_value
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_env import poll_endpoint_env, token_env, token_env_candidates, token_value
+
 
 ROOT = Path(__file__).resolve().parent
 WORKSPACE = ROOT.parent
@@ -29,24 +34,6 @@ def load_json(path: Path, fallback):
 def write_json(path: Path, payload: dict | list) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def endpoint_env(provider: str) -> str:
-    if provider == "seedance_i2v":
-        return "KAGE_SEEDANCE_I2V_ENDPOINT"
-    return f"KAGE_{provider.upper()}_ENDPOINT"
-
-
-def token_env(provider: str) -> str:
-    if provider == "seedance_i2v":
-        return "KAGE_SEEDANCE_I2V_API_KEY"
-    return f"KAGE_{provider.upper()}_API_KEY"
-
-
-def poll_endpoint_env(provider: str) -> str:
-    if provider == "seedance_i2v":
-        return "KAGE_SEEDANCE_I2V_POLL_ENDPOINT"
-    return f"KAGE_{provider.upper()}_POLL_ENDPOINT"
 
 
 def extract_provider_job_id(item: dict) -> str:
@@ -98,9 +85,16 @@ def poll_submitted_item(item: dict, http_enabled: bool) -> dict:
     if not http_enabled:
         return {**base, "status": "waiting_for_poll_enabled", "blocker": "poll http disabled"}
     poll_endpoint = os.environ.get(poll_endpoint_env(provider), "")
-    token = os.environ.get(token_env(provider), "")
+    token = token_value(provider)
     if not poll_endpoint or not token:
-        return {**base, "status": "waiting_for_poll_config", "blocker": "missing poll endpoint or token"}
+        return {
+            **base,
+            "status": "waiting_for_poll_config",
+            "blocker": "missing poll endpoint or token",
+            "poll_endpoint_env": poll_endpoint_env(provider),
+            "token_env": token_env(provider),
+            "token_env_candidates": token_env_candidates(provider),
+        }
     separator = "&" if "?" in poll_endpoint else "?"
     url = f"{poll_endpoint}{separator}id={provider_job_id}"
     result = http_json_get(url, token, provider)

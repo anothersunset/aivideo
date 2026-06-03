@@ -1,8 +1,8 @@
 {
-  "task_id": "TASK-038",
+  "task_id": "TASK-SUBMIT-GATE-ENV-ALIAS-VERIFY",
   "stage": "external_submit_gate",
   "mode": "approval_and_cost_gate",
-  "created_at": 1780376458,
+  "created_at": 1780477036,
   "provider_count": 5,
   "allowed_provider_count": 0,
   "blocked_provider_count": 5,
@@ -19,6 +19,28 @@
       "estimated_cost_usd": 1.8,
       "cost_cap_usd": 0.0,
       "approval_env": "KAGE_KLING_I2V_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+      "token_env": "KAGE_KLING_I2V_TOKEN",
+      "token_env_candidates": [
+        "KAGE_KLING_I2V_TOKEN",
+        "KAGE_KLING_I2V_API_KEY"
+      ],
+      "token_env_used": "",
+      "adapter_readiness": {
+        "provider": "kling_i2v",
+        "display_name": "Kling image-to-video",
+        "submit_mode": "api_http_json_or_manual_portal",
+        "endpoint_env": "KAGE_KLING_I2V_ENDPOINT",
+        "token_env": "KAGE_KLING_I2V_TOKEN",
+        "token_env_candidates": [
+          "KAGE_KLING_I2V_TOKEN",
+          "KAGE_KLING_I2V_API_KEY"
+        ],
+        "token_env_used": "",
+        "has_endpoint": false,
+        "has_token": false,
+        "ready_for_api_submit": false
+      },
       "checks": {
         "has_endpoint": false,
         "has_token": false,
@@ -46,6 +68,28 @@
       "estimated_cost_usd": 2.2,
       "cost_cap_usd": 0.0,
       "approval_env": "KAGE_LUMA_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_LUMA_ENDPOINT",
+      "token_env": "KAGE_LUMA_TOKEN",
+      "token_env_candidates": [
+        "KAGE_LUMA_TOKEN",
+        "KAGE_LUMA_API_KEY"
+      ],
+      "token_env_used": "",
+      "adapter_readiness": {
+        "provider": "luma",
+        "display_name": "Luma video generation",
+        "submit_mode": "api_http_json_or_manual_portal",
+        "endpoint_env": "KAGE_LUMA_ENDPOINT",
+        "token_env": "KAGE_LUMA_TOKEN",
+        "token_env_candidates": [
+          "KAGE_LUMA_TOKEN",
+          "KAGE_LUMA_API_KEY"
+        ],
+        "token_env_used": "",
+        "has_endpoint": false,
+        "has_token": false,
+        "ready_for_api_submit": false
+      },
       "checks": {
         "has_endpoint": false,
         "has_token": false,
@@ -73,6 +117,28 @@
       "estimated_cost_usd": 1.6,
       "cost_cap_usd": 0.0,
       "approval_env": "KAGE_PIKA_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_PIKA_ENDPOINT",
+      "token_env": "KAGE_PIKA_TOKEN",
+      "token_env_candidates": [
+        "KAGE_PIKA_TOKEN",
+        "KAGE_PIKA_API_KEY"
+      ],
+      "token_env_used": "",
+      "adapter_readiness": {
+        "provider": "pika",
+        "display_name": "Pika video generation",
+        "submit_mode": "api_http_json_or_manual_portal",
+        "endpoint_env": "KAGE_PIKA_ENDPOINT",
+        "token_env": "KAGE_PIKA_TOKEN",
+        "token_env_candidates": [
+          "KAGE_PIKA_TOKEN",
+          "KAGE_PIKA_API_KEY"
+        ],
+        "token_env_used": "",
+        "has_endpoint": false,
+        "has_token": false,
+        "ready_for_api_submit": false
+      },
       "checks": {
         "has_endpoint": false,
         "has_token": false,
@@ -100,6 +166,28 @@
       "estimated_cost_usd": 2.4,
       "cost_cap_usd": 0.0,
       "approval_env": "KAGE_RUNWAY_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_RUNWAY_ENDPOINT",
+      "token_env": "KAGE_RUNWAY_TOKEN",
+      "token_env_candidates": [
+        "KAGE_RUNWAY_TOKEN",
+        "KAGE_RUNWAY_API_KEY"
+      ],
+      "token_env_used": "",
+      "adapter_readiness": {
+        "provider": "runway",
+        "display_name": "Runway video generation",
+        "submit_mode": "api_http_json_or_manual_portal",
+        "endpoint_env": "KAGE_RUNWAY_ENDPOINT",
+        "token_env": "KAGE_RUNWAY_TOKEN",
+        "token_env_candidates": [
+          "KAGE_RUNWAY_TOKEN",
+          "KAGE_RUNWAY_API_KEY"
+        ],
+        "token_env_used": "",
+        "has_endpoint": false,
+        "has_token": false,
+        "ready_for_api_submit": false
+      },
       "checks": {
         "has_endpoint": false,
         "has_token": false,
@@ -127,6 +215,28 @@
       "estimated_cost_usd": 1.8,
       "cost_cap_usd": 0.0,
       "approval_env": "KAGE_SEEDANCE_I2V_SUBMIT_APPROVED",
+      "endpoint_env": "KAGE_SEEDANCE_I2V_ENDPOINT",
+      "token_env": "KAGE_SEEDANCE_I2V_TOKEN",
+      "token_env_candidates": [
+        "KAGE_SEEDANCE_I2V_TOKEN",
+        "KAGE_SEEDANCE_I2V_API_KEY"
+      ],
+      "token_env_used": "",
+      "adapter_readiness": {
+        "provider": "seedance_i2v",
+        "display_name": "Seedance image-to-video",
+        "submit_mode": "api_http_json_or_manual_portal",
+        "endpoint_env": "KAGE_SEEDANCE_I2V_ENDPOINT",
+        "token_env": "KAGE_SEEDANCE_I2V_TOKEN",
+        "token_env_candidates": [
+          "KAGE_SEEDANCE_I2V_TOKEN",
+          "KAGE_SEEDANCE_I2V_API_KEY"
+        ],
+        "token_env_used": "",
+        "has_endpoint": false,
+        "has_token": false,
+        "ready_for_api_submit": false
+      },
       "checks": {
         "has_endpoint": false,
         "has_token": false,

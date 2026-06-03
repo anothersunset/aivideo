@@ -4,6 +4,11 @@ import argparse
 import json
 from pathlib import Path
 
+try:
+    from .provider_env import token_env_candidates
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_env import token_env_candidates
+
 
 ROOT = Path(__file__).resolve().parent
 WORKSPACE = ROOT.parent
@@ -101,6 +106,7 @@ def selected_launch_rows(task_id: str) -> list[dict]:
                 "approval_env": f"KAGE_{env_name}_SUBMIT_APPROVED",
                 "endpoint_env": f"KAGE_{env_name}_ENDPOINT",
                 "token_env": f"KAGE_{env_name}_TOKEN",
+                "token_env_candidates": token_env_candidates(provider),
                 "source_frame": keyframe.get("frame") or item.get("source_frame", ""),
                 "source_review_frame": keyframe.get("frame", ""),
                 "motion_prompt": item.get("motion_prompt", ""),
@@ -133,6 +139,7 @@ def provider_config_template(rows: list[dict]) -> dict:
                 "enabled": False,
                 "endpoint_env": row["endpoint_env"],
                 "token_env": row["token_env"],
+                "token_env_candidates": row["token_env_candidates"],
                 "submit_approved_env": row["approval_env"],
                 "cost_cap_env": row["cost_cap_env"],
                 "suggested_cost_cap_usd": 0,
@@ -173,6 +180,7 @@ def env_example(rows: list[dict]) -> str:
                 f"# {provider}",
                 f"KAGE_{env_name}_ENDPOINT=",
                 f"KAGE_{env_name}_TOKEN=",
+                f"# Backward-compatible alias also accepted: KAGE_{env_name}_API_KEY",
                 f"KAGE_{env_name}_SUBMIT_APPROVED=false",
                 f"KAGE_{env_name}_COST_CAP_USD={max(cost_by_provider[provider], 0.5):.2f}",
                 "",
@@ -210,6 +218,7 @@ def build_report(manifest: dict) -> str:
             "",
             "- No external request has been submitted by this package.",
             "- Configure endpoint and token env vars for one provider first.",
+            "- Preferred token env names use `KAGE_{PROVIDER}_TOKEN`; legacy `KAGE_{PROVIDER}_API_KEY` aliases are accepted.",
             "- Set provider approval env to true only after producer approval.",
             "- Set cost cap env at or above the selected provider estimate.",
             "- After returns arrive, run external ingest/review/replacement before updating the current demo.",

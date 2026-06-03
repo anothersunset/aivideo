@@ -6,6 +6,11 @@ import os
 import time
 from pathlib import Path
 
+try:
+    from .provider_env import configured_env_name, endpoint_env, endpoint_value, token_env_candidates, token_value
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_env import configured_env_name, endpoint_env, endpoint_value, token_env_candidates, token_value
+
 
 ROOT = Path(__file__).resolve().parent
 WORKSPACE = ROOT.parent
@@ -76,11 +81,16 @@ def provider_queue_manifest(provider_dir: Path) -> dict:
     estimated_cost = round(seconds * rate, 2)
     readiness = manifest.get("readiness", {})
     approval_env = f"KAGE_{provider_dir.name.upper()}_SUBMIT_APPROVED"
+    endpoint_name = endpoint_env(provider_dir.name)
+    token_candidates = token_env_candidates(provider_dir.name)
+    token_name_used = configured_env_name(token_candidates)
+    has_endpoint = bool(endpoint_value(provider_dir.name))
+    has_token = bool(token_value(provider_dir.name))
     submit_approved = env_bool(approval_env)
     cost_cap = env_float(f"KAGE_{provider_dir.name.upper()}_COST_CAP_USD", env_float("KAGE_EXTERNAL_VIDEO_COST_CAP_USD", 0.0))
     checks = {
-        "has_endpoint": bool(readiness.get("has_endpoint")),
-        "has_token": bool(readiness.get("has_token")),
+        "has_endpoint": has_endpoint,
+        "has_token": has_token,
         "submit_approved": submit_approved,
         "cost_cap_configured": cost_cap > 0,
         "cost_within_cap": cost_cap > 0 and estimated_cost <= cost_cap,
@@ -98,6 +108,11 @@ def provider_queue_manifest(provider_dir: Path) -> dict:
         "estimated_cost_usd": estimated_cost,
         "cost_cap_usd": cost_cap,
         "approval_env": approval_env,
+        "endpoint_env": endpoint_name,
+        "token_env": token_name_used or token_candidates[0],
+        "token_env_candidates": token_candidates,
+        "token_env_used": token_name_used,
+        "adapter_readiness": readiness,
         "checks": checks,
         "allowed_to_submit": allowed,
         "blockers": blockers,
@@ -128,6 +143,7 @@ def write_approval_request(providers: list[dict], task_id: str) -> str:
             "",
             "- Set `KAGE_{PROVIDER}_SUBMIT_APPROVED=true` only after producer/director approval.",
             "- Set `KAGE_{PROVIDER}_COST_CAP_USD` or `KAGE_EXTERNAL_VIDEO_COST_CAP_USD` before submit.",
+            "- Set `KAGE_{PROVIDER}_TOKEN`; older `KAGE_{PROVIDER}_API_KEY` names are still accepted.",
             "- Keep returned chunks under `anime_project/pipeline/external_results/chunks/...`.",
             "- Run `ExternalChunkAssemblyAgent`, then `ExternalResultIngestAgent`, then replacement review.",
         ]

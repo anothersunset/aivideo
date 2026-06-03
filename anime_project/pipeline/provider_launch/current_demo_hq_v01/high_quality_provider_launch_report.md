@@ -1,6 +1,6 @@
 # High Quality Provider Launch Package
 
-Task: TASK-056
+Task: TASK-HQ-LAUNCH-ENV-ALIAS
 Decision: current_demo_hq_launch_ready_blocked_by_submit_gate
 Current demo: producer_demo_v02
 Selected shots: 5
@@ -21,6 +21,7 @@ Estimated first-pass paid cost: $2.84
 
 - No external request has been submitted by this package.
 - Configure endpoint and token env vars for one provider first.
+- Preferred token env names use `KAGE_{PROVIDER}_TOKEN`; legacy `KAGE_{PROVIDER}_API_KEY` aliases are accepted.
 - Set provider approval env to true only after producer approval.
 - Set cost cap env at or above the selected provider estimate.
 - After returns arrive, run external ingest/review/replacement before updating the current demo.

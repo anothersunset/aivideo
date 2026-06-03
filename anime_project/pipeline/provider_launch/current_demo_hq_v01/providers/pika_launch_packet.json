@@ -4,7 +4,7 @@
   "submission_policy": "Prepared only. Do not submit until gate checks pass.",
   "launch_rows": [
     {
-      "task_id": "TASK-056",
+      "task_id": "TASK-HQ-LAUNCH-ENV-ALIAS",
       "queue_id": "POLISH-005",
       "priority": "P1",
       "segment": "act2_01_sample",
@@ -18,6 +18,10 @@
       "approval_env": "KAGE_PIKA_SUBMIT_APPROVED",
       "endpoint_env": "KAGE_PIKA_ENDPOINT",
       "token_env": "KAGE_PIKA_TOKEN",
+      "token_env_candidates": [
+        "KAGE_PIKA_TOKEN",
+        "KAGE_PIKA_API_KEY"
+      ],
       "source_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
       "source_review_frame": "anime_project\\pipeline\\director_review_v02\\keyframes\\act2_01_sample\\12-002_v02_master_mid.png",
       "motion_prompt": "Chiyo restraint beat, silent emotional acting through hands and props, no child pain process, still rain atmosphere. Match the existing master timing, 1920x1080, 24fps, 2D limited anime look, original character design only, no imitation of known franchise compositions.",

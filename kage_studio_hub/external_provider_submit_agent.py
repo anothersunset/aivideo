@@ -8,6 +8,11 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+try:
+    from .provider_env import endpoint_env, endpoint_value, token_env, token_env_candidates, token_value
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from provider_env import endpoint_env, endpoint_value, token_env, token_env_candidates, token_value
+
 
 ROOT = Path(__file__).resolve().parent
 WORKSPACE = ROOT.parent
@@ -38,21 +43,16 @@ def write_json(path: Path, payload: dict | list) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def endpoint_env(provider: str) -> str:
-    if provider == "seedance_i2v":
-        return "KAGE_SEEDANCE_I2V_ENDPOINT"
-    return f"KAGE_{provider.upper()}_ENDPOINT"
-
-
-def token_env(provider: str) -> str:
-    if provider == "seedance_i2v":
-        return "KAGE_SEEDANCE_I2V_API_KEY"
-    return f"KAGE_{provider.upper()}_API_KEY"
-
-
 def http_submit(provider: str, submission: dict) -> dict:
-    endpoint = os.environ[endpoint_env(provider)]
-    token = os.environ[token_env(provider)]
+    endpoint = endpoint_value(provider)
+    token = token_value(provider)
+    if not endpoint or not token:
+        return {
+            "status_code": 0,
+            "error": "missing endpoint or token",
+            "endpoint_env": endpoint_env(provider),
+            "token_env_candidates": token_env_candidates(provider),
+        }
     payload = json.dumps(submission, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
         endpoint,
@@ -106,6 +106,9 @@ def submit_allowed_provider(provider_gate: dict, task_id: str, http_enabled: boo
         "provider": provider,
         "allowed_to_submit": True,
         "queue": provider_gate["queue"],
+        "endpoint_env": endpoint_env(provider),
+        "token_env": token_env(provider),
+        "token_env_candidates": token_env_candidates(provider),
         "submission_count": len(submissions),
         "submitted_count": len(submitted),
         "failed_count": len(failed),
