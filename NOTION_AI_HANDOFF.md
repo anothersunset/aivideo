@@ -38,6 +38,7 @@ The MCP path is implemented far enough to prove local execution:
 
 - Agent: `kage_studio_hub/mcp_video_gateway_agent.py`
 - Local bridge simulation: `kage_studio_hub/mcp_video_bridge_sim.py`
+- Generic HTTP bridge template: `kage_studio_hub/mcp_http_video_bridge.py`
 - Bridge contract: `anime_project/pipeline/mcp_video_gateway/MCP_VIDEO_BRIDGE_CONTRACT.md`
 - Input schema: `anime_project/pipeline/mcp_video_gateway/schemas/submit_video_job.schema.json`
 - Result schema: `anime_project/pipeline/mcp_video_gateway/schemas/video_job_result.schema.json`
@@ -76,11 +77,13 @@ These MP4 chunks are real local renders and explicitly marked as no external API
 
 1. Choose one real provider route: Kling, Seedance, Pika, Runway, Luma, Gemini/Veo where available, ComfyUI, AnimateDiff, Remotion, or Hyperframes-like renderer.
 2. Implement or install an MCP bridge for that route.
-3. Keep the bridge contract compatible with `submit_video_job`.
-4. Configure the submit gate with endpoint/tool credentials, approval, and cost cap.
-5. Rerun `MCPVideoGatewayAgent` in execution mode.
-6. Place returned MP4s in `anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/`.
-7. Run ingest, review, replacement, and master rebuild.
+3. Use `kage_studio_hub/mcp_http_video_bridge.py` as the starting adapter if the provider exposes an HTTP submit endpoint.
+4. Keep the bridge contract compatible with `submit_video_job`.
+5. Configure the submit gate with endpoint/tool credentials, approval, and cost cap.
+6. Set `KAGE_MCP_HTTP_BRIDGE_ENABLE_EXEC=true` only when a real external call is approved.
+7. Rerun `MCPVideoGatewayAgent` in execution mode.
+8. Place returned MP4s in `anime_project/pipeline/external_results/inbox/{provider}/{segment}/{shot_id}/`.
+9. Run ingest, review, replacement, and master rebuild.
 
 ## Local Verification Commands
 

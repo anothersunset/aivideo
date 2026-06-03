@@ -37,6 +37,7 @@ Media files are stored with Git LFS.
 - HQ provider return simulation runs through ingest, review, and replacement without external API calls.
 - `MCPVideoGatewayAgent` prepares MCP `submit_video_job` payloads for mainstream video-model bridges.
 - `mcp_video_bridge_sim.py` proves the MCP bridge path can produce real H.264 MP4 chunks locally while keeping paid-provider gates blocked.
+- `mcp_http_video_bridge.py` is a safe-by-default HTTP adapter template for future real provider or MCP server integration.
 
 ## Safety State
 
@@ -47,6 +48,7 @@ The current default state is safe:
 - `ExternalSubmitGateAgent` blocks all commercial providers unless endpoint, token, approval, and cost cap are configured.
 - `MCPVideoGatewayAgent` defaults to prepare-only mode.
 - MCP execution requires `KAGE_MCP_VIDEO_GATEWAY_ENABLE_EXEC=true` and a bridge command such as `KAGE_KLING_I2V_MCP_COMMAND`.
+- HTTP provider submission additionally requires `KAGE_MCP_HTTP_BRIDGE_ENABLE_EXEC=true`; otherwise `mcp_http_video_bridge.py` returns queued without a network call.
 - Real secrets and private `.env` files are intentionally excluded.
 
 ## Local Hub

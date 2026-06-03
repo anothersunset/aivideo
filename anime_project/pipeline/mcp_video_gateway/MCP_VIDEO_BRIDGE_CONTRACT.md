@@ -28,6 +28,17 @@ $env:KAGE_KLING_I2V_MCP_COMMAND="python kage_studio_hub\mcp_video_bridge_sim.py"
 python kage_studio_hub\mcp_video_gateway_agent.py --task-id TASK-MCP-BRIDGE
 ```
 
+Generic HTTP bridge template:
+
+```powershell
+$env:KAGE_MCP_VIDEO_GATEWAY_ENABLE_EXEC="true"
+$env:KAGE_KLING_I2V_MCP_COMMAND="python kage_studio_hub\mcp_http_video_bridge.py"
+$env:KAGE_MCP_HTTP_BRIDGE_ENABLE_EXEC="true"
+$env:KAGE_KLING_I2V_ENDPOINT="https://provider-or-mcp-adapter.example/submit"
+$env:KAGE_KLING_I2V_TOKEN="<configured outside git>"
+python kage_studio_hub\mcp_video_gateway_agent.py --task-id TASK-MCP-BRIDGE
+```
+
 Provider-specific command envs override the global command:
 
 - `KAGE_KLING_I2V_MCP_COMMAND`
@@ -70,5 +81,7 @@ Do not run a real provider bridge until all of these are true:
 - Producer/director approval is explicit.
 - Provider or global cost cap is configured.
 - The bridge implementation is reviewed for secret handling.
+
+`mcp_http_video_bridge.py` is safe by default. It returns a queued result and makes no HTTP request unless `KAGE_MCP_HTTP_BRIDGE_ENABLE_EXEC=true`.
 
 The current repository default remains prepare-only and blocked for paid providers.

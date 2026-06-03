@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -22,6 +23,7 @@ REQUIRED_FILES = [
     "kage_studio_hub/data/agent_tasks.json",
     "kage_studio_hub/mcp_video_gateway_agent.py",
     "kage_studio_hub/mcp_video_bridge_sim.py",
+    "kage_studio_hub/mcp_http_video_bridge.py",
     "anime_project/pipeline/external_provider_profiles.json",
     "anime_project/pipeline/mcp_video_gateway/MCP_VIDEO_BRIDGE_CONTRACT.md",
     "anime_project/pipeline/mcp_video_gateway/schemas/submit_video_job.schema.json",
@@ -205,6 +207,37 @@ def verify_manifests() -> None:
         raise AssertionError("submit gate should block all real providers by default")
 
 
+def verify_http_bridge_safe_default() -> None:
+    dispatch_path = project_path("anime_project/pipeline/mcp_video_gateway/mcp_video_dispatch_queue.jsonl")
+    first_dispatch = next(
+        json.loads(line)
+        for line in dispatch_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    )
+    env = os.environ.copy()
+    env.pop("KAGE_MCP_HTTP_BRIDGE_ENABLE_EXEC", None)
+    result = subprocess.run(
+        [sys.executable, "kage_studio_hub/mcp_http_video_bridge.py"],
+        cwd=ROOT,
+        input=json.dumps(first_dispatch),
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        env=env,
+    )
+    payload = json.loads(result.stdout)
+    if payload.get("status") != "queued":
+        raise AssertionError("HTTP MCP bridge should remain queued when execution is disabled")
+    if payload.get("external_api_call"):
+        raise AssertionError("HTTP MCP bridge made an external API call with execution disabled")
+    if "KAGE_MCP_HTTP_BRIDGE_ENABLE_EXEC" not in payload.get("error", ""):
+        raise AssertionError("HTTP MCP bridge did not explain its execution gate")
+    combined = result.stdout + result.stderr
+    if "TOKEN=" in combined or "API_KEY=" in combined:
+        raise AssertionError("HTTP MCP bridge output appears to expose secret values")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--skip-media", action="store_true", help="Skip ffprobe media verification.")
@@ -215,6 +248,7 @@ def main() -> int:
 
     verify_document_references()
     verify_manifests()
+    verify_http_bridge_safe_default()
 
     if not args.skip_media:
         for raw in PLAYABLE_EVIDENCE_MP4S:
