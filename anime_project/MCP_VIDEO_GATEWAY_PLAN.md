@@ -79,6 +79,8 @@ The current implementation already prepares the contract:
 - Profiles: `anime_project/pipeline/external_provider_profiles.json`
 - MCP dispatch queue: `anime_project/pipeline/mcp_video_gateway/mcp_video_dispatch_queue.jsonl`
 - MCP gateway manifest: `anime_project/pipeline/mcp_video_gateway/mcp_video_gateway_manifest.json`
+- MCP bridge contract: `anime_project/pipeline/mcp_video_gateway/MCP_VIDEO_BRIDGE_CONTRACT.md`
+- MCP input/output schemas: `anime_project/pipeline/mcp_video_gateway/schemas/`
 - MCP local bridge rehearsal: `anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_report.md`
 - Submit gate: `anime_project/pipeline/submit_gate/external_submit_gate_manifest.json`
 - Returned chunks: `anime_project/pipeline/external_results/chunks/{provider}/{segment}/{shot_id}/`

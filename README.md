@@ -92,6 +92,7 @@ https://github.com/anothersunset/aivideo/actions/workflows/verify-handoff.yml
 - `UPLOAD_MANIFEST.md`
 - `anime_project/EXTERNAL_VIDEO_PIPELINE_RUNBOOK.md`
 - `anime_project/MCP_VIDEO_GATEWAY_PLAN.md`
+- `anime_project/pipeline/mcp_video_gateway/MCP_VIDEO_BRIDGE_CONTRACT.md`
 - `anime_project/pipeline/external_provider_profiles.json`
 - `anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_report.md`
 

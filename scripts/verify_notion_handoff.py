@@ -23,6 +23,9 @@ REQUIRED_FILES = [
     "kage_studio_hub/mcp_video_gateway_agent.py",
     "kage_studio_hub/mcp_video_bridge_sim.py",
     "anime_project/pipeline/external_provider_profiles.json",
+    "anime_project/pipeline/mcp_video_gateway/MCP_VIDEO_BRIDGE_CONTRACT.md",
+    "anime_project/pipeline/mcp_video_gateway/schemas/submit_video_job.schema.json",
+    "anime_project/pipeline/mcp_video_gateway/schemas/video_job_result.schema.json",
     "anime_project/pipeline/mcp_video_gateway/mcp_video_gateway_manifest.json",
     "anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_report.md",
     "anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_summary.json",
@@ -165,6 +168,15 @@ def verify_manifests() -> None:
         raise AssertionError("main MCP gateway manifest must be restored to prepare_only")
     if gateway.get("dispatch_count") != 15 or gateway.get("blocked_count") != 15:
         raise AssertionError("main MCP gateway should show 15 blocked dispatches")
+    dispatch_path = project_path("anime_project/pipeline/mcp_video_gateway/mcp_video_dispatch_queue.jsonl")
+    dispatches = [json.loads(line) for line in dispatch_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    if len(dispatches) != 15:
+        raise AssertionError("MCP dispatch queue should contain 15 records")
+    first_payload = dispatches[0].get("mcp_payload", {})
+    if first_payload.get("schema") != "anime_project\\pipeline\\mcp_video_gateway\\schemas\\submit_video_job.schema.json":
+        raise AssertionError("MCP payload does not reference submit_video_job schema")
+    if first_payload.get("result_schema") != "anime_project\\pipeline\\mcp_video_gateway\\schemas\\video_job_result.schema.json":
+        raise AssertionError("MCP payload does not reference video_job_result schema")
 
     rehearsal = load_json(
         "anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_summary.json"
@@ -175,6 +187,18 @@ def verify_manifests() -> None:
         raise AssertionError("MCP rehearsal should submit 3 local chunks with 0 failures")
     if not rehearsal.get("main_gateway_restored_to_prepare_only") or not rehearsal.get("submit_gate_restored_to_blocked"):
         raise AssertionError("MCP rehearsal did not record restored safe state")
+    for output in rehearsal.get("outputs", []):
+        for key in ["provider", "segment", "shot_id", "chunk_index", "output_path", "probe"]:
+            if key not in output:
+                raise AssertionError(f"MCP rehearsal output missing {key}")
+        sidecar = project_path(output["output_path"]).with_suffix(".mcp_bridge_sim.json")
+        if not sidecar.exists():
+            raise AssertionError(f"MCP bridge result sidecar missing: {sidecar}")
+        sidecar_payload = json.loads(sidecar.read_text(encoding="utf-8"))
+        if sidecar_payload.get("status") != "completed":
+            raise AssertionError(f"MCP bridge result sidecar not completed: {sidecar}")
+        if sidecar_payload.get("schema") and sidecar_payload.get("schema") != "anime_project\\pipeline\\mcp_video_gateway\\schemas\\video_job_result.schema.json":
+            raise AssertionError(f"MCP bridge sidecar references unexpected schema: {sidecar}")
 
     submit_gate = load_json("anime_project/pipeline/submit_gate/external_submit_gate_manifest.json")
     if submit_gate.get("allowed_provider_count") != 0:

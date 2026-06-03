@@ -38,6 +38,9 @@ The MCP path is implemented far enough to prove local execution:
 
 - Agent: `kage_studio_hub/mcp_video_gateway_agent.py`
 - Local bridge simulation: `kage_studio_hub/mcp_video_bridge_sim.py`
+- Bridge contract: `anime_project/pipeline/mcp_video_gateway/MCP_VIDEO_BRIDGE_CONTRACT.md`
+- Input schema: `anime_project/pipeline/mcp_video_gateway/schemas/submit_video_job.schema.json`
+- Result schema: `anime_project/pipeline/mcp_video_gateway/schemas/video_job_result.schema.json`
 - Provider profiles: `anime_project/pipeline/external_provider_profiles.json`
 - Main gateway manifest: `anime_project/pipeline/mcp_video_gateway/mcp_video_gateway_manifest.json`
 - Rehearsal report: `anime_project/pipeline/mcp_video_gateway/rehearsals/kling_i2v_local_sim/mcp_video_gateway_rehearsal_report.md`

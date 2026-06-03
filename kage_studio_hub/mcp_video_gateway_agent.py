@@ -22,6 +22,8 @@ GATEWAY_DIR = PIPELINE_DIR / "mcp_video_gateway"
 DISPATCH_QUEUE_PATH = GATEWAY_DIR / "mcp_video_dispatch_queue.jsonl"
 MANIFEST_PATH = GATEWAY_DIR / "mcp_video_gateway_manifest.json"
 REPORT_PATH = GATEWAY_DIR / "mcp_video_gateway_report.md"
+SUBMIT_SCHEMA_PATH = GATEWAY_DIR / "schemas" / "submit_video_job.schema.json"
+RESULT_SCHEMA_PATH = GATEWAY_DIR / "schemas" / "video_job_result.schema.json"
 
 
 def rel(path: Path) -> str:
@@ -79,6 +81,8 @@ def mcp_payload(submission: dict) -> dict:
     profile = provider_profile(provider)
     return {
         "tool": "submit_video_job",
+        "schema": rel(SUBMIT_SCHEMA_PATH),
+        "result_schema": rel(RESULT_SCHEMA_PATH),
         "arguments": {
             "provider": provider,
             "profile_schema": profile.get("schema_version", ""),

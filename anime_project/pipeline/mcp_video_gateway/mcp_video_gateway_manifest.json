@@ -2,7 +2,7 @@
   "task_id": "TASK-062",
   "stage": "mcp_video_gateway",
   "mode": "prepare_only",
-  "created_at": 1780478430,
+  "created_at": 1780479716,
   "submit_gate": "anime_project\\pipeline\\submit_gate\\external_submit_gate_manifest.json",
   "dispatch_queue": "anime_project\\pipeline\\mcp_video_gateway\\mcp_video_dispatch_queue.jsonl",
   "provider_count": 5,

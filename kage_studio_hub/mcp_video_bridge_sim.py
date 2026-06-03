@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent
 WORKSPACE = ROOT.parent
 ANIME = WORKSPACE / "anime_project"
 PIPE = ANIME / "pipeline"
+RESULT_SCHEMA = PIPE / "mcp_video_gateway" / "schemas" / "video_job_result.schema.json"
 
 
 def rel(path: Path) -> str:
@@ -183,6 +184,7 @@ def main() -> None:
     probe = ffprobe(output)
     result = {
         "status": "completed",
+        "schema": rel(RESULT_SCHEMA),
         "simulated": True,
         "external_api_call": False,
         "job_id": f"mcp-local-sim-{provider}-{args.get('segment', '')}-{args.get('shot_id', '')}-{int(time.time())}",

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/anothersunset/aivideo/schemas/video_job_result.schema.json",
+  "title": "Kage MCP video job result",
+  "type": "object",
+  "required": [
+    "status",
+    "job_id",
+    "provider",
+    "segment",
+    "shot_id",
+    "chunk_index"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["queued", "submitted", "running", "completed", "failed", "cancelled"]
+    },
+    "simulated": {
+      "type": "boolean"
+    },
+    "external_api_call": {
+      "type": "boolean"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "segment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "chunk_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_keyframe": {
+      "type": "string"
+    },
+    "output_path": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
+    "probe": {
+      "type": "object",
+      "properties": {
+        "codec_name": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "r_frame_rate": {
+          "type": "string"
+        },
+        "duration_seconds": {
+          "type": "number"
+        },
+        "size_bytes": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -17,5 +17,6 @@
     "r_frame_rate": "24/1",
     "duration_seconds": 3.0,
     "size_bytes": 342018
-  }
+  },
+  "schema": "anime_project\\pipeline\\mcp_video_gateway\\schemas\\video_job_result.schema.json"
 }
